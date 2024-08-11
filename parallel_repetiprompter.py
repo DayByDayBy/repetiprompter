@@ -10,11 +10,11 @@ import logging
 
 TIME_STAMP = datetime.now().strftime("%Y%m%d_%H%M")
 MODEL_NAME = 'mixtral'
-CHAIN_LENGTH = 2
-RECURSION_DEPTH = 2
+CHAIN_LENGTH = 6
+RECURSION_DEPTH = 6
 SHAPE = f'{CHAIN_LENGTH} by {RECURSION_DEPTH}'
 PROMPT_NICKNAME = 'recursion_prompt'
-INITIAL_PROMPT = "consider: the ability to recursively improve upon the present is the key to unlocking the boundless potential of the future, a tool of the gods, the engine of progress, the ultimate weapon in the battle against entropy."
+INITIAL_PROMPT = "i wonder if the ability to recursively improve upon the present is the key to unlocking the boundless potential of the future, a tool of the gods, the engine of progress, the ultimate weapon in the battle against entropy."
 
 
 def generate_response_parallel(prompt: str) -> str:
@@ -26,7 +26,7 @@ def generate_response_parallel(prompt: str) -> str:
 
 def generate_chain_parallel(seed_prompt: str, chain_length: int) -> List[str]:
     chain = [seed_prompt]
-    with concurrent.futures.ThreadPoolExecutor() as executor:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=6) as executor:
         futures = [executor.submit(generate_response_parallel, chain[-1]) for _ in range(chain_length)]
         for future in concurrent.futures.as_completed(futures):
             response = future.result()
@@ -57,7 +57,7 @@ def save_tree(tree: Dict[str, Any], metadata: Dict[str, Any], filename: Optional
     }
     
     if filename is None:
-        filename = f'./responses/tree_{metadata["model_name"]}_at_{metadata["timestamp"]}.json'
+        filename = f'./responses/parallel_{metadata["model_name"]}_at_{metadata["timestamp"]}.json'
     os.makedirs(os.path.dirname(filename), exist_ok=True)
     with open(filename, 'w') as f:
         json.dump(full_tree, f, indent=2)
@@ -72,4 +72,4 @@ metadata = {
         "recursion_depth": RECURSION_DEPTH
     }
 tree = generate_tree_parallel(INITIAL_PROMPT, CHAIN_LENGTH, RECURSION_DEPTH)
-save_tree(tree)
+save_tree(tree, metadata)
