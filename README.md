@@ -1,8 +1,10 @@
 # repetiprompter
 
-a project based around a simple idea, namely 
+a project based around a fairly simple idea, namely 
 
 - prompt -> response where response becomes prompt
+
+the implementation goes a little further than that, but that is the core of the project
 
 
 ## where to look
