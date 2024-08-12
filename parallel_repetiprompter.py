@@ -10,8 +10,9 @@ import logging
 
 TIME_STAMP = datetime.now().strftime("%Y%m%d_%H%M")
 MODEL_NAME = 'llama3'
-CHAIN_LENGTH = 6
-RECURSION_DEPTH = 4
+TEMP=0.6
+CHAIN_LENGTH = 5
+RECURSION_DEPTH = 5
 SHAPE = f'{CHAIN_LENGTH} by {RECURSION_DEPTH}'
 PROMPT_NICKNAME = 'recursion_prompt'
 INITIAL_PROMPT = "i wonder if the ability to recursively improve upon the present is the key to unlocking the boundless potential of the future, a tool of the gods, the engine of progress, the ultimate weapon in the battle against entropy."
@@ -19,14 +20,14 @@ INITIAL_PROMPT = "i wonder if the ability to recursively improve upon the presen
 
 def generate_response_parallel(prompt: str) -> str:
     try:
-        return ollama.generate(model=MODEL_NAME, prompt=prompt)['response']
+        return ollama.generate(model=MODEL_NAME, prompt=prompt, options={"temperature": TEMP})['response']
     except Exception as e:
         logging.error(f"Error generating response: {e}")
         return ""
 
 def generate_chain_parallel(seed_prompt: str, chain_length: int) -> List[str]:
     chain = [seed_prompt]
-    with concurrent.futures.ThreadPoolExecutor(max_workers=6) as executor:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
         futures = [executor.submit(generate_response_parallel, chain[-1]) for _ in range(chain_length)]
         for future in concurrent.futures.as_completed(futures):
             response = future.result()

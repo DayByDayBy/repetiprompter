@@ -10,7 +10,8 @@ logging.basicConfig(filename='tree_generation.log', level=logging.ERROR,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 TIME_STAMP = datetime.now().strftime("%Y%m%d_%H%M")
-MODEL_NAME = 'mixtral'
+MODEL_NAME = 'llama3'
+TEMP = 0.67
 CHAIN_LENGTH = 2
 RECURSION_DEPTH = 2
 SHAPE = f'{CHAIN_LENGTH} by {RECURSION_DEPTH}'
@@ -19,7 +20,7 @@ INITIAL_PROMPT = "consider: the ability to recursively improve upon the present 
 
 def generate_response(prompt: str) -> str:
     try:
-        return ollama.generate(model=MODEL_NAME, prompt=prompt)['response']
+        return ollama.generate(model=MODEL_NAME, prompt=prompt, options={"temperature": TEMP})['response']
     except Exception as e:
         logging.error(f"Error generating response: {e}")
         return ""
