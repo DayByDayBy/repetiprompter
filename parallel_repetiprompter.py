@@ -9,9 +9,9 @@ from tqdm import tqdm
 import logging
 
 TIME_STAMP = datetime.now().strftime("%Y%m%d_%H%M")
-MODEL_NAME = 'mixtral'
-CHAIN_LENGTH = 6
-RECURSION_DEPTH = 6
+MODEL_NAME = 'llama3'
+CHAIN_LENGTH = 8
+RECURSION_DEPTH = 4
 SHAPE = f'{CHAIN_LENGTH} by {RECURSION_DEPTH}'
 PROMPT_NICKNAME = 'recursion_prompt'
 INITIAL_PROMPT = "i wonder if the ability to recursively improve upon the present is the key to unlocking the boundless potential of the future, a tool of the gods, the engine of progress, the ultimate weapon in the battle against entropy."
