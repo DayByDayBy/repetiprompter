@@ -9,7 +9,8 @@ the implementation goes a little further than that, but that is the core of the 
 
 ## where to look
 
-there are a few scripts, examples or a few approaches, but the most current implementations are 
+there are a few scripts, examples of a few approaches, but the most current implementations are: 
+
 
 ```
 cubic_repetiprompter_beta.py
