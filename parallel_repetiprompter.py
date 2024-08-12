@@ -10,7 +10,7 @@ import logging
 
 TIME_STAMP = datetime.now().strftime("%Y%m%d_%H%M")
 MODEL_NAME = 'llama3'
-CHAIN_LENGTH = 8
+CHAIN_LENGTH = 6
 RECURSION_DEPTH = 4
 SHAPE = f'{CHAIN_LENGTH} by {RECURSION_DEPTH}'
 PROMPT_NICKNAME = 'recursion_prompt'
