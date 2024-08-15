@@ -11,7 +11,7 @@ import logging
 # checking whether ollama parallism is faster or slower, as i suspect it will overload rather than help
 import time
 start_time = time.time()
-os.environ['OLLAMA_NUM_PARALLEL'] = '2'
+os.environ['OLLAMA_NUM_PARALLEL'] = '4'
 
 
 TIME_STAMP = datetime.now().strftime("%Y%m%d_%H%M")
@@ -78,6 +78,7 @@ metadata = {
         "chain_length": CHAIN_LENGTH,
         "recursion_depth": RECURSION_DEPTH
     }
+print(f'\n\nRunning {MODEL_NAME} model\n\n')
 tree = generate_tree_parallel(INITIAL_PROMPT, CHAIN_LENGTH, RECURSION_DEPTH)
 save_tree(tree, metadata)
 end_time = time.time()
