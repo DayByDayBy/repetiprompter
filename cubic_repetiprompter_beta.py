@@ -6,11 +6,16 @@ import os
 from tqdm import tqdm
 import logging
 
+import time
+start_time = time.time()
+
+os.environ['OLLAMA_NUM_PARALLEL'] = '2'
+
 logging.basicConfig(filename='tree_generation.log', level=logging.ERROR,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 TIME_STAMP = datetime.now().strftime("%Y%m%d_%H%M")
-MODEL_NAME = 'llama3'
+MODEL_NAME = 'llama3.1'
 TEMP = 0.67
 CHAIN_LENGTH = 2
 RECURSION_DEPTH = 2
@@ -75,3 +80,6 @@ if __name__ == '__main__':
     save_tree(tree, metadata)
     
     print("\n\ngenerated tree saved.\n\n")
+    
+    end_time = time.time()
+    print(f"executed in {end_time - start_time} seconds\n")

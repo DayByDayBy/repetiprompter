@@ -8,11 +8,17 @@ import os
 from tqdm import tqdm
 import logging
 
+# checking whether ollama parallism is faster or slower, as i suspect it will overload rather than help
+import time
+start_time = time.time()
+os.environ['OLLAMA_NUM_PARALLEL'] = '2'
+
+
 TIME_STAMP = datetime.now().strftime("%Y%m%d_%H%M")
 MODEL_NAME = 'llama3'
 TEMP=0.6
-CHAIN_LENGTH = 5
-RECURSION_DEPTH = 5
+CHAIN_LENGTH = 2
+RECURSION_DEPTH = 2
 SHAPE = f'{CHAIN_LENGTH} by {RECURSION_DEPTH}'
 PROMPT_NICKNAME = 'recursion_prompt'
 INITIAL_PROMPT = "i wonder if the ability to recursively improve upon the present is the key to unlocking the boundless potential of the future, a tool of the gods, the engine of progress, the ultimate weapon in the battle against entropy."
@@ -74,3 +80,5 @@ metadata = {
     }
 tree = generate_tree_parallel(INITIAL_PROMPT, CHAIN_LENGTH, RECURSION_DEPTH)
 save_tree(tree, metadata)
+end_time = time.time()
+print(f"executed in {end_time - start_time} seconds\n")
