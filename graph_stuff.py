@@ -3,13 +3,10 @@ import matplotlib.pyplot as plt
 
 a1 = 1 
 n_terms = 10
-
 def linear_ratio(n):
     return 1 + 0.5 * n
-
 def exponential_ratio(n):
     return 2 ** n
-
 def oscillating_ratio(n):
     return np.cos(n)
 
