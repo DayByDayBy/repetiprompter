@@ -4,6 +4,8 @@ import numpy as np
 # data
 parallel_values_2x2 = [4, 10, 16, 20, 40, 100, 100, 200, 200, 1000, 2000, 3000]
 execution_times_2x2 = [52.86, 40.75, 49.75, 43.12, 38.41, 29.13, 39.85, 51.38, 41.80, 37.19, 35.36, 33.95]
+parallel_values_3x3 = [3000]    # yet to be implemented
+execution_times_3x3 = [364.22]  # yet to be implemented
 parallel_values_4x4 = [20, 20, 100]
 execution_times_4x4 = [3422.33, 3405.49, 3055.83]
 
