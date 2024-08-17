@@ -42,3 +42,10 @@ task: <Task pending name='Task-2' coro=<Kernel.poll_control_queue() running at /
 2024-08-16 23:23:37,334 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
 2024-08-16 23:23:40,610 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
 2024-08-16 23:23:40,615 - INFO - Run completed. OLLAMA_NUM_PARALLEL: 3000, CHAIN_LENGTH: 3, RECURSION_DEPTH: 3, Total time: 421.94s, Tokens/s: 42.69
+2024-08-17 00:56:47,220 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2024-08-17 00:56:56,133 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2024-08-17 00:57:05,799 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2024-08-17 00:57:09,404 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2024-08-17 00:57:12,936 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2024-08-17 00:57:15,650 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2024-08-17 00:57:15,655 - INFO - Run completed. OLLAMA_NUM_PARALLEL: 3000, CHAIN_LENGTH: 2, RECURSION_DEPTH: 2, Total time: 47.01s, Tokens/s: 50.82

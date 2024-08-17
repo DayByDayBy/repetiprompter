@@ -1,18 +1,15 @@
+for responses/tree_llama3.1_at_20240816_2316.json
+
+
 Total execution time: 421.94 seconds
 Total tokens generated: 18011
 Overall tokens per second: 42.69
 Total nodes in tree: 52
 
 
-responses/tree_llama3.1_at_20240816_2316.json
 
 
 going by tqdm output it seems to have stopped early/short, but need to have a proper look tomorrow 
-
-
-
-
-
 
 
 
@@ -44,3 +41,25 @@ Total execution time: 421.94 seconds
 Total tokens generated: 18011
 Overall tokens per second: 42.69
 Total nodes in tree: 52
+
+
+
+----------------------------------------------------------------
+
+
+
+for responses/tree_llama3.1_at_20240817_0056.json
+
+
+Running llama3.1 model
+
+
+                                                                
+                                                                
+generated tree saved.
+
+
+Total execution time: 47.01 seconds
+Total tokens generated: 2389
+Overall tokens per second: 50.82
+Total nodes in tree: 9
