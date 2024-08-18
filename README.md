@@ -14,7 +14,7 @@ there are a few scripts, examples of a few approaches, but the most current impl
 
 
 ```
-cubic_repetiprompter_beta.py
+repetiprompter_beta.py
 parallel_repetiprompter.py
 repetiprompter.ipynb
 ```
