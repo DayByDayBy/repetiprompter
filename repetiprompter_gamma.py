@@ -19,8 +19,8 @@ logging.basicConfig(filename='tree_generation.log', level=logging.INFO,
 TIME_STAMP = datetime.now().strftime("%Y%m%d_%H%M")
 MODEL_NAME = 'llama3.1'
 TEMP = 0.67
-CHAIN_LENGTH = 2
-RECURSION_DEPTH = 2
+CHAIN_LENGTH = 8
+RECURSION_DEPTH = 3
 SHAPE = f'{CHAIN_LENGTH} by {RECURSION_DEPTH}'
 PROMPT_NICKNAME = 'recursion_prompt'
 INITIAL_PROMPT = "consider: the ability to recursively improve upon the present is the key to unlocking the boundless potential of the future, a tool of the gods, the engine of progress, the ultimate weapon in the battle against entropy."
