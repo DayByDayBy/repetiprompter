@@ -18,12 +18,12 @@ logging.basicConfig(filename='tree_generation.log', level=logging.INFO,
 
 TIME_STAMP = datetime.now().strftime("%Y%m%d_%H%M")
 MODEL_NAME = 'llama3.1'
-TEMP = 0.67
-CHAIN_LENGTH = 5
-RECURSION_DEPTH = 5
+TEMP = 1
+CHAIN_LENGTH = 3
+RECURSION_DEPTH = 3
 SHAPE = f'{CHAIN_LENGTH} by {RECURSION_DEPTH}'
 PROMPT_NICKNAME = 'recursion_prompt'
-INITIAL_PROMPT = "consider: the ability to recursively improve upon the present is the key to unlocking the boundless potential of the future, a tool of the gods, the engine of progress, the ultimate weapon in the battle against entropy."
+INITIAL_PROMPT = "the ability to recursively improve upon the present is the key to unlocking the boundless potential of the future, a tool of the gods, the engine of progress, the ultimate weapon in the battle against entropy."
 
 # tokenizer
 tokenizer = tiktoken.encoding_for_model("gpt-4")
@@ -45,7 +45,7 @@ def generate_response(prompt: str) -> tuple[str, float]:
 def generate_chain(seed_prompt: str, chain_length: int) -> List[Dict[str, Any]]:
     chain = [{"text": seed_prompt, "tokens": count_tokens(seed_prompt), "generation_time": 0}]
     for _ in tqdm(range(chain_length), desc="generating chain", leave=False):
-        response, gen_time = generate_response(chain[-1]["text"])
+        response, gen_time = generate_response(f'consider: {chain[-1]["text"]}')
         if response:
             chain.append({"text": response, "tokens": count_tokens(response), "generation_time": gen_time})
         else:
