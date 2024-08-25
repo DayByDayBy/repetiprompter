@@ -1,5 +1,12 @@
 # a lot like the _beta, but with some more metrics/stats being captured 
 
+# big fan of logging, handy to have to refer back to it, altho the one 
+# long doc solution might be better replaced with some smaller ones, or 
+# at least some of the data replciated on smaller, more specific log, 
+# which could even have more metrics
+
+
+
 
 import ollama
 from typing import Dict, List, Any, Optional
