@@ -14,9 +14,12 @@ there are a few scripts, examples of a few approaches, but the most current impl
 
 
 ```
+repetiprompter_gamma.py
+
 repetiprompter_beta.py
 parallel_repetiprompter.py
 repetiprompter.ipynb
+
 ```
 the first of those creates prompts chains as described above of the length 'CHAIN_LENGTH', and then reuses each element in the chain as a seed prompt for another chain, each of which is used as a seed for another chain, and so on, 'RECURSION_DEPTH' times
 

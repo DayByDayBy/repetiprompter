@@ -20,13 +20,17 @@ logging.basicConfig(filename='tree_generation.log', level=logging.INFO,
 
 TIME_STAMP = datetime.now().strftime("%Y%m%d_%H%M")
 MODEL_NAME = 'llama3.1'
-CHAIN_LENGTH = 2
+CHAIN_LENGTH = 3
+RECURSION_DEPTH = 3
 BASE_TEMP = 0.01
 MAX_TEMP = 1
-RECURSION_DEPTH = 2
 SHAPE = f'{CHAIN_LENGTH} by {RECURSION_DEPTH}'
 PROMPT_NICKNAME = 'recursion_prompt'
 INITIAL_PROMPT = "the ability to recursively improve upon the present is the key to unlocking the boundless potential of the future, a tool of the gods, the engine of progress, the ultimate weapon in the battle against entropy."
+# INITIAL_PROMPT = 'systems have sub-systems and sub-systems have sub-systems and so on ad infinitum, which is why we're always starting over.'
+# INITIAL_PROMPT = 'terrified of being alone, yet afraid of intimacy, we experience widespread feelings of emptiness, of disconnection, of the unreality of self. and here the computer, a companion without emotional demands, offers a compromise. You can be a loner, but never alone. You can interact, but need never feel vulnerable to another person.'
+# INITIAL_PROMPT = 'As machines become more and more efficient and perfect, so it will become clear that imperfection is the greatness of man.'
+
 
 # tokenizer
 tokenizer = tiktoken.encoding_for_model("gpt-4")
@@ -46,12 +50,12 @@ def generate_response(prompt: str, TEMP: float) -> tuple[str, float]:
     except Exception as e:
         logging.error(f"Error generating response: {e}")
         end_time = time.time()
-        return "", end_time - start_time
+        return "no response received", end_time - start_time
 
 def generate_chain(seed_prompt: str, chain_length: int, TEMP: float) -> List[Dict[str, Any]]:
     chain = [{"text": seed_prompt, "tokens": count_tokens(seed_prompt), "generation_time": 0, 'temp': TEMP}]
     for _ in tqdm(range(chain_length), desc="generating chain", leave=False):
-        response, gen_time = generate_response(f'consider: {chain[-1]["text"]}', TEMP)
+        response, gen_time = generate_response(f'do you understand what he meant when he said "{chain[-1]["text"]}"', TEMP)
         if response:
             chain.append({"text": response, "tokens": count_tokens(response), "generation_time": gen_time})
         else:
@@ -64,11 +68,12 @@ def generate_tree(seed_prompt: str, chain_length: int, current_depth: int, max_d
     tree = {"prompt": chain[0], "responses": chain[1:]}   
     if current_depth < max_depth:
         tree["children"] = []
-        for response in tqdm(chain[1:], desc=f"recursion depth {recursion_depth}", leave=False):
-            child_tree = generate_tree(response["text"], chain_length, recursion_depth - 1)
+        for response in tqdm(chain[1:], desc=f"recursion depth {current_depth}", leave=False):
+            child_tree = generate_tree(response["text"], chain_length, current_depth + 1, max_depth)
             tree["children"].append(child_tree)
-    
-    return tree
+        return tree
+    else:
+        return tree        
 
 def calculate_tree_stats(tree: Dict[str, Any]) -> Dict[str, Any]:
     total_tokens = tree["prompt"]["tokens"] + sum(r["tokens"] for r in tree["responses"])
@@ -118,10 +123,7 @@ if __name__ == '__main__':
         "ollama_num_parallel": os.environ['OLLAMA_NUM_PARALLEL']
     }
     
-    tree = generate_tree(INITIAL_PROMPT, 
-                         CHAIN_LENGTH, 
-                         current_depth = 1, 
-                         max_depth = RECURSION_DEPTH)
+    tree = generate_tree(INITIAL_PROMPT, CHAIN_LENGTH, current_depth = 1, max_depth = RECURSION_DEPTH)
     save_tree(tree, metadata)
     
     end_time = time.time()
