@@ -1,8 +1,5 @@
 # testing a cascading temp idea
 
-
-
-
 import ollama
 from typing import Dict, List, Any, Optional
 import json
@@ -13,23 +10,23 @@ import logging
 import time
 import tiktoken
 
-os.environ['OLLAMA_NUM_PARALLEL'] = '3000'
+os.environ['OLLAMA_NUM_PARALLEL'] = '2'
 
 logging.basicConfig(filename='tree_generation.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 TIME_STAMP = datetime.now().strftime("%Y%m%d_%H%M")
-MODEL_NAME = 'llama3.1'
+MODEL_NAME = 'tinyllama'
 CHAIN_LENGTH = 3
 RECURSION_DEPTH = 3
-BASE_TEMP = 0.01
+BASE_TEMP = 0.5
 MAX_TEMP = 1
 SHAPE = f'{CHAIN_LENGTH} by {RECURSION_DEPTH}'
 PROMPT_NICKNAME = 'recursion_prompt'
 INITIAL_PROMPT = "the ability to recursively improve upon the present is the key to unlocking the boundless potential of the future, a tool of the gods, the engine of progress, the ultimate weapon in the battle against entropy."
-# INITIAL_PROMPT = 'systems have sub-systems and sub-systems have sub-systems and so on ad infinitum, which is why we're always starting over.'
-# INITIAL_PROMPT = 'terrified of being alone, yet afraid of intimacy, we experience widespread feelings of emptiness, of disconnection, of the unreality of self. and here the computer, a companion without emotional demands, offers a compromise. You can be a loner, but never alone. You can interact, but need never feel vulnerable to another person.'
-# INITIAL_PROMPT = 'As machines become more and more efficient and perfect, so it will become clear that imperfection is the greatness of man.'
+# INITIAL_PROMPT = "systems have sub-systems and sub-systems have sub-systems and so on ad infinitum, which is why we're always starting over."
+# INITIAL_PROMPT = "terrified of being alone, yet afraid of intimacy, we experience widespread feelings of emptiness, of disconnection, of the unreality of self. and here the computer, a companion without emotional demands, offers a compromise. You can be a loner, but never alone. You can interact, but need never feel vulnerable to another person."
+# INITIAL_PROMPT = "as machines become more and more efficient and perfect, so it will become clear that imperfection is the greatness of man.""
 
 
 # tokenizer
@@ -39,7 +36,7 @@ def count_tokens(text: str) -> int:
     return len(tokenizer.encode(text))
 
 def calculate_temp(current_depth: int, max_depth: int, base_temp: float, max_temp: float = 1.0) -> float:
-    return base_temp + (max_temp - base_temp) * (current_depth / max_depth)
+    return base_temp + (max_temp - base_temp) * ((max_depth - current_depth +1) / max_depth)
 
 def generate_response(prompt: str, TEMP: float) -> tuple[str, float]:
     start_time = time.time()
@@ -55,7 +52,7 @@ def generate_response(prompt: str, TEMP: float) -> tuple[str, float]:
 def generate_chain(seed_prompt: str, chain_length: int, TEMP: float) -> List[Dict[str, Any]]:
     chain = [{"text": seed_prompt, "tokens": count_tokens(seed_prompt), "generation_time": 0, 'temp': TEMP}]
     for _ in tqdm(range(chain_length), desc="generating chain", leave=False):
-        response, gen_time = generate_response(f'do you understand what he meant when he said "{chain[-1]["text"]}"', TEMP)
+        response, gen_time = generate_response(f'remind me, friend, "{chain[-1]["text"]}"', TEMP)
         if response:
             chain.append({"text": response, "tokens": count_tokens(response), "generation_time": gen_time})
         else:
