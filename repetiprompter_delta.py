@@ -10,23 +10,23 @@ import logging
 import time
 import tiktoken
 
-os.environ['OLLAMA_NUM_PARALLEL'] = '2'
+os.environ['OLLAMA_NUM_PARALLEL'] = '4'
 
 logging.basicConfig(filename='tree_generation.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 TIME_STAMP = datetime.now().strftime("%Y%m%d_%H%M")
-MODEL_NAME = 'tinyllama'
+MODEL_NAME = 'openchat'
 CHAIN_LENGTH = 3
 RECURSION_DEPTH = 3
-BASE_TEMP = 0.5
+BASE_TEMP = 0.25
 MAX_TEMP = 1
 SHAPE = f'{CHAIN_LENGTH} by {RECURSION_DEPTH}'
 PROMPT_NICKNAME = 'recursion_prompt'
 INITIAL_PROMPT = "the ability to recursively improve upon the present is the key to unlocking the boundless potential of the future, a tool of the gods, the engine of progress, the ultimate weapon in the battle against entropy."
 # INITIAL_PROMPT = "systems have sub-systems and sub-systems have sub-systems and so on ad infinitum, which is why we're always starting over."
 # INITIAL_PROMPT = "terrified of being alone, yet afraid of intimacy, we experience widespread feelings of emptiness, of disconnection, of the unreality of self. and here the computer, a companion without emotional demands, offers a compromise. You can be a loner, but never alone. You can interact, but need never feel vulnerable to another person."
-# INITIAL_PROMPT = "as machines become more and more efficient and perfect, so it will become clear that imperfection is the greatness of man.""
+# INITIAL_PROMPT = "as machines become more and more efficient and perfect, so it will become clear that imperfection is the greatness of man."
 
 
 # tokenizer
@@ -52,7 +52,7 @@ def generate_response(prompt: str, TEMP: float) -> tuple[str, float]:
 def generate_chain(seed_prompt: str, chain_length: int, TEMP: float) -> List[Dict[str, Any]]:
     chain = [{"text": seed_prompt, "tokens": count_tokens(seed_prompt), "generation_time": 0, 'temp': TEMP}]
     for _ in tqdm(range(chain_length), desc="generating chain", leave=False):
-        response, gen_time = generate_response(f'remind me, friend, "{chain[-1]["text"]}"', TEMP)
+        response, gen_time = generate_response(f' "{chain[-1]["text"]}"', TEMP)
         if response:
             chain.append({"text": response, "tokens": count_tokens(response), "generation_time": gen_time})
         else:
