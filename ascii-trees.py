@@ -4,7 +4,7 @@ import time
 def tree_to_dict(tree):
     """Convert our tree structure to a dictionary format suitable for ascii-trees."""
     node = {
-        "name": tree["prompt"]["text"][:30] + "...",  # Truncate long prompts
+        "name": tree["prompt"]["text"][:30] + "...",  # long prompts
         "children": []
     }
     if "children" in tree:
@@ -12,14 +12,14 @@ def tree_to_dict(tree):
             node["children"].append(tree_to_dict(child))
     return node
 
-def visualize_tree(tree):
+def visualise_tree(tree):
     """Generate and print an ASCII representation of the tree."""
     tree_dict = tree_to_dict(tree)
     ascii_tree = tree_to_ascii(tree_dict)
     print("\nCurrent Tree Structure:")
     print(ascii_tree)
 
-# Modify your generate_tree function to periodically visualize the tree
+# generate_tree function that periodically visualises the tree
 def generate_tree(seed_prompt: str, chain_length: int, current_depth: int, max_depth: int) -> Dict[str, Any]:
     temp = calculate_temp(current_depth, max_depth, base_temp=BASE_TEMP, max_temp=MAX_TEMP)
     chain = generate_chain(seed_prompt, chain_length, temp)
@@ -31,16 +31,16 @@ def generate_tree(seed_prompt: str, chain_length: int, current_depth: int, max_d
             child_tree = generate_tree(response["text"], chain_length, current_depth + 1, max_depth)
             tree["children"].append(child_tree)
         
-        # Visualize the tree every 5 minutes
+        # visualise tree every 5 minutes
         if time.time() - generate_tree.last_visualization > 300:  # 300 seconds = 5 minutes
-            visualize_tree(tree)
+            visualise_tree(tree)
             generate_tree.last_visualization = time.time()
     
     return tree
 
-# Initialize the last visualization time
+# initialise last visualization time
 generate_tree.last_visualization = time.time()
 
-# In your main execution:
+# for main execution:
 tree = generate_tree(INITIAL_PROMPT, CHAIN_LENGTH, current_depth=1, max_depth=RECURSION_DEPTH)
-visualize_tree(tree)  # Final visualization of the complete tree
+visualise_tree(tree)  # Final visualization of the complete tree
