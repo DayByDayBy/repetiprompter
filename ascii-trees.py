@@ -31,8 +31,8 @@ def generate_tree(seed_prompt: str, chain_length: int, current_depth: int, max_d
             child_tree = generate_tree(response["text"], chain_length, current_depth + 1, max_depth)
             tree["children"].append(child_tree)
         
-        # visualise tree every 5 minutes
-        if time.time() - generate_tree.last_visualization > 300:  # 300 seconds = 5 minutes
+        # visualise tree every 5m/300s
+        if time.time() - generate_tree.last_visualization > 300:
             visualise_tree(tree)
             generate_tree.last_visualization = time.time()
     
