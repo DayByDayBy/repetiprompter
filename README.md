@@ -2,10 +2,9 @@
 
 a project based around a fairly simple idea, namely 
 
-#### prompt -> response, where the response becomes the next prompt
+#### prompt -> response, where each response becomes the next prompt
 
 the implementation goes a little further than that, but that is the core of the project
-
 
 
 ## where to look
@@ -13,7 +12,10 @@ the implementation goes a little further than that, but that is the core of the 
 there are a few scripts, examples of a few approaches, but the most current implementations are: 
 
 
+
 ```
+repetiprompter_delta.py
+
 repetiprompter_gamma.py
 
 repetiprompter_beta.py
@@ -21,15 +23,16 @@ parallel_repetiprompter.py
 repetiprompter.ipynb
 
 ```
-the first of those creates prompts chains as described above of the length 'CHAIN_LENGTH', and then reuses each element in the chain as a seed prompt for another chain, each of which is used as a seed for another chain, and so on, 'RECURSION_DEPTH' times
+they all create *prompt->response* chains of the length 'CHAIN_LENGTH', and then reuse each element in the chain as a seed-prompt for another chain, each of which is used as a seed-chain for another, and so on, 'RECURSION_DEPTH' times
 
-the second does similar, but does so employing some parallelisation via the 'concurrent' library, the third is a jupyter notbeook refactoring, with some basic visualisations and stats information
+the parallel one does so, employing some parallelisation via the 'concurrent' library
+
+the last one is a jupyter notbeook refactoring of an earlier iteration, with some basic visualisations and stats information
 
 
-be sure to check the values for CHAIN_LENGTH and RECURSION_DEPTH before running, 
-(in particular the latter) as it will take a while to complete if those are much above 4 and 4 
+be sure to check the values for CHAIN_LENGTH and RECURSION_DEPTH before running, (in particular the latter) as it will take a while to complete if those are much above 4 and 4, especially for larger models 
 
-check how many respponses will be generated with this:
+check how many responses will be generated with this:
 
 ```
 chain_length = CHAIN_LENGTH
@@ -49,8 +52,10 @@ bear in mind model choice etc will determine how long each prompt->response cycl
 
 ## requirements
 
-all three approaches use the following libraries:
+using the following libraries:
+
 ```
+
 ollama
 typing (Dict, List, Any, Optional)
 json
@@ -58,6 +63,13 @@ datetime
 os
 tqdm
 logging
+
+pandas 
+matplotlib 
+seaborn 
+networkx 
+wordcloud
+
 ```
 
 these are used by the parallel-repetiprompter:
@@ -66,14 +78,30 @@ concurrent.futures
 functools (partial)
 ```
 
-these are used by the notebook:
+
+some models used:
 
 ```
-pandas 
-matplotlib 
-seaborn 
-networkx 
-wordcloud
+
+dolphin-mistral
+dolphin-mixtral
+gemma2:27b
+llama2
+llama3
+llama3.1:8b
+llama3.1:70b
+mistral
+mixtral
+moondream
+openchat
+openhermes
+orca-mini
+phi
+phi3
+phi3:14b
+stablelm2:zephyr
+tinyllama
+wizardlm2
+zephyr
+
 ```
-
-
