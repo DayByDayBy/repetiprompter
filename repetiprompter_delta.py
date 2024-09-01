@@ -1,4 +1,12 @@
-# testing a cascading temp idea
+# testing a cascading temp idea 
+# check 'calculate_temp' function, as i may have changed the setting. 
+# if active, it will be increasing or decreasing the temp, depending on when you check
+
+# also worth checking model_name (you may not have it, sizes (and runtime) vary), 
+# as some settings may be innpapropriate, such as recursion 
+# depths much above 3-4; given the number of genrations involved, 
+# a slight increase in time-per-token can be significant, ie multi-day runtime 
+# on even fairly decent hardware
 
 import ollama
 from typing import Dict, List, Any, Optional
@@ -9,24 +17,27 @@ from tqdm import tqdm
 import logging
 import time
 import tiktoken
+import random
 
-os.environ['OLLAMA_NUM_PARALLEL'] = '4'
+os.environ['OLLAMA_NUM_PARALLEL'] = '6'
 
 logging.basicConfig(filename='tree_generation.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 TIME_STAMP = datetime.now().strftime("%Y%m%d_%H%M")
-MODEL_NAME = 'llama3.1'
-CHAIN_LENGTH = 5
-RECURSION_DEPTH = 5
-BASE_TEMP = 0.1
-MAX_TEMP = 1.0
+MODEL_NAME = 'stablelm2:12b'
+CHAIN_LENGTH = 6
+RECURSION_DEPTH = 6
+BASE_TEMP = 0.01
+MAX_TEMP = 1.00
 SHAPE = f'{CHAIN_LENGTH} by {RECURSION_DEPTH}'
 PROMPT_NICKNAME = 'recursion_prompt'
-# INITIAL_PROMPT = "the ability to recursively improve upon the present is the key to unlocking the boundless potential of the future, a tool of the gods, the engine of progress, the ultimate weapon in the battle against entropy."
+INITIAL_PROMPT = "the ability to recursively improve upon the present is the key to unlocking the boundless potential of the future, a tool of the gods, the engine of progress, the ultimate weapon in the battle against entropy."
 # INITIAL_PROMPT = "systems have sub-systems and sub-systems have sub-systems and so on ad infinitum, which is why we're always starting over."
 # INITIAL_PROMPT = "terrified of being alone, yet afraid of intimacy, we experience widespread feelings of emptiness, of disconnection, of the unreality of self. and here the computer, a companion without emotional demands, offers a compromise. You can be a loner, but never alone. You can interact, but need never feel vulnerable to another person."
-INITIAL_PROMPT = "as machines become more and more efficient and perfect, so it will become clear that imperfection is the greatness of man."
+# INITIAL_PROMPT = "as machines become more and more efficient and perfect, so it will become clear that imperfection is the greatness of man."
+# INITIAL_PROMPT = "the single biggest problem in communication is the illusion that it has taken place."
+# INITIAL_PROMPT =  '"positive feed-back increases the gain of the amplifier, negative feed-back reduces it." discuss this idea in terms of gradients and machine learning'
 
 
 # tokenizer
@@ -35,9 +46,11 @@ tokenizer = tiktoken.encoding_for_model("gpt-4")
 def count_tokens(text: str) -> int:
     return len(tokenizer.encode(text))
 
+# keeping old calculate_temp for reference, may delete soon:
 # def calculate_temp(current_depth: int, max_depth: int, base_temp: float, max_temp: float) -> float:
 #     return base_temp + (max_temp - base_temp) * ((max_depth - current_depth +1) / max_depth)
 
+# new and improved -  swap '(max_temp - base_temp)' for '(base_temp - min_temp)' to reverse temp direction
 def calculate_temp(current_depth: int, max_depth: int, base_temp: float, max_temp: float) -> float:
     weight_per_depth = 1 / max_depth
     temp = base_temp + (max_temp - base_temp) * weight_per_depth * current_depth
@@ -53,17 +66,28 @@ def generate_response(prompt: str, TEMP: float) -> tuple[str, float]:
     except Exception as e:
         logging.error(f"Error generating response: {e}")
         end_time = time.time()
-        return "no response received", end_time - start_time
+        return "no response received - check the model's local availability", end_time - start_time
 
 def generate_chain(seed_prompt: str, chain_length: int, TEMP: float) -> List[Dict[str, Any]]:
+    prefix = INITIAL_PROMPT
     chain = [{"text": seed_prompt, "tokens": count_tokens(seed_prompt), "generation_time": 0, 'temp': TEMP}]
     for _ in tqdm(range(chain_length), desc="generating chain", leave=False):
-        response, gen_time = generate_response(f'"{INITIAL_PROMPT}" \n {chain[-1]["text"]}', TEMP)
+        response, gen_time = generate_response(f'"{prefix}" \n {chain[-1]["text"]}', TEMP)
         if response:
             chain.append({"text": response, "tokens": count_tokens(response), "generation_time": gen_time})
+            prefix = f'("{INITIAL_PROMPT}") \n\n' if random.random() < 0.1 else ''    
+             
+            """ not 100% happy with this idea as it stands - basically it's
+                randomly reminding the LLM of the context, as the 'generate()' messages are single shot. 
+                an interesting idea to see how a nudge affects it, but without recording when it gets reminded, 
+                that's not helpful data, and just adds a confound. may redesign it all again, change how data is 
+                logged and so on, at least before i go running much bigger numbers """
         else:
             break
     return chain
+
+
+
 
 def generate_tree(seed_prompt: str, chain_length: int, current_depth: int, max_depth: int) -> Dict[str, Any]:
     temp = calculate_temp(current_depth, max_depth, base_temp=BASE_TEMP, max_temp=MAX_TEMP)
@@ -114,7 +138,7 @@ def save_tree(tree: Dict[str, Any], metadata: Dict[str, Any], filename: Optional
 
 if __name__ == '__main__':
     start_time = time.time()
-    print(f'\n\nRunning {MODEL_NAME} model\n\n')
+    print(f'\n\n running {MODEL_NAME} model \n shape: {SHAPE} \n started: {TIME_STAMP}\n')
     
     metadata = {
         "tree_key": f'{PROMPT_NICKNAME}_{MODEL_NAME}',
