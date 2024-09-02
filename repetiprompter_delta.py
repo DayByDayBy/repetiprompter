@@ -78,9 +78,9 @@ def generate_chain(seed_prompt: str, chain_length: int, TEMP: float) -> List[Dic
             prefix = f'("{INITIAL_PROMPT}") \n\n' if random.random() < 0.1 else ''    
              
             """ not 100% happy with this idea as it stands - basically it's
-                randomly reminding the LLM of the context, as the 'generate()' messages are single shot. 
-                an interesting idea to see how a nudge affects it, but without recording when it gets reminded, 
-                that's not helpful data, and just adds a confound. may redesign it all again, change how data is 
+                randomly 'reminding' the LLM of the original prompt, as the 'generate()' messages are single shot. 
+                def an interesting idea to see how a nudge affects it, but without recording when it gets reminded 
+                that's not too helpful, and really just adds a confound. may redesign it all again, change how data is 
                 logged and so on, at least before i go running much bigger numbers """
         else:
             break

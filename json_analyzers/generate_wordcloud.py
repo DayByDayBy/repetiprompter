@@ -2,7 +2,6 @@ import os
 import json
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud as WordCloud
-  
 # import networkx as nx
 
 def read_json_from_dir(directory_path):
