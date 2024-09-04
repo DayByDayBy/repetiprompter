@@ -88,7 +88,6 @@ def generate_chain(seed_prompt: str, chain_length: int, TEMP: float) -> List[Dic
 
 
 
-
 def generate_tree(seed_prompt: str, chain_length: int, current_depth: int, max_depth: int) -> Dict[str, Any]:
     temp = calculate_temp(current_depth, max_depth, base_temp=BASE_TEMP, max_temp=MAX_TEMP)
     chain = generate_chain(seed_prompt, chain_length, temp)
@@ -138,6 +137,7 @@ def save_tree(tree: Dict[str, Any], metadata: Dict[str, Any], filename: Optional
 
 if __name__ == '__main__':
     start_time = time.time()
+    
     print(f'\n\n running {MODEL_NAME} model \n shape: {SHAPE} \n started: {TIME_STAMP}\n')
     
     metadata = {
