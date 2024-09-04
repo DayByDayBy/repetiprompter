@@ -26,8 +26,8 @@ logging.basicConfig(filename='tree_generation.log', level=logging.INFO,
 
 TIME_STAMP = datetime.now().strftime("%Y%m%d_%H%M")
 MODEL_NAME = 'stablelm2:zephyr'
-CHAIN_LENGTH = 6
-RECURSION_DEPTH = 6
+CHAIN_LENGTH = 4
+RECURSION_DEPTH = 4
 BASE_TEMP = 0.01
 MAX_TEMP = 1.00
 SHAPE = f'{CHAIN_LENGTH} by {RECURSION_DEPTH}'
