@@ -5,8 +5,8 @@
     numbers are most likely from the last time i checked a model
 """
  
-chain_length = 6 
-recursion_depth = 6
+chain_length = 5
+recursion_depth = 5
 average_generation_time_in_seconds = 1.166667
 
 total_chains = sum(chain_length ** i for i in range(recursion_depth))
