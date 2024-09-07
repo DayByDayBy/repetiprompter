@@ -38,7 +38,8 @@ PROMPT_NICKNAME = 'recursion_prompt'
 # INITIAL_PROMPT = "as machines become more and more efficient and perfect, so it will become clear that imperfection is the greatness of man."
 # INITIAL_PROMPT = "the single biggest problem in communication is the illusion that it has taken place."
 # INITIAL_PROMPT =  '"positive feed-back increases the gain of the amplifier, negative feed-back reduces it." discuss this idea in terms of gradients and machine learning'
-INITIAL_PROMPT = "a feedback loop is a process in which the outputs of a system are circled back and used as inputs."
+# INITIAL_PROMPT = "a feedback loop is a process in which the outputs of a system are circled back and used as inputs."
+INITIAL_PROMPT = "the next sentence is false. the previous sentence is true. both of the previous sentences are true."
 
 
 # tokenizer
