@@ -25,10 +25,10 @@ logging.basicConfig(filename='tree_generation.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 TIME_STAMP = datetime.now().strftime("%Y%m%d_%H%M")
-MODEL_NAME = 'stablelm2:zephyr'
+MODEL_NAME = 'llama3.1'
 CHAIN_LENGTH = 4
 RECURSION_DEPTH = 4
-BASE_TEMP = 0.01
+BASE_TEMP = 0.6
 MAX_TEMP = 1.00
 SHAPE = f'{CHAIN_LENGTH} by {RECURSION_DEPTH}'
 PROMPT_NICKNAME = 'recursion_prompt'
@@ -39,7 +39,7 @@ PROMPT_NICKNAME = 'recursion_prompt'
 # INITIAL_PROMPT = "the single biggest problem in communication is the illusion that it has taken place."
 # INITIAL_PROMPT =  '"positive feed-back increases the gain of the amplifier, negative feed-back reduces it." discuss this idea in terms of gradients and machine learning'
 # INITIAL_PROMPT = "a feedback loop is a process in which the outputs of a system are circled back and used as inputs."
-INITIAL_PROMPT = "the next sentence is false. the previous sentence is true. both of the previous sentences are true."
+INITIAL_PROMPT = "the next sentence is false. the previous sentence is true."
 
 
 # tokenizer

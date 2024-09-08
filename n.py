@@ -10,7 +10,7 @@ print('\n')
  
 chain_length = 4
 recursion_depth = 4
-average_generation_time_in_seconds = 0.99
+average_generation_time_in_seconds = 15
 
 total_chains = sum(chain_length ** i for i in range(recursion_depth))
 total_prompt_response_actions = total_chains * (chain_length-1)
@@ -18,13 +18,15 @@ total_prompt_response_actions = total_chains * (chain_length-1)
 print(f'chains: {total_chains} \nresponses: {total_prompt_response_actions}')
 print('\n')
 
+
 hours = (total_prompt_response_actions * average_generation_time_in_seconds)/3600
 minutes = (total_prompt_response_actions * average_generation_time_in_seconds)/60
+
 days = hours/24
 weeks =days/7
 
 
-print(f'minutes: {hours} \nhours: {minutes} \ndays: {days} \nweeks: {weeks}')
+print(f'minutes: {minutes} \nhours: {hours} \ndays: {days} \nweeks: {weeks}')
 
 
 
