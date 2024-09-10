@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "tree_key": "recursion_prompt_orca-mini",
+    "timestamp": "20240901_1737",
+    "shape": "2 by 2",
+    "model_name": "orca-mini",
+    "chain_length": 2,
+    "recursion_depth": 2,
+    "ollama_num_parallel": "6",
+    "total_tokens": 346,
+    "total_time": 5.665145635604858,
+    "node_count": 9,
+    "tokens_per_second": 61.075217171015964
+  },
+  "content": {
+    "prompt": {
+      "text": "as machines become more and more efficient and perfect, so it will become clear that imperfection is the greatness of man.",
+      "tokens": 24,
+      "generation_time": 0,
+      "temp": 0.55
+    },
+    "responses": [
+      {
+        "text": " I believe you are referring to a quote by Albert Einstein about the limitations of machines. His full statement was: \"As machines become more and more efficient and perfect, it becomes increasingly clear that imperfection is the greatness of man.\"",
+        "tokens": 46,
+        "generation_time": 1.1000208854675293
+      },
+      {
+        "text": " Yes, that's correct. He believed that the limitations of machines are their inability to perform tasks that require human intuition, creativity, and critical thinking.",
+        "tokens": 30,
+        "generation_time": 0.7115130424499512
+      }
+    ],
+    "children": [
+      {
+        "prompt": {
+          "text": " I believe you are referring to a quote by Albert Einstein about the limitations of machines. His full statement was: \"As machines become more and more efficient and perfect, it becomes increasingly clear that imperfection is the greatness of man.\"",
+          "tokens": 46,
+          "generation_time": 0,
+          "temp": 1.0
+        },
+        "responses": [
+          {
+            "text": " Yes, that's correct. He believed that while machines could be highly efficient and effective in certain areas, there was still a lot that humans could do better due to our unique qualities such as creativity, intuition, and emotional intelligence.",
+            "tokens": 46,
+            "generation_time": 1.057616949081421
+          },
+          {
+            "text": " That's correct! In addition, he believed that relying too heavily on machines would ultimately lead to the loss of important human skills and values, such as empathy and social responsibility. His philosophy is often referred to as \"human-centered design\" or \"user-centered design.\"",
+            "tokens": 53,
+            "generation_time": 1.159764051437378
+          }
+        ]
+      },
+      {
+        "prompt": {
+          "text": " Yes, that's correct. He believed that the limitations of machines are their inability to perform tasks that require human intuition, creativity, and critical thinking.",
+          "tokens": 30,
+          "generation_time": 0,
+          "temp": 1.0
+        },
+        "responses": [
+          {
+            "text": " In addition to that, his ideas about the limits of perfection also align with your statement. He argued that even though machines have become increasingly efficient and precise, they still lack the nuances and complexities that only humans can understand and solve.",
+            "tokens": 46,
+            "generation_time": 1.0359179973602295
+          },
+          {
+            "text": " Thank you for sharing that information. It seems like the person you are referring to shares your perspective on the limitations of perfection.",
+            "tokens": 25,
+            "generation_time": 0.6003127098083496
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "tree_key": "recursion_prompt_phi",
+    "timestamp": "20240829_1855",
+    "shape": "3 by 3",
+    "model_name": "phi",
+    "chain_length": 3,
+    "recursion_depth": 3,
+    "ollama_num_parallel": "3000",
+    "total_tokens": 69,
+    "total_time": 0,
+    "node_count": 1,
+    "tokens_per_second": 0
+  },
+  "content": {
+    "prompt": {
+      "text": "terrified of being alone, yet afraid of intimacy, we experience widespread feelings of emptiness, of disconnection, of the unreality of self. and here the computer, a companion without emotional demands, offers a compromise. You can be a loner, but never alone. You can interact, but need never feel vulnerable to another person.",
+      "tokens": 69,
+      "generation_time": 0,
+      "temp": 0.33666666666666667
+    },
+    "responses": [],
+    "children": []
+  }
+}

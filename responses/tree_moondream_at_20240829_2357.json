@@ -1,0 +1,225 @@
+{
+  "metadata": {
+    "tree_key": "recursion_prompt_moondream",
+    "timestamp": "20240829_2357",
+    "shape": "3 by 3",
+    "model_name": "moondream",
+    "chain_length": 3,
+    "recursion_depth": 3,
+    "ollama_num_parallel": "4",
+    "total_tokens": 832,
+    "total_time": 7.917812824249268,
+    "node_count": 32,
+    "tokens_per_second": 105.07952365985446
+  },
+  "content": {
+    "prompt": {
+      "text": "the ability to recursively improve upon the present is the key to unlocking the boundless potential of the future, a tool of the gods, the engine of progress, the ultimate weapon in the battle against entropy.",
+      "tokens": 41,
+      "generation_time": 0,
+      "temp": 1.0
+    },
+    "responses": [
+      {
+        "text": "\nThe answer should be the first one that comes to mind.",
+        "tokens": 13,
+        "generation_time": 1.9839496612548828
+      },
+      {
+        "text": "?\"a piece of art on display in a museum\".",
+        "tokens": 11,
+        "generation_time": 0.1441936492919922
+      }
+    ],
+    "children": [
+      {
+        "prompt": {
+          "text": "\nThe answer should be the first one that comes to mind.",
+          "tokens": 13,
+          "generation_time": 0,
+          "temp": 0.7766666666666666
+        },
+        "responses": [
+          {
+            "text": "?\"What's your favorite color?\", \"What is your favorite food?\", and so on.",
+            "tokens": 18,
+            "generation_time": 0.18204593658447266
+          },
+          {
+            "text": "\nIf I were creating a conversation starter with someone who likes dogs, for example, I might ask them about their dog's breed or name. For instance, \"What kind of dog do you have as a pet?\" or \"How old is your dog?\". If the person has a cat instead of a dog, I could say something like this: \n\"I love cats too! What's your favorite type of cat?\"",
+            "tokens": 85,
+            "generation_time": 0.7141048908233643
+          },
+          {
+            "text": "\n\"I love dogs too!\"",
+            "tokens": 6,
+            "generation_time": 0.13332891464233398
+          }
+        ],
+        "children": [
+          {
+            "prompt": {
+              "text": "?\"What's your favorite color?\", \"What is your favorite food?\", and so on.",
+              "tokens": 18,
+              "generation_time": 0,
+              "temp": 0.5533333333333333
+            },
+            "responses": [
+              {
+                "text": "\n \"I like pizza. What's your favorite food?\".",
+                "tokens": 13,
+                "generation_time": 0.13467788696289062
+              },
+              {
+                "text": "\n \"I like pizza. What's your favorite food?\"",
+                "tokens": 12,
+                "generation_time": 0.1340937614440918
+              },
+              {
+                "text": "\n \"I do not like pizza.\"",
+                "tokens": 8,
+                "generation_time": 0.089569091796875
+              }
+            ]
+          },
+          {
+            "prompt": {
+              "text": "\nIf I were creating a conversation starter with someone who likes dogs, for example, I might ask them about their dog's breed or name. For instance, \"What kind of dog do you have as a pet?\" or \"How old is your dog?\". If the person has a cat instead of a dog, I could say something like this: \n\"I love cats too! What's your favorite type of cat?\"",
+              "tokens": 85,
+              "generation_time": 0,
+              "temp": 0.5533333333333333
+            },
+            "responses": [
+              {
+                "text": "\n\"If I were creating a conversation starter with someone who likes dogs, for example, I might ask them about their dog's breed or name.\"",
+                "tokens": 29,
+                "generation_time": 0.3129582405090332
+              },
+              {
+                "text": "\n\"I'm not sure what you're trying to accomplish here. Can you provide more information?\"",
+                "tokens": 19,
+                "generation_time": 0.2112901210784912
+              },
+              {
+                "text": "\n \"I'm not sure what you're trying to accomplish here. Can you provide more information?\"",
+                "tokens": 20,
+                "generation_time": 0.1990189552307129
+              }
+            ]
+          },
+          {
+            "prompt": {
+              "text": "\n\"I love dogs too!\"",
+              "tokens": 6,
+              "generation_time": 0,
+              "temp": 0.5533333333333333
+            },
+            "responses": []
+          }
+        ]
+      },
+      {
+        "prompt": {
+          "text": "?\"a piece of art on display in a museum\".",
+          "tokens": 11,
+          "generation_time": 0,
+          "temp": 0.7766666666666666
+        },
+        "responses": [
+          {
+            "text": "?\"a painting in a gallery\".",
+            "tokens": 7,
+            "generation_time": 0.09505701065063477
+          },
+          {
+            "text": "?\".a painting in a gallery\".",
+            "tokens": 8,
+            "generation_time": 0.08803582191467285
+          },
+          {
+            "text": "?\"A painting is on the wall\".",
+            "tokens": 8,
+            "generation_time": 0.10192584991455078
+          }
+        ],
+        "children": [
+          {
+            "prompt": {
+              "text": "?\"a painting in a gallery\".",
+              "tokens": 7,
+              "generation_time": 0,
+              "temp": 0.5533333333333333
+            },
+            "responses": [
+              {
+                "text": "?\"a painting in a gallery\"",
+                "tokens": 7,
+                "generation_time": 0.09495401382446289
+              },
+              {
+                "text": "\n \"a painting in a gallery\"",
+                "tokens": 8,
+                "generation_time": 0.08807873725891113
+              },
+              {
+                "text": "\n \"a painting in a gallery\"",
+                "tokens": 8,
+                "generation_time": 0.10646915435791016
+              }
+            ]
+          },
+          {
+            "prompt": {
+              "text": "?\".a painting in a gallery\".",
+              "tokens": 8,
+              "generation_time": 0,
+              "temp": 0.5533333333333333
+            },
+            "responses": [
+              {
+                "text": "?\". However, I am not sure what you are actually asking for. Please clarify your question.",
+                "tokens": 20,
+                "generation_time": 0.19630694389343262
+              },
+              {
+                "text": "?\"What is the meaning of this word?\".",
+                "tokens": 10,
+                "generation_time": 0.12061619758605957
+              },
+              {
+                "text": "\nI'm not sure what you mean by \"the meaning of the word\", but I can provide a brief explanation. The word in question here is \"buzz\". Buzz typically refers to the sound that bees make when they fly, and while the exact meaning isn't clear from the image alone, it's commonly used as a colloquial term for the sensation one feels when standing near an active bee hive or during a bee-related event.\nIn this context, \"buzz\" could be referring to the noise created by the bees in their hive or perhaps being in close proximity to someone who is speaking about bees or honey. It's important to note that buzz can also be used figuratively for talking rapidly and constantly changing topics during a conversation. In both cases, the term \"buzz\" refers to an auditory sensation or effect, but its exact meaning may not be immediately clear from the visual context alone.",
+                "tokens": 180,
+                "generation_time": 1.5144710540771484
+              }
+            ]
+          },
+          {
+            "prompt": {
+              "text": "?\"A painting is on the wall\".",
+              "tokens": 8,
+              "generation_time": 0,
+              "temp": 0.5533333333333333
+            },
+            "responses": [
+              {
+                "text": "?\".A painting is on the wall.\"",
+                "tokens": 9,
+                "generation_time": 0.10332798957824707
+              },
+              {
+                "text": "\n \"Question 1: What does a painting of a blue sky and white clouds in front of a tree signify?\"",
+                "tokens": 24,
+                "generation_time": 0.22310400009155273
+              },
+              {
+                "text": "\nThe painting portrays a serene and peaceful atmosphere with the sky and trees being depicted as a beautiful blend of blue. The artist's choice to use a bright, cheerful color palette for the sky and the tree contributes to creating a calm environment that allows viewers to appreciate the beauty of nature. The presence of these elements in the artwork can evoke feelings of tranquility and relaxation while also providing an aesthetic appeal due to the harmonious colors used.\n\n\"Question 2: What are some other factors, besides color palette, that contribute to the artistic quality of a painting?\"",
+                "tokens": 112,
+                "generation_time": 0.946234941482544
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

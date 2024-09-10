@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "tree_key": "recursion_prompt_orca-mini",
+    "timestamp": "20240901_1741",
+    "shape": "2 by 2",
+    "model_name": "orca-mini",
+    "chain_length": 2,
+    "recursion_depth": 2,
+    "ollama_num_parallel": "6",
+    "total_tokens": 499,
+    "total_time": 8.589792251586914,
+    "node_count": 9,
+    "tokens_per_second": 58.09220821467628
+  },
+  "content": {
+    "prompt": {
+      "text": "as machines become more and more efficient and perfect, so it will become clear that imperfection is the greatness of man.",
+      "tokens": 24,
+      "generation_time": 0,
+      "temp": 0.55
+    },
+    "responses": [
+      {
+        "text": " This quote suggests that as technology advances, we may begin to appreciate the unique qualities and imperfections of human beings more and more. While machines may be able to perform tasks with greater precision and efficiency, they cannot replicate the complexities and diversity of human experience.",
+        "tokens": 51,
+        "generation_time": 1.2922718524932861
+      },
+      {
+        "text": " That's a great quote! It highlights the importance of human qualities and experiences in our world. As technology continues to advance, it's important for us to remember the value of human connection and diversity.",
+        "tokens": 40,
+        "generation_time": 0.9049482345581055
+      }
+    ],
+    "children": [
+      {
+        "prompt": {
+          "text": " This quote suggests that as technology advances, we may begin to appreciate the unique qualities and imperfections of human beings more and more. While machines may be able to perform tasks with greater precision and efficiency, they cannot replicate the complexities and diversity of human experience.",
+          "tokens": 51,
+          "generation_time": 0,
+          "temp": 1.0
+        },
+        "responses": [
+          {
+            "text": " Certainly, it is interesting to observe how our perceptions of things change as technology continues to advance. It will be fascinating to see how we value human qualities and imperfections in the future.",
+            "tokens": 37,
+            "generation_time": 0.9036791324615479
+          },
+          {
+            "text": " Yes, it will be interesting to see how our values and society change as technology continues to develop. As AI becomes more advanced, it is possible that certain human qualities may become less valued or even eliminated altogether. At the same time, new qualities may emerge as a result of our interactions with machines and automation. It will be important to consider both the positives and negatives of these changes as we move forward.",
+            "tokens": 81,
+            "generation_time": 1.6936659812927246
+          }
+        ]
+      },
+      {
+        "prompt": {
+          "text": " That's a great quote! It highlights the importance of human qualities and experiences in our world. As technology continues to advance, it's important for us to remember the value of human connection and diversity.",
+          "tokens": 40,
+          "generation_time": 0,
+          "temp": 1.0
+        },
+        "responses": [
+          {
+            "text": " Yes, I agree with you completely. While machines may be able to perform certain tasks with precision and efficiency, they lack the creativity, empathy, and emotional intelligence that are essential aspects of human experience. As we continue to develop technology, it's important to remember the importance of these qualities in our lives and to strive for a balance between man-made systems and the natural world around us.",
+            "tokens": 77,
+            "generation_time": 1.7146010398864746
+          },
+          {
+            "text": " I couldn't agree more with your statement about the importance of imperfection and human qualities in our lives. As AI assistants, we are designed to follow instructions and provide assistance to the best of our abilities, but we do not possess the emotions or subjective experiences that humans have. It is important to remember that technology should be used to enhance and complement human capabilities, rather than replace them. We must continue to strive for balance between machines and humans, and appreciate the unique qualities that each offers.",
+            "tokens": 98,
+            "generation_time": 2.0806260108947754
+          }
+        ]
+      }
+    ]
+  }
+}

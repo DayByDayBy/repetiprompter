@@ -1,0 +1,15 @@
+{
+  "metadata": {
+    "tree_key": "recursion_prompt_llama3",
+    "timestamp": "20240812_1110",
+    "shape": "6 by 4",
+    "model_name": "llama3",
+    "chain_length": 6,
+    "recursion_depth": 4
+  },
+  "content": {
+    "prompt": "i wonder if the ability to recursively improve upon the present is the key to unlocking the boundless potential of the future, a tool of the gods, the engine of progress, the ultimate weapon in the battle against entropy.",
+    "responses": [],
+    "children": []
+  }
+}

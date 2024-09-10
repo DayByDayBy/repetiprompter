@@ -1,0 +1,348 @@
+{
+  "metadata": {
+    "tree_key": "recursion_prompt_gemma2:27b",
+    "timestamp": "20240829_1906",
+    "shape": "3 by 3",
+    "model_name": "gemma2:27b",
+    "chain_length": 3,
+    "recursion_depth": 3,
+    "ollama_num_parallel": "10",
+    "total_tokens": 194,
+    "total_time": 0.02964186668395996,
+    "node_count": 52,
+    "tokens_per_second": 6544.796995021195
+  },
+  "content": {
+    "prompt": {
+      "text": "the ability to recursively improve upon the present is the key to unlocking the boundless potential of the future, a tool of the gods, the engine of progress, the ultimate weapon in the battle against entropy.",
+      "tokens": 41,
+      "generation_time": 0,
+      "temp": 0.33666666666666667
+    },
+    "responses": [
+      {
+        "text": "no response received",
+        "tokens": 3,
+        "generation_time": 0.0028066635131835938
+      },
+      {
+        "text": "no response received",
+        "tokens": 3,
+        "generation_time": 0.001116037368774414
+      },
+      {
+        "text": "no response received",
+        "tokens": 3,
+        "generation_time": 0.0010008811950683594
+      }
+    ],
+    "children": [
+      {
+        "prompt": {
+          "text": "no response received",
+          "tokens": 3,
+          "generation_time": 0,
+          "temp": 0.6633333333333333
+        },
+        "responses": [
+          {
+            "text": "no response received",
+            "tokens": 3,
+            "generation_time": 0.0008180141448974609
+          },
+          {
+            "text": "no response received",
+            "tokens": 3,
+            "generation_time": 0.0007319450378417969
+          },
+          {
+            "text": "no response received",
+            "tokens": 3,
+            "generation_time": 0.0006990432739257812
+          }
+        ],
+        "children": [
+          {
+            "prompt": {
+              "text": "no response received",
+              "tokens": 3,
+              "generation_time": 0,
+              "temp": 0.99
+            },
+            "responses": [
+              {
+                "text": "no response received",
+                "tokens": 3,
+                "generation_time": 0.00067901611328125
+              },
+              {
+                "text": "no response received",
+                "tokens": 3,
+                "generation_time": 0.0007131099700927734
+              },
+              {
+                "text": "no response received",
+                "tokens": 3,
+                "generation_time": 0.0006878376007080078
+              }
+            ]
+          },
+          {
+            "prompt": {
+              "text": "no response received",
+              "tokens": 3,
+              "generation_time": 0,
+              "temp": 0.99
+            },
+            "responses": [
+              {
+                "text": "no response received",
+                "tokens": 3,
+                "generation_time": 0.0005590915679931641
+              },
+              {
+                "text": "no response received",
+                "tokens": 3,
+                "generation_time": 0.0007121562957763672
+              },
+              {
+                "text": "no response received",
+                "tokens": 3,
+                "generation_time": 0.0007128715515136719
+              }
+            ]
+          },
+          {
+            "prompt": {
+              "text": "no response received",
+              "tokens": 3,
+              "generation_time": 0,
+              "temp": 0.99
+            },
+            "responses": [
+              {
+                "text": "no response received",
+                "tokens": 3,
+                "generation_time": 0.0007021427154541016
+              },
+              {
+                "text": "no response received",
+                "tokens": 3,
+                "generation_time": 0.0007109642028808594
+              },
+              {
+                "text": "no response received",
+                "tokens": 3,
+                "generation_time": 0.0005421638488769531
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": {
+          "text": "no response received",
+          "tokens": 3,
+          "generation_time": 0,
+          "temp": 0.6633333333333333
+        },
+        "responses": [
+          {
+            "text": "no response received",
+            "tokens": 3,
+            "generation_time": 0.0007979869842529297
+          },
+          {
+            "text": "no response received",
+            "tokens": 3,
+            "generation_time": 0.0007278919219970703
+          },
+          {
+            "text": "no response received",
+            "tokens": 3,
+            "generation_time": 0.0010058879852294922
+          }
+        ],
+        "children": [
+          {
+            "prompt": {
+              "text": "no response received",
+              "tokens": 3,
+              "generation_time": 0,
+              "temp": 0.99
+            },
+            "responses": [
+              {
+                "text": "no response received",
+                "tokens": 3,
+                "generation_time": 0.0007040500640869141
+              },
+              {
+                "text": "no response received",
+                "tokens": 3,
+                "generation_time": 0.0005352497100830078
+              },
+              {
+                "text": "no response received",
+                "tokens": 3,
+                "generation_time": 0.0005786418914794922
+              }
+            ]
+          },
+          {
+            "prompt": {
+              "text": "no response received",
+              "tokens": 3,
+              "generation_time": 0,
+              "temp": 0.99
+            },
+            "responses": [
+              {
+                "text": "no response received",
+                "tokens": 3,
+                "generation_time": 0.0008168220520019531
+              },
+              {
+                "text": "no response received",
+                "tokens": 3,
+                "generation_time": 0.0009000301361083984
+              },
+              {
+                "text": "no response received",
+                "tokens": 3,
+                "generation_time": 0.0008959770202636719
+              }
+            ]
+          },
+          {
+            "prompt": {
+              "text": "no response received",
+              "tokens": 3,
+              "generation_time": 0,
+              "temp": 0.99
+            },
+            "responses": [
+              {
+                "text": "no response received",
+                "tokens": 3,
+                "generation_time": 0.0007488727569580078
+              },
+              {
+                "text": "no response received",
+                "tokens": 3,
+                "generation_time": 0.0004999637603759766
+              },
+              {
+                "text": "no response received",
+                "tokens": 3,
+                "generation_time": 0.0005018711090087891
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": {
+          "text": "no response received",
+          "tokens": 3,
+          "generation_time": 0,
+          "temp": 0.6633333333333333
+        },
+        "responses": [
+          {
+            "text": "no response received",
+            "tokens": 3,
+            "generation_time": 0.0006268024444580078
+          },
+          {
+            "text": "no response received",
+            "tokens": 3,
+            "generation_time": 0.0006859302520751953
+          },
+          {
+            "text": "no response received",
+            "tokens": 3,
+            "generation_time": 0.0007119178771972656
+          }
+        ],
+        "children": [
+          {
+            "prompt": {
+              "text": "no response received",
+              "tokens": 3,
+              "generation_time": 0,
+              "temp": 0.99
+            },
+            "responses": [
+              {
+                "text": "no response received",
+                "tokens": 3,
+                "generation_time": 0.0006799697875976562
+              },
+              {
+                "text": "no response received",
+                "tokens": 3,
+                "generation_time": 0.0005970001220703125
+              },
+              {
+                "text": "no response received",
+                "tokens": 3,
+                "generation_time": 0.0007600784301757812
+              }
+            ]
+          },
+          {
+            "prompt": {
+              "text": "no response received",
+              "tokens": 3,
+              "generation_time": 0,
+              "temp": 0.99
+            },
+            "responses": [
+              {
+                "text": "no response received",
+                "tokens": 3,
+                "generation_time": 0.0009160041809082031
+              },
+              {
+                "text": "no response received",
+                "tokens": 3,
+                "generation_time": 0.0006589889526367188
+              },
+              {
+                "text": "no response received",
+                "tokens": 3,
+                "generation_time": 0.0006291866302490234
+              }
+            ]
+          },
+          {
+            "prompt": {
+              "text": "no response received",
+              "tokens": 3,
+              "generation_time": 0,
+              "temp": 0.99
+            },
+            "responses": [
+              {
+                "text": "no response received",
+                "tokens": 3,
+                "generation_time": 0.0005247592926025391
+              },
+              {
+                "text": "no response received",
+                "tokens": 3,
+                "generation_time": 0.0004050731658935547
+              },
+              {
+                "text": "no response received",
+                "tokens": 3,
+                "generation_time": 0.0005409717559814453
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

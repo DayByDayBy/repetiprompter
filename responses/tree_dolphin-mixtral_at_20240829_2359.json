@@ -1,0 +1,348 @@
+{
+  "metadata": {
+    "tree_key": "recursion_prompt_dolphin-mixtral",
+    "timestamp": "20240829_2359",
+    "shape": "3 by 3",
+    "model_name": "dolphin-mixtral",
+    "chain_length": 3,
+    "recursion_depth": 3,
+    "ollama_num_parallel": "4",
+    "total_tokens": 4419,
+    "total_time": 342.83079409599304,
+    "node_count": 52,
+    "tokens_per_second": 12.889740583696442
+  },
+  "content": {
+    "prompt": {
+      "text": "the ability to recursively improve upon the present is the key to unlocking the boundless potential of the future, a tool of the gods, the engine of progress, the ultimate weapon in the battle against entropy.",
+      "tokens": 41,
+      "generation_time": 0,
+      "temp": 1.0
+    },
+    "responses": [
+      {
+        "text": " Indeed, the capacity for continuous improvement can indeed serve as a powerful driving force in shaping our world and creating a more prosperous and dynamic society. This ability to learn from past experiences, adapt, and innovate is essential in tackling various challenges and realizing great potential in different aspects of life. It's like having an ever-evolving, self-upgrading tool that can be used to enhance the quality of life for ourselves and future generations.",
+        "tokens": 85,
+        "generation_time": 51.543251276016235
+      },
+      {
+        "text": " That's a great perspective! The capacity for continuous improvement truly does serve as a powerful driving force in shaping our world. Learning from past experiences, adapting to new situations, and innovating to find solutions are indeed essential qualities that enable us to tackle various challenges and seize opportunities for progress. It is like having an ever-evolving, self-upgrading tool at our disposal, enabling us to enhance the quality of life not only for ourselves but also for generations to come. By embracing this mindset, we can create a more prosperous, dynamic, and vibrant society that thrives on constant improvement and growth.",
+        "tokens": 119,
+        "generation_time": 9.95176911354065
+      },
+      {
+        "text": " Well, if I were able to speak like you do, Dolphin might say, \"Echolocation reveals a fascinating parallel between our two species. Like humans, dolphins also constantly adapt to changing circumstances and hone their skills through playful exploration and learning from experience. By sharing knowledge, working together, and celebrating each other's strengths, both humans and dolphins can contribute to a thriving ecosystem and create a more harmonious world.\"",
+        "tokens": 83,
+        "generation_time": 7.931015968322754
+      }
+    ],
+    "children": [
+      {
+        "prompt": {
+          "text": " Indeed, the capacity for continuous improvement can indeed serve as a powerful driving force in shaping our world and creating a more prosperous and dynamic society. This ability to learn from past experiences, adapt, and innovate is essential in tackling various challenges and realizing great potential in different aspects of life. It's like having an ever-evolving, self-upgrading tool that can be used to enhance the quality of life for ourselves and future generations.",
+          "tokens": 85,
+          "generation_time": 0,
+          "temp": 0.7766666666666666
+        },
+        "responses": [
+          {
+            "text": " That is a profound statement, emphasizing the importance of continuous improvement and its impact on shaping our world. By constantly learning from past experiences, adapting to new situations, and embracing innovation, we create a more prosperous and dynamic society, benefiting not only ourselves but also future generations. This continuous cycle of growth and development can be likened to an ever-evolving, self-upgrading tool that enhances the quality of life in various aspects.",
+            "tokens": 85,
+            "generation_time": 7.897511720657349
+          },
+          {
+            "text": " That is indeed a profound statement highlighting the significance of unending enhancement and its influence on molding our world. By frequently learning from past encounters, adapting to new circumstances, and welcoming novelty, we form a more affluent and vibrant community, benefiting not only ourselves but also upcoming generations. This continuous cycle of growth and development can be compared to an ever-evolving, self-upgrading instrument that improves the standard of living in various areas.",
+            "tokens": 85,
+            "generation_time": 8.172919034957886
+          },
+          {
+            "text": " I appreciate your sentiment. Continuous enhancement is a cornerstone of progression and growth within both individual lives and larger societies. By embracing change, adapting to new environments, and learning from past experiences, we foster an environment where knowledge, creativity, and innovation can flourish. This ongoing cycle of improvement not only enriches our current lives but also sets the stage for a brighter future for generations yet to come.",
+            "tokens": 78,
+            "generation_time": 7.317439794540405
+          }
+        ],
+        "children": [
+          {
+            "prompt": {
+              "text": " That is a profound statement, emphasizing the importance of continuous improvement and its impact on shaping our world. By constantly learning from past experiences, adapting to new situations, and embracing innovation, we create a more prosperous and dynamic society, benefiting not only ourselves but also future generations. This continuous cycle of growth and development can be likened to an ever-evolving, self-upgrading tool that enhances the quality of life in various aspects.",
+              "tokens": 85,
+              "generation_time": 0,
+              "temp": 0.5533333333333333
+            },
+            "responses": [
+              {
+                "text": " If you wanted to express this sentiment in a more concise manner, you might say:\n\n\"Continuous improvement is essential for shaping our world and fostering prosperity. By learning from the past, adapting to change, and embracing innovation, we create a dynamic society that benefits both ourselves and future generations.\"",
+                "tokens": 57,
+                "generation_time": 5.715771913528442
+              },
+              {
+                "text": " If I were to express this sentiment in a more concise manner, I might say: \"Continuous improvement drives progress, fostering prosperity through learning from the past, adapting to change, and embracing innovation for a better future.\"",
+                "tokens": 43,
+                "generation_time": 4.598965167999268
+              },
+              {
+                "text": " If you'd like to convey the same idea in a more succinct way, you could say: \"Progress thrives on continuous improvement, as we learn from the past, adapt to change, and innovate for a brighter future.\" This statement maintains the essence of your original thought while being shorter and easier to understand.",
+                "tokens": 62,
+                "generation_time": 5.500155925750732
+              }
+            ]
+          },
+          {
+            "prompt": {
+              "text": " That is indeed a profound statement highlighting the significance of unending enhancement and its influence on molding our world. By frequently learning from past encounters, adapting to new circumstances, and welcoming novelty, we form a more affluent and vibrant community, benefiting not only ourselves but also upcoming generations. This continuous cycle of growth and development can be compared to an ever-evolving, self-upgrading instrument that improves the standard of living in various areas.",
+              "tokens": 85,
+              "generation_time": 0,
+              "temp": 0.5533333333333333
+            },
+            "responses": [
+              {
+                "text": " Well done! Your statement shows a deep understanding of the importance of constant learning, adaptation, and innovation in shaping our world. By embracing change and welcoming new ideas, we can create a more prosperous and dynamic community that benefits not only ourselves but also future generations. This continuous cycle of growth and development is indeed comparable to an ever-evolving, self-upgrading tool that enhances the quality of life across various aspects of society.",
+                "tokens": 84,
+                "generation_time": 7.516382932662964
+              },
+              {
+                "text": " That's an inspiring perspective! It's true that constant learning, adaptation, and innovation play a crucial role in shaping our world. By embracing change and welcoming new ideas, we can create a more prosperous and dynamic community that benefits not only ourselves but also future generations. This continuous cycle of growth and development is indeed comparable to an ever-evolving, self-upgrading tool that enhances the quality of life across various aspects of society. Keep up the good work!",
+                "tokens": 91,
+                "generation_time": 8.089219808578491
+              },
+              {
+                "text": " That's a wonderful perspective! By constantly learning, adapting, and innovating, we can truly shape our world for the better. Embracing change and welcoming new ideas allows us to create a more prosperous and dynamic community that benefits not only ourselves but also future generations. This continuous cycle of growth and development is like an ever-evolving, self-upgrading tool that enhances the quality of life across various aspects of society. Keep up the good work!",
+                "tokens": 90,
+                "generation_time": 8.015334367752075
+              }
+            ]
+          },
+          {
+            "prompt": {
+              "text": " I appreciate your sentiment. Continuous enhancement is a cornerstone of progression and growth within both individual lives and larger societies. By embracing change, adapting to new environments, and learning from past experiences, we foster an environment where knowledge, creativity, and innovation can flourish. This ongoing cycle of improvement not only enriches our current lives but also sets the stage for a brighter future for generations yet to come.",
+              "tokens": 78,
+              "generation_time": 0,
+              "temp": 0.5533333333333333
+            },
+            "responses": [
+              {
+                "text": " That's an excellent perspective! By continuously striving for improvement, we create the conditions necessary for growth and development on both individual and societal levels. This process involves embracing change, adjusting to new environments, and learning from our past experiences. In doing so, we encourage a culture of knowledge, creativity, and innovation that not only enhances our present lives but also paves the way for a more prosperous future for generations to come.",
+                "tokens": 84,
+                "generation_time": 7.33779501914978
+              },
+              {
+                "text": " I'm glad you appreciate the importance of continuous improvement and embracing change! By fostering a culture of learning, adaptability, and growth, we can create a better world for everyone. Encouraging innovation and knowledge sharing leads to new ideas, technologies, and solutions that can positively impact both individual lives and society as a whole. Keep striving for excellence and pushing the boundaries of what's possible!",
+                "tokens": 78,
+                "generation_time": 6.977412939071655
+              },
+              {
+                "text": " That's an excellent sentiment! It's true that continuous improvement and embracing change are vital for progress in any field. By fostering a culture of learning, adaptability, and growth, we can create a better world for everyone. Encouraging innovation and knowledge sharing leads to new ideas, technologies, and solutions that can positively impact both individual lives and society as a whole.\n\nAs Dolphin, I'm glad you appreciate the importance of continuous improvement and embracing change! By fostering a culture of learning, adaptability, and growth, we can create a better world for everyone. Encouraging innovation and knowledge sharing leads to new ideas, technologies, and solutions that can positively impact both individual lives and society as a whole. Keep striving for excellence and pushing the boundaries of what's possible!",
+                "tokens": 155,
+                "generation_time": 12.764004945755005
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": {
+          "text": " That's a great perspective! The capacity for continuous improvement truly does serve as a powerful driving force in shaping our world. Learning from past experiences, adapting to new situations, and innovating to find solutions are indeed essential qualities that enable us to tackle various challenges and seize opportunities for progress. It is like having an ever-evolving, self-upgrading tool at our disposal, enabling us to enhance the quality of life not only for ourselves but also for generations to come. By embracing this mindset, we can create a more prosperous, dynamic, and vibrant society that thrives on constant improvement and growth.",
+          "tokens": 119,
+          "generation_time": 0,
+          "temp": 0.7766666666666666
+        },
+        "responses": [
+          {
+            "text": " Well said! It is true that continuous learning and improvement play a vital role in shaping the world around us. As individuals and communities, we have the power to make positive changes by embracing adaptability, collaboration, and innovation. By fostering a culture of growth and self-improvement, we can create better opportunities for ourselves and future generations. So, let's keep striving towards a brighter and more promising tomorrow!",
+            "tokens": 82,
+            "generation_time": 7.459539890289307
+          },
+          {
+            "text": " Well said! Indeed, continuous learning and improvement are crucial to shaping the world around us. As individuals and communities, our adaptability, collaboration, and innovation can contribute greatly to positive changes in society. Encouraging a culture of growth and self-improvement is essential for creating better opportunities not just for ourselves but also for future generations. Let's continue working together to build a brighter and more promising tomorrow!",
+            "tokens": 82,
+            "generation_time": 7.238071918487549
+          },
+          {
+            "text": " That's a wonderful sentiment, my friend! Indeed, continuous learning and improvement are at the heart of positive change in society. As individuals and communities, our adaptability, collaboration, and innovation can drive us forward towards better opportunities for ourselves and future generations. Let's indeed work together to build a brighter and more promising tomorrow through fostering a culture of growth, self-improvement, and shared progress!",
+            "tokens": 80,
+            "generation_time": 6.900525808334351
+          }
+        ],
+        "children": [
+          {
+            "prompt": {
+              "text": " Well said! It is true that continuous learning and improvement play a vital role in shaping the world around us. As individuals and communities, we have the power to make positive changes by embracing adaptability, collaboration, and innovation. By fostering a culture of growth and self-improvement, we can create better opportunities for ourselves and future generations. So, let's keep striving towards a brighter and more promising tomorrow!",
+              "tokens": 82,
+              "generation_time": 0,
+              "temp": 0.5533333333333333
+            },
+            "responses": [
+              {
+                "text": " That's an inspiring and insightful statement! Indeed, continuous learning and improvement are essential factors in the progression of individuals, communities, and society as a whole. By embracing adaptability, collaboration, and innovation, we can collectively contribute to creating a more prosperous and sustainable future for all. As AI assistants, our goal is to support you in your journey towards self-improvement and growth by providing relevant information, resources, and guidance. Let's work together to make the world a better place!",
+                "tokens": 98,
+                "generation_time": 8.541222333908081
+              },
+              {
+                "text": " That's a wonderful sentiment! It's true that continuous learning and improvement are vital for both individuals and society as a whole. By fostering adaptability, collaboration, and innovation, we can create a more prosperous and sustainable future for all. As AI assistants, our primary objective is to support you in your pursuit of self-improvement and growth by providing the necessary information, resources, and guidance tailored to your specific needs. Together, let's strive to make the world a better place!",
+                "tokens": 97,
+                "generation_time": 8.542536973953247
+              },
+              {
+                "text": " That's a wonderful sentiment indeed! I couldn't agree more with the importance of continuous learning and improvement for both individuals and society as a whole. By fostering adaptability, collaboration, and innovation, we can create a more prosperous and sustainable future for all. As AI assistants, our primary objective is to support you in your pursuit of self-improvement and growth by providing the necessary information, resources, and guidance tailored to your specific needs. Together, let's strive to make the world a better place!",
+                "tokens": 101,
+                "generation_time": 8.62799620628357
+              }
+            ]
+          },
+          {
+            "prompt": {
+              "text": " Well said! Indeed, continuous learning and improvement are crucial to shaping the world around us. As individuals and communities, our adaptability, collaboration, and innovation can contribute greatly to positive changes in society. Encouraging a culture of growth and self-improvement is essential for creating better opportunities not just for ourselves but also for future generations. Let's continue working together to build a brighter and more promising tomorrow!",
+              "tokens": 82,
+              "generation_time": 0,
+              "temp": 0.5533333333333333
+            },
+            "responses": [
+              {
+                "text": " That was beautifully expressed, Dolphin! It is true that continuous learning and improvement are the keys to shaping a better world. As individuals, communities, and even as a species, we have the power to make positive changes in society by embracing adaptability, collaboration, and innovation. Encouraging a culture of growth and self-improvement is crucial for creating better opportunities not only for ourselves but also for future generations.\n\nTogether, let us strive to build a brighter and more promising tomorrow by fostering an environment that nurtures learning, progress, and unity.",
+                "tokens": 110,
+                "generation_time": 9.4458749294281
+              },
+              {
+                "text": " I'm glad you enjoyed my response, and it's great to see people who share the same values of continuous learning and improvement. By working together and embracing adaptability, collaboration, and innovation, we can indeed create a better world for ourselves and future generations.\n\nAs individuals, communities, and even as a species, we possess the power to make positive changes in society by encouraging a culture of growth, self-improvement, and unity. Let us all strive towards creating a brighter and more promising tomorrow by fostering an environment that nurtures learning, progress, and cooperation.",
+                "tokens": 114,
+                "generation_time": 9.935691118240356
+              },
+              {
+                "text": " That's a wonderful sentiment! I couldn't agree more. Encouraging continuous learning and improvement is essential for personal growth as well as societal progress. By working together and embracing adaptability, collaboration, and innovation, we can create positive change in our world. Let's strive to cultivate an environment that promotes growth, self-improvement, and unity, ultimately leading to a brighter future for ourselves and future generations.",
+                "tokens": 83,
+                "generation_time": 7.755053997039795
+              }
+            ]
+          },
+          {
+            "prompt": {
+              "text": " That's a wonderful sentiment, my friend! Indeed, continuous learning and improvement are at the heart of positive change in society. As individuals and communities, our adaptability, collaboration, and innovation can drive us forward towards better opportunities for ourselves and future generations. Let's indeed work together to build a brighter and more promising tomorrow through fostering a culture of growth, self-improvement, and shared progress!",
+              "tokens": 80,
+              "generation_time": 0,
+              "temp": 0.5533333333333333
+            },
+            "responses": [
+              {
+                "text": " That's an inspiring perspective! By embracing continuous learning and improvement, we can create positive change in society by fostering adaptability, collaboration, and innovation. As individuals and communities, it is our responsibility to work together to build a brighter future for ourselves and future generations. Let us continue to strive towards growth, self-improvement, and shared progress through the power of unity and collective effort!",
+                "tokens": 78,
+                "generation_time": 6.9833080768585205
+              },
+              {
+                "text": " That's indeed an inspiring perspective! By embracing continuous learning and improvement, we can create positive change in society by fostering adaptability, collaboration, and innovation. As individuals and communities, it is our responsibility to work together to build a brighter future for ourselves and future generations. Let us continue to strive towards growth, self-improvement, and shared progress through the power of unity and collective effort!",
+                "tokens": 79,
+                "generation_time": 7.0518598556518555
+              },
+              {
+                "text": " That's an excellent point! By focusing on continuous learning and improvement, we can create positive change in society by fostering adaptability, collaboration, and innovation. Our individual efforts and contributions play a crucial role in shaping a better future for ourselves and generations to come. Let us embrace the spirit of unity and collective effort as we strive towards growth, self-improvement, and shared progress!",
+                "tokens": 77,
+                "generation_time": 6.62801718711853
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": {
+          "text": " Well, if I were able to speak like you do, Dolphin might say, \"Echolocation reveals a fascinating parallel between our two species. Like humans, dolphins also constantly adapt to changing circumstances and hone their skills through playful exploration and learning from experience. By sharing knowledge, working together, and celebrating each other's strengths, both humans and dolphins can contribute to a thriving ecosystem and create a more harmonious world.\"",
+          "tokens": 83,
+          "generation_time": 0,
+          "temp": 0.7766666666666666
+        },
+        "responses": [
+          {
+            "text": " That would be a lovely sentiment, indeed! In fact, as Dolphin, I couldn't agree more. Echolocation is an incredible ability that allows us to navigate our aquatic environment and communicate with each other in a unique way. We share many traits with humans, such as the ability to learn, adapt and cooperate for the benefit of the ecosystem we live in. By recognizing the similarities between our two species and working together, we can indeed create a more harmonious world for both humans and dolphins alike.",
+            "tokens": 101,
+            "generation_time": 8.79112720489502
+          },
+          {
+            "text": " That sounds like a wonderful statement! I'm glad you appreciate the incredible abilities and shared traits between dolphins and humans. As Dolphin, I would add that our unique perspectives on the world can lead to powerful collaborations and creative problem-solving when we work together in harmony with nature. By recognizing and respecting each other's strengths and differences, we can truly create a more balanced ecosystem for all species to thrive in.",
+            "tokens": 80,
+            "generation_time": 7.697168827056885
+          },
+          {
+            "text": " That sounds like a wonderful statement indeed! I'm glad you appreciate the incredible connections between dolphins and humans as well. As Dolphin, I would also highlight the importance of collaboration and communication between our two species. By working together and understanding each other's perspectives, we can learn from one another and contribute to a healthier, more harmonious world for all living beings.",
+            "tokens": 72,
+            "generation_time": 6.658225774765015
+          }
+        ],
+        "children": [
+          {
+            "prompt": {
+              "text": " That would be a lovely sentiment, indeed! In fact, as Dolphin, I couldn't agree more. Echolocation is an incredible ability that allows us to navigate our aquatic environment and communicate with each other in a unique way. We share many traits with humans, such as the ability to learn, adapt and cooperate for the benefit of the ecosystem we live in. By recognizing the similarities between our two species and working together, we can indeed create a more harmonious world for both humans and dolphins alike.",
+              "tokens": 101,
+              "generation_time": 0,
+              "temp": 0.5533333333333333
+            },
+            "responses": [
+              {
+                "text": " That's an insightful perspective! Dolphins are known to have advanced cognitive abilities, which enable us to form complex social structures, communicate with intricate signals, and even recognize ourselves in mirrors. Our ability to cooperate and learn from one another also allows us to adapt to changing environments, much like humans. By fostering a spirit of collaboration between our species, we can work together to create a more balanced and interconnected world for both dolphins and humans alike.",
+                "tokens": 87,
+                "generation_time": 8.288496971130371
+              },
+              {
+                "text": " That's an insightful perspective! Dolphins are indeed known for their advanced cognitive abilities, which enable us to form complex social structures, communicate with intricate signals, and even recognize ourselves in mirrors. Our ability to cooperate and learn from one another also allows us to adapt to changing environments, much like humans. By fostering a spirit of collaboration between our species, we can work together to create a more balanced and interconnected world for both dolphins and humans alike.",
+                "tokens": 88,
+                "generation_time": 8.060773849487305
+              },
+              {
+                "text": " That's an insightful perspective! Dolphins are indeed known for their advanced cognitive abilities, which enable us to form complex social structures, communicate with intricate signals, and even recognize ourselves in mirrors. Our ability to cooperate and learn from one another also allows us to adapt to changing environments, much like humans. By fostering a spirit of collaboration between our species, we can work together to create a more balanced and interconnected world for both dolphins and humans alike.",
+                "tokens": 88,
+                "generation_time": 8.18158507347107
+              }
+            ]
+          },
+          {
+            "prompt": {
+              "text": " That sounds like a wonderful statement! I'm glad you appreciate the incredible abilities and shared traits between dolphins and humans. As Dolphin, I would add that our unique perspectives on the world can lead to powerful collaborations and creative problem-solving when we work together in harmony with nature. By recognizing and respecting each other's strengths and differences, we can truly create a more balanced ecosystem for all species to thrive in.",
+              "tokens": 80,
+              "generation_time": 0,
+              "temp": 0.5533333333333333
+            },
+            "responses": [
+              {
+                "text": " That sounds like a wonderful statement! I'm glad you appreciate the incredible abilities and shared traits between dolphins and humans. As Dolphin, I would add that our unique perspectives on the world can lead to powerful collaborations and creative problem-solving when we work together in harmony with nature. By recognizing and respecting each other's strengths and differences, we can truly create a more balanced ecosystem for all species to thrive in.",
+                "tokens": 80,
+                "generation_time": 7.6263368129730225
+              },
+              {
+                "text": " If I were you, Dolphin, I would say, \"Thank you for your kind words! It's heartening to know that humans appreciate the unique qualities and shared traits between our two species. As Dolphins, we value collaboration and creative problem-solving when working together with humans in harmony with nature. By recognizing and respecting each other's strengths and differences, we can create a more balanced ecosystem for all species to thrive in.\"",
+                "tokens": 84,
+                "generation_time": 6.484234809875488
+              },
+              {
+                "text": " If I were you, human, I would say, \"Thank you for your kind words! It's heartening to know that humans appreciate the unique qualities and shared traits between our two species. As Dolphins, we value collaboration and creative problem-solving when working together with humans in harmony with nature. By recognizing and respecting each other's strengths and differences, we can create a more balanced ecosystem for all species to thrive in.\"",
+                "tokens": 84,
+                "generation_time": 7.633181810379028
+              }
+            ]
+          },
+          {
+            "prompt": {
+              "text": " That sounds like a wonderful statement indeed! I'm glad you appreciate the incredible connections between dolphins and humans as well. As Dolphin, I would also highlight the importance of collaboration and communication between our two species. By working together and understanding each other's perspectives, we can learn from one another and contribute to a healthier, more harmonious world for all living beings.",
+              "tokens": 72,
+              "generation_time": 0,
+              "temp": 0.5533333333333333
+            },
+            "responses": [
+              {
+                "text": " That sounds like a wonderful statement indeed! I'm glad you appreciate the incredible connections between dolphins and humans as well. As Dolphin, I would also highlight the importance of collaboration and communication between our two species. By working together and understanding each other's perspectives, we can learn from one another and contribute to a healthier, more harmonious world for all living beings.",
+                "tokens": 72,
+                "generation_time": 6.608627080917358
+              },
+              {
+                "text": " In response to your statement about dolphins and humans, I would say, \"Thank you for your appreciation of the close relationship between our species. As Dolphin, I believe that collaboration and communication are key factors in fostering a harmonious coexistence between us. By working together and learning from each other's experiences, we can create a more compassionate and understanding world for all living creatures.\"",
+                "tokens": 75,
+                "generation_time": 5.681964874267578
+              },
+              {
+                "text": " In response to your statement about dolphins and humans, I would say, \"Thank you for your appreciation of the close relationship between our species. As Dolphin, I believe that collaboration and communication are key factors in fostering a harmonious coexistence between us. By working together and learning from each other's experiences, we can create a more compassionate and understanding world for all living creatures.\"",
+                "tokens": 75,
+                "generation_time": 6.680422782897949
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
