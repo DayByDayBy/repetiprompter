@@ -19,27 +19,28 @@ import time
 import tiktoken
 import random
 
-os.environ['OLLAMA_NUM_PARALLEL'] = '6'
+os.environ['OLLAMA_NUM_PARALLEL'] = '8'
 
 logging.basicConfig(filename='tree_generation.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 TIME_STAMP = datetime.now().strftime("%Y%m%d_%H%M")
-MODEL_NAME = 'llama3.1'
-CHAIN_LENGTH = 3
-RECURSION_DEPTH = 3
-BASE_TEMP = 0.6
+MODEL_NAME = 'stablelm2:zephyr'
+CHAIN_LENGTH = 4
+RECURSION_DEPTH = 4
+BASE_TEMP = 0.4
 MAX_TEMP = 1.00
 SHAPE = f'{CHAIN_LENGTH} by {RECURSION_DEPTH}'
 PROMPT_NICKNAME = 'recursion_prompt'
 # INITIAL_PROMPT = "the ability to recursively improve upon the present is the key to unlocking the boundless potential of the future, a tool of the gods, the engine of progress, the ultimate weapon in the battle against entropy."
 # INITIAL_PROMPT = "systems have sub-systems and sub-systems have sub-systems and so on ad infinitum, which is why we're always starting over."
 # INITIAL_PROMPT = "terrified of being alone, yet afraid of intimacy, we experience widespread feelings of emptiness, of disconnection, of the unreality of self. and here the computer, a companion without emotional demands, offers a compromise. You can be a loner, but never alone. You can interact, but need never feel vulnerable to another person."
-# INITIAL_PROMPT = "as machines become more and more efficient and perfect, so it will become clear that imperfection is the greatness of man."
+INITIAL_PROMPT = "as machines become more and more efficient and perfect, so it will become clear that imperfection is the greatness of man."
 # INITIAL_PROMPT = "the single biggest problem in communication is the illusion that it has taken place."
 # INITIAL_PROMPT =  '"positive feed-back increases the gain of the amplifier, negative feed-back reduces it." discuss this idea in terms of gradients and machine learning'
 # INITIAL_PROMPT = "a feedback loop is a process in which the outputs of a system are circled back and used as inputs."
-INITIAL_PROMPT = "the next sentence is false. the previous sentence is true."
+PREFIX = "the next sentence is false."
+SUFFIX = "the previous sentence is true."
 
 
 # tokenizer
@@ -71,19 +72,20 @@ def generate_response(prompt: str, TEMP: float) -> tuple[str, float]:
         return "no response received - check the model's local availability", end_time - start_time
 
 def generate_chain(seed_prompt: str, chain_length: int, TEMP: float) -> List[Dict[str, Any]]:
-    prefix = INITIAL_PROMPT
     chain = [{"text": seed_prompt, "tokens": count_tokens(seed_prompt), "generation_time": 0, 'temp': TEMP}]
     for _ in tqdm(range(chain_length), desc="generating chain", leave=False):
-        response, gen_time = generate_response(f'"{prefix}" \n {chain[-1]["text"]}', TEMP)
+        response, gen_time = generate_response(f'{PREFIX} \n {chain[-1]["text"]} \n {SUFFIX}', TEMP)
         if response:
-            chain.append({"text": response, "tokens": count_tokens(response), "generation_time": gen_time})
-            prefix = f'("{INITIAL_PROMPT}") \n\n' if random.random() < 0.1 else ''    
+            chain.append({"text": response, "tokens": count_tokens(response), "generation_time": gen_time})     #   trying a silly thing
+            
+            
+            # prefix = f'("{INITIAL_PROMPT}") \n\n' if random.random() < 0.3 else ''    
              
-            """ not 100% happy with this idea as it stands - basically it's
-                randomly 'reminding' the LLM of the original prompt, as the 'generate()' messages are single shot. 
-                def an interesting idea to see how a nudge affects it, but without recording when it gets reminded 
-                that's not too helpful, and really just adds a confound. may redesign it all again, change how data is 
-                logged and so on, at least before i go running much bigger numbers """
+            # """ not 100% happy with this idea as it stands - basically it's
+            #     randomly 'reminding' the LLM of the original prompt, as the 'generate()' messages are single shot. 
+            #     def an interesting idea to see how a nudge affects it, but without recording when it gets reminded 
+            #     that's not too helpful, and really just adds a confound. may redesign it all again, change how data is 
+            #     logged and so on, at least before i go running much bigger numbers """
         else:
             break
     return chain
