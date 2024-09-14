@@ -19,7 +19,7 @@ import time
 import tiktoken
 import random
 
-os.environ['OLLAMA_NUM_PARALLEL'] = '10'
+os.environ['OLLAMA_NUM_PARALLEL'] = '6'
 
 logging.basicConfig(filename='tree_generation.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
