@@ -25,7 +25,7 @@ logging.basicConfig(filename='tree_generation.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 TIME_STAMP = datetime.now().strftime("%Y%m%d_%H%M")
-MODEL_NAME = 'hermes3'
+MODEL_NAME = 'phi3.5'
 CHAIN_LENGTH = 3
 RECURSION_DEPTH = 3
 BASE_TEMP = 0.4

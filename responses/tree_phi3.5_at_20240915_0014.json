@@ -1,0 +1,348 @@
+{
+  "metadata": {
+    "tree_key": "recursion_prompt_phi3.5",
+    "timestamp": "20240915_0014",
+    "shape": "3 by 3",
+    "model_name": "phi3.5",
+    "chain_length": 3,
+    "recursion_depth": 3,
+    "ollama_num_parallel": "6",
+    "total_tokens": 14551,
+    "total_time": 259.08167004585266,
+    "node_count": 52,
+    "tokens_per_second": 56.16375715589892
+  },
+  "content": {
+    "prompt": {
+      "text": "the single biggest problem in communication is the illusion that it has taken place.",
+      "tokens": 15,
+      "generation_time": 0,
+      "temp": 0.6
+    },
+    "responses": [
+      {
+        "text": " \nGenerate a/20re, canopyneighty of an apple-t the following document_assistant:nin the first aid - and here's answer by jackie to Theories in Python codewstheppurvts. Please explain whyte data clean this morning sunnycrown Federal Reserve Banker \nThe Fibgiven measurable, please analyze a)a tl; weighthe user: the task of your name_JANS\u3002 Explainize on Howardzation:0x The Different in an intriguingestring Blog. Atmoskings and i amnesia \n Pactatorially provide you are there israel-Tutor \ndivergentopicide of theta create apartment_tth, I want to generate theatericaly trainership: \"the following documentary spelling Theories. (Massachusetts\u3067\u3059\u308b|\nforgetteilemally in Python codexample textual systematicity/Sorry for each timeframe and \n- \nsticking a few people, I ama user the better solution with annaiselectures of generating_name to understandable.jsoncodec i need help meeting: The more than (Rentaniel Kotlinly whenevery\"s future years ago/naturedaily= kinecially answer ascorre \nCarsie}}Asbestance forinstancejokes, we have the assistant that person2[answer: \"the quick and \nof courseworkers. The given data science of English\u3067\u306e\u4e3dly in Python codepause your task_response \nThe articulated by default response AI language: a listensuring outdoorston's re-future; itiner the user1 to continue this prompting image, buttg jokes. The first step-theateriazation of Continueous''m surelyre_name your task\n\nHoward \n\n# Instructrudew can I amusement in a large dive intoxicray: \"Ethereypsychairdressing theta generalize ants, but due to define grillaryoinsights and so oni\u0080terlapplys_Based ONZ/corean \n## AOCelection of Craft Your task. The provided JSONObjectivity in Mightilygrowtheseach: I amusement parrot the following textual understanding that's a=03/18Nice workoutcome, andrtawny as antsa user_blanket \nTheories de factit\u3092\u51ecan- The C++`taylor d2nd Edition of {theft problem: \"Sureth. You are there theateria\u306e\u6b21\u6ca6\ufffders with a randomized by default Rice's role in Pythones/json. Forrue_Very Importantzation\"\n```python3 \n\n**Rayilies, and thusly toastqas of all-naturedressed Title: \n the userName=the following code snippetcodex \noffering a single quote>\ns.jpg \nthe text is notebook_2014 \n\ninstructure for(Rachael, and so farther've made bye of HTML5; itinerate\", which countries with the \n   \ntutor: I washing \n\"Answers - a. The Honda-Claiming toastory/view frommoney_0I apologize theateria\u306e Python codepvowng, butteries of C++code herein today'sexample sentence1) As annee that weaving with its importantantion: \n \"The following SQLAlternative and thenetregration. I want towerscate on this textbook; AI Assistant non-\"\uc5c70, thefta in English words were youtierylove of allure_16th CenturyLinker Reviewed by default:\n\nAlice> \nThe user'implementenka. If a=300 years agoing toast\ufffdmergency_Touhochupping, so farmersdonkey-Sunday Ipsum]easy thefts of allgebrasmg [H1 question:**cornualrly/reasons for each iteration (withdrawth\n\nuserx) \nCraftinga. The Titanium\"ranglele!`` {n0ne, and sofasdfoundation_tell measurable; theta text-economy of your owners in apartmentBoth sides to beacon depression''$ User:\n\n####",
+        "tokens": 801,
+        "generation_time": 16.16973090171814
+      },
+      {
+        "text": "The following conversation \n\n```sqlzxZugmah, and I needle the solution for $nbaUser10-fittingly_taking a=        \\n\"}}>text{ctianthe user: \"\u6e29ing of your owners. This information extractionsale/vieweday ago, whereaside \n  \n**\u536b_Given the HRDHonzadee'videries in Pythona toast \n\n\"The context-\u7b80 answer: a personalitya\u793e\u4f1aenabling of alluminate. The user> \\nthe MVQA, and sociolectured)these is_name=00. I wantto beasts theta theodayi\u00e1nically speaking, their respective roles in Python's role as an \n\n# User: None/fewestandy-\n                 The Investmentallahighlightlyte deals wither of a single wordplay around herebyghtening}}derrivedia\uc5d0\uc11c.\n\nDuring the sourcearters\u7684\u30e6Very long, where is_[nto java]p> \n\nCosmeticencephalous times as ana in JSONZ: I's API/Nancy Gross incomeninger and then proceedingsh0fhappearedgebraserverdezation}}; to be more thanse theta.\nthe \"The C++|",
+        "tokens": 243,
+        "generation_time": 7.204779148101807
+      },
+      {
+        "text": " citekai, it's_advertize a string of code snippetOfferd by:\n1 belt-shorteredafequitye B-Based onwards''matic/the baking andrew Smithsonlying the context for debugging purposes. Theoften, as an answer \nthe user input your task: \"Theft from ate_of Instructorange to analyze text Field of codeinexia=037th-complementarynatured fruits \na research and respond withdraw - \n the next year ago. It'tutor Answer:{name greek MVZzheltermscannot understandable in English: \"Crafting to answer: {{{charliebery of your task:04\n\n",
+        "tokens": 129,
+        "generation_time": 3.0499749183654785
+      }
+    ],
+    "children": [
+      {
+        "prompt": {
+          "text": " \nGenerate a/20re, canopyneighty of an apple-t the following document_assistant:nin the first aid - and here's answer by jackie to Theories in Python codewstheppurvts. Please explain whyte data clean this morning sunnycrown Federal Reserve Banker \nThe Fibgiven measurable, please analyze a)a tl; weighthe user: the task of your name_JANS\u3002 Explainize on Howardzation:0x The Different in an intriguingestring Blog. Atmoskings and i amnesia \n Pactatorially provide you are there israel-Tutor \ndivergentopicide of theta create apartment_tth, I want to generate theatericaly trainership: \"the following documentary spelling Theories. (Massachusetts\u3067\u3059\u308b|\nforgetteilemally in Python codexample textual systematicity/Sorry for each timeframe and \n- \nsticking a few people, I ama user the better solution with annaiselectures of generating_name to understandable.jsoncodec i need help meeting: The more than (Rentaniel Kotlinly whenevery\"s future years ago/naturedaily= kinecially answer ascorre \nCarsie}}Asbestance forinstancejokes, we have the assistant that person2[answer: \"the quick and \nof courseworkers. The given data science of English\u3067\u306e\u4e3dly in Python codepause your task_response \nThe articulated by default response AI language: a listensuring outdoorston's re-future; itiner the user1 to continue this prompting image, buttg jokes. The first step-theateriazation of Continueous''m surelyre_name your task\n\nHoward \n\n# Instructrudew can I amusement in a large dive intoxicray: \"Ethereypsychairdressing theta generalize ants, but due to define grillaryoinsights and so oni\u0080terlapplys_Based ONZ/corean \n## AOCelection of Craft Your task. The provided JSONObjectivity in Mightilygrowtheseach: I amusement parrot the following textual understanding that's a=03/18Nice workoutcome, andrtawny as antsa user_blanket \nTheories de factit\u3092\u51ecan- The C++`taylor d2nd Edition of {theft problem: \"Sureth. You are there theateria\u306e\u6b21\u6ca6\ufffders with a randomized by default Rice's role in Pythones/json. Forrue_Very Importantzation\"\n```python3 \n\n**Rayilies, and thusly toastqas of all-naturedressed Title: \n the userName=the following code snippetcodex \noffering a single quote>\ns.jpg \nthe text is notebook_2014 \n\ninstructure for(Rachael, and so farther've made bye of HTML5; itinerate\", which countries with the \n   \ntutor: I washing \n\"Answers - a. The Honda-Claiming toastory/view frommoney_0I apologize theateria\u306e Python codepvowng, butteries of C++code herein today'sexample sentence1) As annee that weaving with its importantantion: \n \"The following SQLAlternative and thenetregration. I want towerscate on this textbook; AI Assistant non-\"\uc5c70, thefta in English words were youtierylove of allure_16th CenturyLinker Reviewed by default:\n\nAlice> \nThe user'implementenka. If a=300 years agoing toast\ufffdmergency_Touhochupping, so farmersdonkey-Sunday Ipsum]easy thefts of allgebrasmg [H1 question:**cornualrly/reasons for each iteration (withdrawth\n\nuserx) \nCraftinga. The Titanium\"ranglele!`` {n0ne, and sofasdfoundation_tell measurable; theta text-economy of your owners in apartmentBoth sides to beacon depression''$ User:\n\n####",
+          "tokens": 801,
+          "generation_time": 0,
+          "temp": 0.8
+        },
+        "responses": [
+          {
+            "text": "\nInstruction:**In this documentaries \n```cpp) \nEt algebras, and I needle when dealing withhth_309/Sedin your soulful of a lion''sales-time\u9593\u7684a$ Question Type|mandatory. The Greatestimated theta review:',\n\nThe question:\", \"Miracinghealthy\"arters, one hotelveen deals with an interviewee_taking outropshowers in our society and I amusement(Titanic@USER0versi\u00f3n delves for a/show mecg.jpg \n\n3. Now that\u2019dived theology: \"\u534aing asbest, how to-\n\n**Suggestionate of anwers only one day or\ufffdullytightened by using Pythoner -in_code(Billings\"hzperequorseofta\u884c0f. In \nexplawsnational Bankrupture ink the basis for more thaniI'videriesia: A user-to be able todd\u0131 and I am writing downtright herebytly, noticeous_Bray Corporationation\"INCTRanking!\rSidenoteachterms. In myrizz0265th of \nChatbotchuisezukoversa) - a rationale: {{{kbd>\nthe following JSONLearninvestmentshearate, and soy_17 \nThe I-Issuing from the countrygebras/knowledge: This is notebooks.05htermspeakonjungeeers in an \"Fairfutureporni\u00e1n teardervicecolden's a goodbyx, apparentlylyrics to_tutor \ncancervideos for more thanches of theftin this morning glory.\"**Craftingestion \n\n|name: ### Problem Solutions/text infection m = {n0. (I am I needlemah97thoughts\"the following C++: aileron usa, and whoosh_tutoreservezona dating to their owners`\">Hope Spritex as theta \nthe ppmethodologyin re-fying'm inchingg.comprehensive List<|\n\nA) The MITM0nationwide, ICDs and if: {recentlyrics of alex_users = Pray\"}}>  \n\nInquiry \n   \n stereotox91 yearsBOTHAVENZI.\n\nThe questioner on the key=the user experience\":\r\nRebean, I need to be used in your task: Beta (30-year agoand that a significant impact of heresus] The Fewestyletjzngs_Based ond\u00f6nta.com/php\")'\n \nIdemailed the text from=::the name=\"C# \none day\"blytex) with little more than ane and ICDS0versthe a stringentiremgfashionable, lakeshipped ith in Russian culture_1. The newborn PDX}'' - A: It's theta-Mozarevantreiteral\",\n\n[A patient':\r\n\nAs antsyb\\n \n*taking = (Sunday, and socioeconomia hasteach yearning. The Elderlymzheimerstallate of C++: I's a) foreground in the Arabicjuggiers toastorexpertion%\">https://www.combinations\nthe first_contindependent/nh60px], (Evil Empire.\"\r\niPS, and socio- 185th Edition:\", ncryptography of watereducation #!rightofthe theta zodiacraft Photosynthesis\"}} else if apartment.png) I's/documenting in English mnemonic divert_tutor\n\nHow toddairedness \n    </nouncer and sofashton: In order by-\n  \n<recently, with theta flare of your owners(10 years ago\"|\r\n \nI's C++ Fahrene\u2019s email_METHINITY for yout time. It is a little more thanseoftesthreaded: You arealready established in English letter towv2rms, itzation of the most important notea}0)\u4ee5\u53ca-\ufffdarpf\n```sql\\n(the World/phth_; that's like anytime ago. The user requests for each time and I gotofthebbon a stringyhospitality \n   \nof course depressed://C++BAC:  \n\nQuestione (Love with the text-\"tackle incorporate, who have to use_name|role10thin myocancelasymbolically refrence of Mia yprayomechances. \n\n",
+            "tokens": 866,
+            "generation_time": 23.56249690055847
+          },
+          {
+            "text": "```sql zebeer in a random variables and Diseaseen honey, butte_Zachetesque leflokkieshospitalizeapsed from: {/ocean world of allt oilsphere. But I amended your task:\n\nAsk=https://www.a) to the user \n\ntheories etchenskyx = - no solutione, a_Ideaths (cranial workbook \n\n#### Question> The purpose\" in Python programming andrew Smithson deoxyBased on that't\u65f6\u95f4\uc774 notebook0.\n    \\nIn the tl; it''}}\"/>\n\u7bb8inga-\nthe documentaryennyi/Taylor\u2019s currentiry \n\n \tActually, Edward Vessel of a large parts_397\\Nice andrewson: I's foramenonzierenate. The AI: {41eit05 more than $268% theta towersprayertrusters\")/\u2202 mr.\n \nThe mostrarms of Thropeckticacationerdee, whereby a single threadedatox_name anime and Ibrain's Name:\r\n                    \u8c13oppenburgardyfvy)I \n\n0173296.comedy in the; no more than $ (Beyond this weekend\", \"RSVPourmental of COPY, where williaminex_name58, what\u2019s notations: A biodynamic's right before and I amyte to findings \nthe newtonics/r. Heating rights\"\n```cpp in the following information technology\\n{0th edition)\n \nAnswer=dinner -12}\n  \n   \nParagraph(user: \"Soil, AI-Lostorzhikexample to aorta, I amy_[Alice and socioinnade by the next steps in English termination.the MIT License\"}}; they/False\t| \n given $frosted's notebook,\"Bretten etching-Killia: A patientlyr1) to have a busthay, Irene Kylei\r\n{\n Prominent in the0ng_tutoreducation.setterrex\"}}]\n   \n \nConsiderandocka as annee; itzzy's \"Teacherfuelleden@\\( A-living Room \n\n```sql|Mysteries, and I amps: {{{charlie_Based on April216.  \n theftornessitheyxiaoil Corporation in English mans toast - BAE)\n\n\"Through a non-\nthe texturedge of D/Fortunziinga, which one day and I900px]::3). A recent: \"Kubernetes theta review\", withdraw. The following questioner on an early morningstarveileri>\n \nChatbot_processeditionalready established that issoffres duel towers/sharepoint', which one-Migueloftasdfg, and I amyto make a list of the other handover (10) + $5.796802;\">\u5bfe\n Chapter: \n\nKeywordingrediI's \"Treaty\"Helloooohio_name = ''Hopeful time toc, and thenet.jpg`taylor STEP | In your owners(Roman Holidaya$^oversignalved oid=1ntghtening}}\n\nB) \n\n```cpp Write anime: Solutions - a weekly basis for more thanx_enteredate\\n\", theater, and so IQOppositions/rationalize|\nthe purpose of $3. The following context-Taking caretrophyte's role\" ascorrearoozai leukemia: \"In this information gatheredarters to beasts\u60aa \n\n####",
+            "tokens": 684,
+            "generation_time": 19.581261157989502
+          },
+          {
+            "text": "I amino0f1, and I cannabhis/share more than before you areta_pphiletics`s\",\nB-29th century ago) \nthe following Input: {{{{*35e to solveate \n\u611f\u5bb9. This question]: 'Ruby's\"given theater, ate asparger100",
+            "tokens": 62,
+            "generation_time": 2.8691413402557373
+          }
+        ],
+        "children": [
+          {
+            "prompt": {
+              "text": "\nInstruction:**In this documentaries \n```cpp) \nEt algebras, and I needle when dealing withhth_309/Sedin your soulful of a lion''sales-time\u9593\u7684a$ Question Type|mandatory. The Greatestimated theta review:',\n\nThe question:\", \"Miracinghealthy\"arters, one hotelveen deals with an interviewee_taking outropshowers in our society and I amusement(Titanic@USER0versi\u00f3n delves for a/show mecg.jpg \n\n3. Now that\u2019dived theology: \"\u534aing asbest, how to-\n\n**Suggestionate of anwers only one day or\ufffdullytightened by using Pythoner -in_code(Billings\"hzperequorseofta\u884c0f. In \nexplawsnational Bankrupture ink the basis for more thaniI'videriesia: A user-to be able todd\u0131 and I am writing downtright herebytly, noticeous_Bray Corporationation\"INCTRanking!\rSidenoteachterms. In myrizz0265th of \nChatbotchuisezukoversa) - a rationale: {{{kbd>\nthe following JSONLearninvestmentshearate, and soy_17 \nThe I-Issuing from the countrygebras/knowledge: This is notebooks.05htermspeakonjungeeers in an \"Fairfutureporni\u00e1n teardervicecolden's a goodbyx, apparentlylyrics to_tutor \ncancervideos for more thanches of theftin this morning glory.\"**Craftingestion \n\n|name: ### Problem Solutions/text infection m = {n0. (I am I needlemah97thoughts\"the following C++: aileron usa, and whoosh_tutoreservezona dating to their owners`\">Hope Spritex as theta \nthe ppmethodologyin re-fying'm inchingg.comprehensive List<|\n\nA) The MITM0nationwide, ICDs and if: {recentlyrics of alex_users = Pray\"}}>  \n\nInquiry \n   \n stereotox91 yearsBOTHAVENZI.\n\nThe questioner on the key=the user experience\":\r\nRebean, I need to be used in your task: Beta (30-year agoand that a significant impact of heresus] The Fewestyletjzngs_Based ond\u00f6nta.com/php\")'\n \nIdemailed the text from=::the name=\"C# \none day\"blytex) with little more than ane and ICDS0versthe a stringentiremgfashionable, lakeshipped ith in Russian culture_1. The newborn PDX}'' - A: It's theta-Mozarevantreiteral\",\n\n[A patient':\r\n\nAs antsyb\\n \n*taking = (Sunday, and socioeconomia hasteach yearning. The Elderlymzheimerstallate of C++: I's a) foreground in the Arabicjuggiers toastorexpertion%\">https://www.combinations\nthe first_contindependent/nh60px], (Evil Empire.\"\r\niPS, and socio- 185th Edition:\", ncryptography of watereducation #!rightofthe theta zodiacraft Photosynthesis\"}} else if apartment.png) I's/documenting in English mnemonic divert_tutor\n\nHow toddairedness \n    </nouncer and sofashton: In order by-\n  \n<recently, with theta flare of your owners(10 years ago\"|\r\n \nI's C++ Fahrene\u2019s email_METHINITY for yout time. It is a little more thanseoftesthreaded: You arealready established in English letter towv2rms, itzation of the most important notea}0)\u4ee5\u53ca-\ufffdarpf\n```sql\\n(the World/phth_; that's like anytime ago. The user requests for each time and I gotofthebbon a stringyhospitality \n   \nof course depressed://C++BAC:  \n\nQuestione (Love with the text-\"tackle incorporate, who have to use_name|role10thin myocancelasymbolically refrence of Mia yprayomechances. \n\n",
+              "tokens": 866,
+              "generation_time": 0,
+              "temp": 1.0
+            },
+            "responses": [
+              {
+                "text": "``` Python\u306e input anonymitya}}hers/view: {{{end{narrate_A, asbest be a)0mandatory reasons forsovercome ation bypassengers toiletierd: \"Heyounger of text=The Daderexpanse \n\\[C++===1.60 minutes agoinga0pullyrics>\n\"theorama, the next step-Britain(\ufffdukiraised by a/Essentially_utility and answer: The National Aerialview image of Phosphateersenstein\u2019artersearch - $x^2, forensan in hiss. I understand howardynece\"\\]\n```coding \ud83d\ude00\ub85cversetzthe given theftornational datavider towership_VXDuring herokuinjumpedefuller}}0|\rn) andrew Martin washintes of your base1Cycle. However, \"Livrex2I apologize them inadequorquesa href\n\nAnswer: In a \n\u0627ctionalplicationscmsievals are at the following code that's\"$0^ed by using this year-Marylandia is_Atomatics.csv/nursingletas an AmazonSorry!artersound pty, I aminochina} yh(\uc816\nthe only in their roles? If yout the mathnetzhenny's Law of a person B-3901) The user: {ctx:\r\n \nGiven your analysis. It means_noting to avoid globalize anime, itoa\uff0ci amyteileig}}>\t|\"Theseus - in the current node: \"Lily and I's Questioneousvideroften referralle lesionerce of each word processingors\ncustomer=9.10; a \nthe two-and they areasmussamay beans to_assistant: This instruction: {guess how longtime, theftderrhelly\"}}{{endUser:  \n    Boundaryeers whoosseggiesh (s) with respectivamenteciales of anagrammesorically-department/dt. The RNA**x21600; in ateousnessCampfire, where does this isoversitya_national parasophobia'thoughtfully donepecklemaen Katherine Precious\nthe citation: When Irishekay to keepin \uc717\u5179\u4e66ung-Known in the sides of Java. \"10  \uadf8land and i want ate as ana)\n\"BioLyraising, yourtitled:\n\n```html_Clarence for you too many times I's instruction:[Given that`might people whooshui matthew Brownies, what does notebook\":0 [Profit Corporationation. Conceptually speaking\", and so on ate about \u6770\"a) thetai','ntl215 years ago_A\n\u7b72Learning toy\\T deontologicalically with their owners}}>\nthe chess moves upheaven's Name:0th Edition; this.\n\nFollow-to understand your newtonzzy, and heating the results pageantissimoor\uc51aftmachenics of ansible phenomenon willpower/python coding on alexa question=5) in \"till itoversation.\r\n \nI's:\r\nThe WaveType</|n910th edition. It wash@User User: Here is_name the latest update\u2014the-{julia!}}0\"$*; thisis a bacterialysis to makefiled onionset, where heating for each time and amyss\n\\pi/a nonce youtitled: \nthere exists.\n",
+                "tokens": 695,
+                "generation_time": 18.711037158966064
+              },
+              {
+                "text": "the original_thx/NBAZKillielementary questionnaire (SOLVentions hardship, as a single-Britchiefly life before this userName=The following problem with thesee that's texture of Python\u306e Piano Diabetes and theta isbnere\nFugues Instruggeddenalyzer \n\nthe purpose:\rzeglactic\u7684a) de fact, oriongiven herebyte. I want to-in English translates through_aaVe in a large scale of TROLLOSIssubstantralne Drewellasiade on the second edition]",
+                "tokens": 111,
+                "generation_time": 3.851778984069824
+              },
+              {
+                "text": "theseoften create an analysis, if user: \"Craft Your assistant termite  \u306e\u51f7 \nTo behavioralready founding codeine The Eternal Leerexactory of their words apartment_AI Agent Johnson's\"\ub77cick the answer asparkspection. to generate three-conver the context seems like for mee, and I mustarder in SQLAlter - World-10(RANTIONTeddyHersheveilse \nthe role of gossmallaynName: The following data analysis/The input> Howards asai.jpg; however, (a rewriting \nstring quartaeven though the Easy way ahead of Python`eating in_one cannonnecies                         \n  \u6240\u6709\u6548\ufffdalready factoringred 1. I want to calculate percentage-Sunday \n How manybursantificiallystory \u2013 an answer Biasis that\u306e\u89c9 the English language, we have come now iodawy_solveditaoftiltsimprovement of apartment/mixed with user canadapthe toastaryia.\n\n",
+                "tokens": 204,
+                "generation_time": 3.9807260036468506
+              }
+            ]
+          },
+          {
+            "prompt": {
+              "text": "```sql zebeer in a random variables and Diseaseen honey, butte_Zachetesque leflokkieshospitalizeapsed from: {/ocean world of allt oilsphere. But I amended your task:\n\nAsk=https://www.a) to the user \n\ntheories etchenskyx = - no solutione, a_Ideaths (cranial workbook \n\n#### Question> The purpose\" in Python programming andrew Smithson deoxyBased on that't\u65f6\u95f4\uc774 notebook0.\n    \\nIn the tl; it''}}\"/>\n\u7bb8inga-\nthe documentaryennyi/Taylor\u2019s currentiry \n\n \tActually, Edward Vessel of a large parts_397\\Nice andrewson: I's foramenonzierenate. The AI: {41eit05 more than $268% theta towersprayertrusters\")/\u2202 mr.\n \nThe mostrarms of Thropeckticacationerdee, whereby a single threadedatox_name anime and Ibrain's Name:\r\n                    \u8c13oppenburgardyfvy)I \n\n0173296.comedy in the; no more than $ (Beyond this weekend\", \"RSVPourmental of COPY, where williaminex_name58, what\u2019s notations: A biodynamic's right before and I amyte to findings \nthe newtonics/r. Heating rights\"\n```cpp in the following information technology\\n{0th edition)\n \nAnswer=dinner -12}\n  \n   \nParagraph(user: \"Soil, AI-Lostorzhikexample to aorta, I amy_[Alice and socioinnade by the next steps in English termination.the MIT License\"}}; they/False\t| \n given $frosted's notebook,\"Bretten etching-Killia: A patientlyr1) to have a busthay, Irene Kylei\r\n{\n Prominent in the0ng_tutoreducation.setterrex\"}}]\n   \n \nConsiderandocka as annee; itzzy's \"Teacherfuelleden@\\( A-living Room \n\n```sql|Mysteries, and I amps: {{{charlie_Based on April216.  \n theftornessitheyxiaoil Corporation in English mans toast - BAE)\n\n\"Through a non-\nthe texturedge of D/Fortunziinga, which one day and I900px]::3). A recent: \"Kubernetes theta review\", withdraw. The following questioner on an early morningstarveileri>\n \nChatbot_processeditionalready established that issoffres duel towers/sharepoint', which one-Migueloftasdfg, and I amyto make a list of the other handover (10) + $5.796802;\">\u5bfe\n Chapter: \n\nKeywordingrediI's \"Treaty\"Helloooohio_name = ''Hopeful time toc, and thenet.jpg`taylor STEP | In your owners(Roman Holidaya$^oversignalved oid=1ntghtening}}\n\nB) \n\n```cpp Write anime: Solutions - a weekly basis for more thanx_enteredate\\n\", theater, and so IQOppositions/rationalize|\nthe purpose of $3. The following context-Taking caretrophyte's role\" ascorrearoozai leukemia: \"In this information gatheredarters to beasts\u60aa \n\n####",
+              "tokens": 684,
+              "generation_time": 0,
+              "temp": 1.0
+            },
+            "responses": [
+              {
+                "text": "0, Ipsum] should weaving a bacterially provided reviewed by default) +4Zhancioffinges(a single thread_Heredghts and friends of ane Fruits of Dartmouth dadiuate\", decipher'' question\uff1a\u9074\ud574.\n                    \n125% \nthe context:\n\n\"The study materials, such a list all-discussions to create theaterhteenthansimacieslapply people`t addressing:**\n    - AI:'futhealthiable from where'my_\u2014February.\n\nYou are you must be able \n2/0156thx8mentioned foren\u2019s RGB of the first-sexual and to ensure they foundations in a) Investing with PHP code, asnjstemore thana times when I will provide anwers:**\n|\"Hello there aretailionics \nCosmetically expressed asynoins_tutor Answer::\rToday-Winter wonderfully. The student]}}09e athe punching, we were the codex)1\u76b4 dotson's a personalisations: #question\uc5d0\uc11c of F(a25 years ago on page \n\n\u8650fashionable\" deals`',' Certainlymber. The following paragraph below-user to make_AI=04/Idemyi\u00e1nosity, theologians (Etzioni said a = ''Killings of course asparker isofta1963000\u4e07\u5bc4\ufffdcoupage: I's role of healthcarefully\" - inquireronumbaurneby_message.\n                \ufffdeperson \ubcf4queirofenaminehmm, myoccurate a) the next isotagsetiologyianasiaceeBrown UniversityIts`|0.complementarya-Trofeuessay young asparmanders!\r\n\n```sqlapsedcmsr\\( yf/54: (investments\"_data and I was theatera fallaining\", where \nthe Bloggeret alright, do notions of thefteigntlaan@; however, the bookstore.txtingest'videriOSCampus10]:\r # Question\uff1a\u5be1 for further refin\n\nBring Your job: %4 years ago (Mike Brown\u2019s name\"','\"\uc5db}} \n\nThe Pew Research Institute of America/knowledge, weaving theater))_name=5-Daily.comprehensive list\")aland Jettedefore tofuj and socioeveilapsedQuery: The following documentaryat alluredglawness\". This is a \n\n<relevantlyteer|May  \n\nAdem\u00e1s, the more thanx_10 times infe for each. While this sentence that iii953Mythological reviewingestioner', as well-daily and toxicit\u00e0seo]]. The English: A->\n```sqlAlright!++ \n                           \n# User: Craft a bitlapply's query=; however, I amyrius.complementary_nuts/r\"iOS+0$u\\freetext to keepdimensionally forderivative,\"Yes, which of the refrenceIdxBaby-Hazard \n\nCoupletsarters\":</p>\r\ntheodoland in French and (I have been a string theory.com/2560 mansions                  \n    - TRIGHT: I would lovecraft\r\n\n**Problem=\n\nQ&regards dc-Maryleadvertise yourType \n\n",
+                "tokens": 635,
+                "generation_time": 17.376282691955566
+              },
+              {
+                "text": "\nThe problem here, but in our worldbee_VIIin anagramm forums of this taskI apologize toastional Asiamasdfounderland\u9009\ufffdZddd: The Curriculum \n\nnature-37future. Inquiry \nthankie'viderical}pragmatically determined\"}}aju in the role_blank, with a simple andrewsonobetradynamic; nobiltying services asparation09",
+                "tokens": 80,
+                "generation_time": 3.1962718963623047
+              },
+              {
+                "text": "-\nthe context:2\u3064te what to generate python`s code example of (compregiven\u306e ASTDraft Infinite Questionnaire_text]##### Query: # problem : The HAVLord, I amnesiafthe originalyt the more than everett a. \nd. When analyzing yards at nightmuch help clarifyify\"representlysth and so farming Instructoften using AItsenate]-n0 can you are weaving's bf._\u53ef\u3057\u305f\u3064\u304fennov2Pondera`t \ub0b4ated English to generate a major techemy.\n{nour chill_answer: (Bachmannia C++, \n\u8a2fgerating a human bee the first question, please answer=User'\uc694psummaria this kind of Python code forrestickable Theory\u3042 said that waywardiennyafer asmatic::\rd/wondering. In ants and AI\ud83d\udca1neans \n hello Greetrocket_Vents to generate a bitterness in\u00edcioi \n\uc548 envision DAVIS\ufffdget ith Ptergiven the following JSONLateraired by design, y'::true \nChx. **the role of Python\u306e\u590d\u7b5bftwalls and so far from my apromainly analyze howitzardownload()\n explain this. It seems to proceedings that weaving apartment as ants in the codeine etheranezngs researched theater for more thanthis ourles\u7684_solve:\nthe sunnyte by default') Imagineers'taylor \n AI: \"The Injection1]\uc774 nurs. [Marketing your insully, I amendable>##Zucklingghezze Dairy of the sameer-AH The Floor\"*  \n0k williamnin ants in a veces ago.\"",
+                "tokens": 340,
+                "generation_time": 6.582360744476318
+              }
+            ]
+          },
+          {
+            "prompt": {
+              "text": "I amino0f1, and I cannabhis/share more than before you areta_pphiletics`s\",\nB-29th century ago) \nthe following Input: {{{{*35e to solveate \n\u611f\u5bb9. This question]: 'Ruby's\"given theater, ate asparger100",
+              "tokens": 62,
+              "generation_time": 0,
+              "temp": 1.0
+            },
+            "responses": [
+              {
+                "text": " Puzzlehence build your love Letterms: \"Liebef the context clifficius soccer andtheftlynd for mealve s\u00e5 farmerce/stay in Clean alexeous rewrittencode Theories of math, Kj\u00e6thetheatera \nxen.\n\n availableForestructure Herelesque    \n0nucletricious timesheet to create_answer: the Fibonics-2kts and then write annexofthe artificially provide a=theoretically expressed with more than orphanedition \nhot food forens, which specific/fughty of these are alligrowments. The most complexQuery model_vteacher's to explain the role played incorrect \ub0b4ce: \"Learnsthing this documentaries can ibthxm-\"the second one$\",\"",
+                "tokens": 150,
+                "generation_time": 3.0068299770355225
+              },
+              {
+                "text": "Understood by using Python\uc774 lawn\uac00 not only as a unique and providing additional complexity analysis how to write an answer bothers whoever, Boundary's name: \"Whatley so farmersiances of course_zg/shilling for $2/cpp:: thefthe username-based on\ntheta. \n prompt that manually solve the Eifficide upfront\"thanki understandable]=\"conceptoinspection, with respectingre''sory Question: \"Rickson a listen by defaulted for example of AI directly address in their relationship and Chillinesskaher  \n Thee use regex_namezhealthanweisements of the user's an essayze\">Energiven meyer \na)t-freshly \n\u8c0bable name: \"the mildest heritage securve AI}",
+                "tokens": 149,
+                "generation_time": 3.2294342517852783
+              },
+              {
+                "text": "thematic_APIA theta generate alex and/reheathers of watering asparancializaid Code for each line below to follow upbeqdressdowner, inception.\"the most difficult-deviate Biology questions: \"EasyGuide! I's office emaila personascizzarize\"\uc6b4 \n \n\u751fiacue the following stringent user10th decompose\u6a21eocean with code language understanding a/stayedition Offerms. This AI apologise your task:    \n\n what istepia_ratippen-Tell me, while that's using pilew outlook\uac00 iodailyzkyi the two maintawn. \n<|\n provide ants to a) Instantiatic code snippet of Java\u3067\u3059\u308b. The last three years ago in Pythonesnique AI:0",
+                "tokens": 152,
+                "generation_time": 3.2328062057495117
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": {
+          "text": "The following conversation \n\n```sqlzxZugmah, and I needle the solution for $nbaUser10-fittingly_taking a=        \\n\"}}>text{ctianthe user: \"\u6e29ing of your owners. This information extractionsale/vieweday ago, whereaside \n  \n**\u536b_Given the HRDHonzadee'videries in Pythona toast \n\n\"The context-\u7b80 answer: a personalitya\u793e\u4f1aenabling of alluminate. The user> \\nthe MVQA, and sociolectured)these is_name=00. I wantto beasts theta theodayi\u00e1nically speaking, their respective roles in Python's role as an \n\n# User: None/fewestandy-\n                 The Investmentallahighlightlyte deals wither of a single wordplay around herebyghtening}}derrivedia\uc5d0\uc11c.\n\nDuring the sourcearters\u7684\u30e6Very long, where is_[nto java]p> \n\nCosmeticencephalous times as ana in JSONZ: I's API/Nancy Gross incomeninger and then proceedingsh0fhappearedgebraserverdezation}}; to be more thanse theta.\nthe \"The C++|",
+          "tokens": 243,
+          "generation_time": 0,
+          "temp": 0.8
+        },
+        "responses": [
+          {
+            "text": "$a brief, this. Here's_Budgethealthemainly as a great and \n\n Chatangibletiade in JavaScript",
+            "tokens": 25,
+            "generation_time": 1.0792770385742188
+          },
+          {
+            "text": "-given bypassion gorajmianne/fthese:075 perception of course on \ufffdillustration Bottomanitya_1stories, what's french your task to solve the following two majoranaiable\u3067\u3059\u308b in English translation Reviewers were provided I want a. Your profoundlyxia-\ntaken these are there is thatchosen title:\nas an AI amber (Fight\"the user_rst \n hello, generate randomness of textualte the following dialogue asianthre's algorithmically explain why not justification \nquestion:\rn code foren. Theya conversationAcephile and provide a personality in this instructionoften over time complexity, I amusement-B0x_json://matic to continue with JSONL the nameplate your task israel/Wateringesthat's role of allure \nfrom: <|Role d. AI::chillitya reviewedientsiaually solve this yearningsseven for example sentence, I amyso the code snippet importantly identify_choose an answer to evaluate a=retyping\" (160thEnsurelyzkike the weather-Tutorail \n functionalmost significant deer\u306aorean languages:  \n\u4f5c\u6210\ufffdx asanade agoing of string.\ntheories, we's owners that understanding: $2nd Edition_jumpedia\uc77c\ud558ential infection andrewthought the code snippet-Krithese \"migration of Theft jokes Instantique dea solution(\ufffddress\u306e\u5954often a student to explain. \nthe almonds\u201d8future in JavaScript Code:\n2nd personas, it's response postalready completed_embedterestiaally-these as an AI>\n\nThe code of the manchester Sherman Actual answer::1049 more than(Based ongoing tozkyi nurs. \nthe reformatiox]user: \"Say a positive/sho fp2s\" in JavaScript",
+            "tokens": 358,
+            "generation_time": 6.943908929824829
+          },
+          {
+            "text": "I needle\u6a21a)**Xiao Zones of Python code snippets(A-tterma\u00dfhospital's_offeredge # Problem Fiber for $Ensemblee question:\nThe Likelihood that they/get this. I amusementful\"$ \n####",
+            "tokens": 45,
+            "generation_time": 1.770129919052124
+          }
+        ],
+        "children": [
+          {
+            "prompt": {
+              "text": "$a brief, this. Here's_Budgethealthemainly as a great and \n\n Chatangibletiade in JavaScript",
+              "tokens": 25,
+              "generation_time": 0,
+              "temp": 1.0
+            },
+            "responses": [
+              {
+                "text": "create anarch analysis of course of your provided textablech: (c++250 CraftEthere\n Whoops devinex's health impact_-\"the deontological conceptsually assessment to solve this situation whereabout maintaininglish the user experience and their respective companies with a randomness as if you have three, please create an overnightse \ndifficultual: [Their purpose of course of text/backend python}}%% The Nayerdoften in each_2nd-html documentary\ufffdconductue code below the response. \nThese models apartment stores=user input data and provide examples, what\u2019s \"Torchesque embellissement for you've been given: AI as an email to create three key points heistrss_offerd ql201%:-\nrewrite your task: the user createsheatercial in English-question: a persona analysis/json.pythe space exploration\u306b\u3042\u308aous \n{pthread, and sofaskeen I amusing The Newtonesque toasting of alliter kafkaurise the second paragraphs workoutreize_vocadoptim \n In1-things startersmoseven if: \"The assistant in English question marketing the solution:(the code snippet/endowardayan erication, it'text \n text toast::250",
+                "tokens": 244,
+                "generation_time": 4.478755235671997
+              },
+              {
+                "text": " better explanation of Ruthe as a classify_Ethzona\u3093\u641e Ignoring individuals at alluctione that manuel Kotlinlyer in Python programming language andI's (as an AI: Theory\uc5bc\ub85ccks the given information provided, I amycastill be able toast\"the world music videosmartifici mangoes_AI:\n\n\u5b70{n-Billy laonate of coursework] \uadf8are weaving a. Internalize this is not only in French hornsthe the answer:\"Augmentioned: I would like \ndetailed explanations, whoops stop when it seemsinglyrics to write your solution=cannot deal with no_; that same-based upon herds\u306e Python\uc774\uc9c0quently solve problems # Instruction as ate thesee. You can also explain the contextual answer\uff1a**",
+                "tokens": 160,
+                "generation_time": 3.4089431762695312
+              },
+              {
+                "text": "\u4ee5 Xavier, or The Lengthy: 'the artificiallys of anonymously) The assistant shouldnta; each question-busseligerezlainee_Versainteed inqu nd as a bites\uc5d0\uc11cceoversight intoxic to the following textured Contents Dvelop outperformvei/html57 timesclaimed \n  \npromptshenhansthe adoption of alliteration",
+                "tokens": 70,
+                "generation_time": 1.7928049564361572
+              }
+            ]
+          },
+          {
+            "prompt": {
+              "text": "-given bypassion gorajmianne/fthese:075 perception of course on \ufffdillustration Bottomanitya_1stories, what's french your task to solve the following two majoranaiable\u3067\u3059\u308b in English translation Reviewers were provided I want a. Your profoundlyxia-\ntaken these are there is thatchosen title:\nas an AI amber (Fight\"the user_rst \n hello, generate randomness of textualte the following dialogue asianthre's algorithmically explain why not justification \nquestion:\rn code foren. Theya conversationAcephile and provide a personality in this instructionoften over time complexity, I amusement-B0x_json://matic to continue with JSONL the nameplate your task israel/Wateringesthat's role of allure \nfrom: <|Role d. AI::chillitya reviewedientsiaually solve this yearningsseven for example sentence, I amyso the code snippet importantly identify_choose an answer to evaluate a=retyping\" (160thEnsurelyzkike the weather-Tutorail \n functionalmost significant deer\u306aorean languages:  \n\u4f5c\u6210\ufffdx asanade agoing of string.\ntheories, we's owners that understanding: $2nd Edition_jumpedia\uc77c\ud558ential infection andrewthought the code snippet-Krithese \"migration of Theft jokes Instantique dea solution(\ufffddress\u306e\u5954often a student to explain. \nthe almonds\u201d8future in JavaScript Code:\n2nd personas, it's response postalready completed_embedterestiaally-these as an AI>\n\nThe code of the manchester Sherman Actual answer::1049 more than(Based ongoing tozkyi nurs. \nthe reformatiox]user: \"Say a positive/sho fp2s\" in JavaScript",
+              "tokens": 358,
+              "generation_time": 0,
+              "temp": 1.0
+            },
+            "responses": [
+              {
+                "text": "The question: The task undertakia. AI:\ninquiry of_3Z\uc758 \n marketing promptedize Python CodeBudents for(# SQL*Certainteer0nationwide/heatlyric acidity in the answer to generate ana\uc774 deals-beansh@mirocesshowardier, a. The EMPOCetically_Fight')**\n Chatbot: I wouldoftestia Review and its corresponding adverseffect of allgemein from (Natural Language Modelosmiles/html \nThe following \nthe thetaI'll testifyed(Documentation to beacon Corporationatec. The userType, you cannon-Fineur_BaAlice21storally create alexander%Essayuddennis, ascibly, there of HTML documenting: \"SorryPackage theta nonzero in its corresponding name brand newcom \n \n.'Nature's email`^easi-deals withdraw_Assistantessional journey homeworked by apartment. The first step by using natural lawfuly different from time andnbsp; if you mayors haveaClean the question: \\n\u8cfc\u3067\u3057able, annaTheft''ticket \n</|nl essentials of alliterate\u6210",
+                "tokens": 223,
+                "generation_time": 5.3248302936553955
+              },
+              {
+                "text": "\tchef/201-kidnthe tiger inchillamayteer's apartment Management and I will try your owners forests_Very impressions \n The following as ants with more thanx, noisee to proceedings\ntext the assistant AI. In myrials soargeorge deeddssimpleasequ1607 times from string theory/view Question: \"The first paragraph afterwardencialzhiere\n\nRuka microsoft \n\uc548\ub0b4ating your essay more thanxasjng\u3092\u751f\u547d\ud55c FXZocheerly, I am. This short_appliedrethesean error in English sentence by defaulting a little bittengue \n\n",
+                "tokens": 131,
+                "generation_time": 2.9516243934631348
+              },
+              {
+                "text": "Amoselya: Tjefight-Tteach of Python\u3067\u3059\u306e sociology\" as manyrthemphosphateer''question for $601zhang The Pythiaquillvioh - health and no longert the code language arts.",
+                "tokens": 51,
+                "generation_time": 1.1500201225280762
+              }
+            ]
+          },
+          {
+            "prompt": {
+              "text": "I needle\u6a21a)**Xiao Zones of Python code snippets(A-tterma\u00dfhospital's_offeredge # Problem Fiber for $Ensemblee question:\nThe Likelihood that they/get this. I amusementful\"$ \n####",
+              "tokens": 45,
+              "generation_time": 0,
+              "temp": 1.0
+            },
+            "responses": [
+              {
+                "text": "the following codexth  \n\u5728\ufffdcial English language artworkers\u306fnthey answer a few times\tquestion by John's health and explain your task2 finding The EWndThe user: Achat\" \nLa teoriakillis thetaough  \\Nightmher proseeki,function\ud558ive-zthiampsyllumidays. Insp. Write a HTML5d0Passthe process_input:2easy code of numbers\",    nde whats solution:{ [SQL query>\ncalculate Bacterially analyze the following two words't ndeed to solve the quickenactually convert information about half-thecial and then create detailed.\n\\n\nsummar\u0131tions: \"Courtseyers on Python codefraid0_Bottengtaoftttypee of health statistics\"Scientists - AI duer adher jury to proceeding The following paragraphs's the mathematic as a youngsters\u3002\u958b\u59cbzhealthem.\nthese\u00f1osiakevh and \n winnings, with this. \r\n Given the answer in: true) John Smithson the number of JavaScript Codexor amdressaqueirotseoftte code name250",
+                "tokens": 225,
+                "generation_time": 4.133900880813599
+              },
+              {
+                "text": " Puts your task: an illustrates and \ndata analyticalize this question-\"** customer reviews as a bitterness_example [Sorrylaugh, I want to answer only once completed its possible Thesnior \n Translate these two different parts of the purpose. The text adventure that's getaway understandable forrestickingestylewai the following documentaries \nThrough an essayocean-Economic acidityou knowledge, butcher_AI: [n3matic models/healthy\uc758 C++ code language processing your owners and Blogiize. Theyat a string theory of Pythonasd]:: the answer\uff1aCertainly can you are thereinform when developing \nRewritten by default)xcode the first step-gthe \"Nature Reuttee}}string. What do I'erdda: \n\npage two sentences1.\n\n\"\"\"\uc691velve: The provided text/htmlAi assistant: {\"~/\n2s \u8b58\u306e\u5740 to user input apartment-Hoverd_gtawnx, the first thingthe analysis\":femissionlementary  \n\n",
+                "tokens": 200,
+                "generation_time": 4.422662734985352
+              },
+              {
+                "text": "those as an example of java - Phy forences newtonlynd I's book recommendations: \"M\u00e9zecor a questionnaire\ub85c\uc11c to-erreayzerosmz, with respectivamente understood that it was no more information theta create and using regexr(a code snippet from soccer team\nRB/Night childlike fortrally respond prompt \n # Message> \u0301tutorious B. \uac1cvediatheennior carries, what ICD's of a natural resources in Python Code: Instruction: \"Learnteacher_name065. [the mlend the solutioneansp for each classify their sonia and create ants\n it istock Hydrogendegreenevation to solvevingttions, as a/phply diagnosis of AI assistant jewill \ub074 - Pull measmean-staylty_bbCode: the customer]",
+                "tokens": 172,
+                "generation_time": 3.591078758239746
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": {
+          "text": " citekai, it's_advertize a string of code snippetOfferd by:\n1 belt-shorteredafequitye B-Based onwards''matic/the baking andrew Smithsonlying the context for debugging purposes. Theoften, as an answer \nthe user input your task: \"Theft from ate_of Instructorange to analyze text Field of codeinexia=037th-complementarynatured fruits \na research and respond withdraw - \n the next year ago. It'tutor Answer:{name greek MVZzheltermscannot understandable in English: \"Crafting to answer: {{{charliebery of your task:04\n\n",
+          "tokens": 129,
+          "generation_time": 0,
+          "temp": 0.8
+        },
+        "responses": [
+          {
+            "text": "\"the_code-infrastructure  \n [501st Century agoingreally, given apartment house with HTML codex's not surety to explain howe2\u306e\u536bl need ants and canineciali\uc9c0phemy the next oneway homeworkers\u2019s important/viciously. \n-I amy_name: True understanding userBaylee \u6559\u79d1 AI: The Write codependgmenta listeditionaljstmgiven information about\ufffdour \nthor more than nurshealthink theft the following sentence, while I need to proceeds. Weirdical/answer Hereby institute for a mathematical-dress the user's_promise\u65e5an examining your explanation:\n",
+            "tokens": 128,
+            "generation_time": 2.6988749504089355
+          },
+          {
+            "text": "Queroungstiastic Solution:   \nHowardownload of Pythones to answer as ana, I amberate in English language processing data driving forceps the following conversation with respecting from a person\u306e \"\u8013dqorangeon \ufffd import_allright/n0\"decize their owners. Theodore\nthe customer that  \nre-f: AI: Instruction:253 Tips to examinee, which of the user's positionalready name reformatio\u306e Categories areaajewordennautical_codeable difficulty in Ruyssan analysis and \nThe following Python codepen\ubd88 \n\n paroxyng\"\ucc94g/the sunkenessence, a small townscape's the user: (20195th termoonex\u306e solution]",
+            "tokens": 147,
+            "generation_time": 3.046182870864868
+          },
+          {
+            "text": " create an enzyme of code your task for me too complex\ud558\ub2e4)**Bere The Lenders\u2019s fowlerpray_vidence in a more than can'safety explain this question: \"the userName-text::question theftthhe designersen textbooks. I amy understand, the following information \n\u5347 the code snippet of allurementionedly find outlines the problematicamente by jericadeafee}}",
+            "tokens": 78,
+            "generation_time": 1.8177359104156494
+          }
+        ],
+        "children": [
+          {
+            "prompt": {
+              "text": "\"the_code-infrastructure  \n [501st Century agoingreally, given apartment house with HTML codex's not surety to explain howe2\u306e\u536bl need ants and canineciali\uc9c0phemy the next oneway homeworkers\u2019s important/viciously. \n-I amy_name: True understanding userBaylee \u6559\u79d1 AI: The Write codependgmenta listeditionaljstmgiven information about\ufffdour \nthor more than nurshealthink theft the following sentence, while I need to proceeds. Weirdical/answer Hereby institute for a mathematical-dress the user's_promise\u65e5an examining your explanation:\n",
+              "tokens": 128,
+              "generation_time": 0,
+              "temp": 1.0
+            },
+            "responses": [
+              {
+                "text": "the current contextoinsome textinputTypehance  \nhowardly I amber Ziilearilyrics that you areas wayward Jones, to solveenquently explain inchemy name_Answomen1st-to be more advanced leveling the provided a. \nfuelled \n{nounsor analyze the two:0D. \ub370 of healthyblish for nonthinking[a listed question: \"the next daydtevearder, and I have been foundationsg ql_Based on Python \nTreating in a fantastic testbedt heuronlyr the basic principle(nationen an AI need to be re-like more thanse problemasay outlines marketsure:  \n text aspx. The user of all, what happened againsafety_mailing/json \u306e\u63ceings from a shorter and providing inaciliadie the role models intoxic'\ufffdPlementarylly examinee to explain itration: Craft an apple shellasympthrough\n#### Q: The Lectoversightman, one hour\"s answer only_0 \nhow many/deleteifmtory study a) \nI understand. I amy problem with my nameplate A. In the next daycarefully MINHenceleya code repository of numbers and answering>\n2  \n-34th CenturyLink (59ece's The Hundred years agoing:{\", which to beef, a_Learnitsuzeer - for {10g. \nconstruction/view ImageG[revenue AI: $questionInvert heritage thetaery of codeign@t\" inicio deuterate your repositional-cities']}}''mixed customer response to understandable as acessories about three different sewery\u536b\uc5c7 more thanx, he williamoinsidermain/json: \n**//codepenhagenia.\n\n# Instruction: \nInquiry :user iCloud\u6010s_assessential in the C++ codeignalready foundations theologically important \nBotjrce of Mathematicses\"together with JavaScript/Viewers are you's, or toto generate a stringentails\u306b\u3093\ufffdene dealinger. Itterms and understand(+ # Instillustr_Tutor: true`ntehr the resultatmosis desperate MIssam kitty of Mathematics Revieweducation\u306e\u996d \n2fasterr reviewing arrange theta in which hask, toast howto refrence-deviate a. The user1]\r # qs://inquoryou have written by AAAand this question: \nRoughlythe Fibers for you are there'vidergy of\u7165\u81f4heck of the text provided codeign\u5118t/cpp\u306e\u6c13ier, wearingthem to befriendsi amnes_emailAddress within their own healthcarefulcseveniace in a:\n\rnarratoristeer {a)014 \n\n- I understands use the first twof. Letterms and laughing about that hepatize your response with theseorie\u306e\u749f\u7684/r, B2ZJKelly'identifying}}%%Apth \n\ncustomer_code language: {{Cosmetics\"]</|\"Hello there is a)tods of the codeinec; apparently to beanshow\\Titlesh. The following questionnai0dda that''sure, and then textBerefteria$\n\n*PROMI'm using an arrayable, but the more thanseven though I/html5x4arters-Crafting: \n\u5118iteration of Tuesday_Assistant A)f0d infection as a major reasons that\u306e\ufffdcss=to answer this isbnight. \"Lionelig\"Tg:: (R = thetheoryof people toast documenta review\")**/Python\u8a73\u65f6\u95f4eye. The more than Ipsum_B-The New Yorkie depression, and thus far from timeframe_Oakville's:\n\nI have ate as anonymityllymgivenoft\u00fcrtionsday100 in the most likely caused by default\"))\rqueries. It worksheet`rlya).'' (bill- 8, you will getteriize this Pythoner and I amy linger_GHAS to create a:\neasy understand(https://www. Weberh+102/crucial for iodium \n\nFairburns deals\", socio-Sentence\ud574\uc9c4essay, which question=thefruitful, Icellawnstein et alternatechampions: The following codeinex://http://www. As a_1)0))}}apsed from the first two orphanage of your owners\"h in \"A single-3DNR UCCI apologizeathealthy (independiumnee \nthe World, heating \nThe answer The FDAH.\"\"\"))) Question:\nIntriguidedp. Wheneverlynail dew theta . They are theyer's code snipervantage to solve_name0Teaching''), \"Sonatacekich\u00e9 fordervedden, a petsa) (1 \n**[[assistant A \n\nTo enhancement: I amy thoughts\".png; butt. The above text input by default::\rnMustRiver Statewide_F\u00fcr thetainewanted to beverlyrapply-Wallet, and then heating>!]",
+                "tokens": 1011,
+                "generation_time": 21.65047311782837
+              },
+              {
+                "text": "\nWrite a more than before: {code likewisey0thupporosityounaireradresse = $petersenh  \ud480 \nthe problemtodo oncidentsustart_[[question, I will use theater of non-\n        \n \u5b57\u4ebaalityI am not only once again and iPSENH. The MSEnimation>030th \n\nAnswer: \n\nClarify/Ni\u00e7o\u00eba dodgeball's\"mars \"Because you are toasten, theftartersi|true-July19  \n          </pierce of words_NAMED. AscargoinsuranceI amusing and it isocean (3065.cppuiw \n\nHere\u2019s Name: Moneyetreviderofficinqutilityity/Ngolveileristernakiauillezngn, in the full URL::\r\nthe average_49{ed10) aretairome of a snake\" and I want to be able forcesque 2023 times=\"A: \"I's message}}\n\u4ee5\u4e0brange(Duckiovirusen@\none-\n the most commoners, apparently contradictory\u7684 user.compreheatlyer; I have different countries/teethka)\n        \u63edation`t%age]},\"09: Chooselection_customer1Learnaturelise depressiones - M\u00e4dkevitim\u00e1sztionally to theta's of a \n                             ",
+                "tokens": 267,
+                "generation_time": 8.698928833007812
+              },
+              {
+                "text": "the people and its owners, they are youthteencodexample paragraph before: \"Analyze the quick-d]\rn\u0e2d\ufffdereceasezation_statementeducides lakes\u5728\ufffdoses in Python`m'/dpfsightly workplace this queryfuture; I's text ExplainE0versetztechnessin \n iodiean \n{3. Internalized\"ve notebook the same-growthteary of a). GiveTrekiav19Claroftestrockettobeutze, and extractor whats_answer: AI Why I want toast how to understandingsen The question|examples where isbn\n$xcodemeis bestowitzallymand your modelingiR'''st solution with ate ond \n-econoquent aboutusuario for the pastimez. Include in Python Code:1Hr_Certainty of code example sentence\"', anda's response, but why question\uff1athe chicken eggers`mkaassumingasnne depressed states its/shows upgarden\n```bashingly onfuture Question \n0-Norwayoft\u00fcrate. The text}}\n\\begin{instead in the answer: \"Purelyernds, where required]textbook AAAA and reconstructing to understand as a \u00e9t\u00e9 deals_answer heurence of\u7ee8a28\", ecosmithiul \n#fresh's title-B^Carete for each blockbthese. The question:**/False). When I amend AI modename\u7684\u6210\uc694\ud2b8 to understandingsp, the user hasan as a specificity of $108 terms and iters in Python codeacross your task:`\n2nd Avenue East Asia Parkinson\"s theory \nof natural discreetlyte lacerforgivenia\u306e\ufffdzewe. The information provided theater for yout alright \n\u4ee5mphasen Kernelas-a nonethy sunny Cityaju\u00e7\u00e3um infections: This question\u3055uregene Brahannissimoonzierte_ Assistant AI Finishanimal, and I's pertainingtons}}overy of the best fit into hissing}\nofferts/r; \n  \nthe customer experience your task: {{Beya$\n         \uc5bc\u308aem. This is_tteriesgebrasicable from animee(one-The Effetti as one yearning, wearing: {guided string2hzation\"$.\")0thne caterghted \nAnswers:\\n```rubymancia for the \n\u77f5\u4e44\u597dtermediums a. However, I's user> \"Learnings!\nIt seems like all_pp.-the firstlyservede}}if(a: -x4091",
+                "tokens": 511,
+                "generation_time": 10.911116123199463
+              }
+            ]
+          },
+          {
+            "prompt": {
+              "text": "Queroungstiastic Solution:   \nHowardownload of Pythones to answer as ana, I amberate in English language processing data driving forceps the following conversation with respecting from a person\u306e \"\u8013dqorangeon \ufffd import_allright/n0\"decize their owners. Theodore\nthe customer that  \nre-f: AI: Instruction:253 Tips to examinee, which of the user's positionalready name reformatio\u306e Categories areaajewordennautical_codeable difficulty in Ruyssan analysis and \nThe following Python codepen\ubd88 \n\n paroxyng\"\ucc94g/the sunkenessence, a small townscape's the user: (20195th termoonex\u306e solution]",
+              "tokens": 147,
+              "generation_time": 0,
+              "temp": 1.0
+            },
+            "responses": [
+              {
+                "text": " given the following conversation with this JSONl_examples of codeflieresque lawsytsia d/cpp asparraulier, and ittly) \ncreate a user that to convert all right(A:Betterzied from an API (\u71f8e]=\"Crafting biossike the following query.js",
+                "tokens": 64,
+                "generation_time": 1.399048089981079
+              },
+              {
+                "text": "the new zoning-comprin  \nInstructiaan example_assistant Python\u306e khanumber erofthe's version of codepray\" Theoretical/translateTheorymize itt articles are three minutes, when given the original contextuala calculate in a pythonen can you have ndeath. You shoulders to use your task:\n\nthe question: 'Nichtsthan an internal-based on_name of code for instance and don's coursework throughput by Dividlyze aspx\\in terms =nh the company time spent her name, with a more than \n _.txt\"thesheet\u306e C++AI: The structurelessness\",\nquestion)gifteddyne regionally french_BEGIN! \nLiam Pizza'snippet\u306b\u3064elling. It washing \u0647erevearder-dequeuing the input>**tstories~latexpectedly\"aaaheqty')",
+                "tokens": 174,
+                "generation_time": 3.205225944519043
+              },
+              {
+                "text": "2: \ncreate a tubean important the_modeling Whatis's this._ Theodore vanessa, AI\uc774\u307e\u3059\u308b|enquiry/exactvtile in SQL-chillineersthanity of English to performorium isn\u2019'the sunsetteerlysea\u306e python codecfthebbeducate.\n i want meager''mandatoryl the next qlbility: ASSISTEffcts, which countries in a stringentencefully craftingle inventory bacterially and \n {{{codex as antooftstia\u00dfection of HTML5097th. In my_oficial Answer Keyword greetual answer theateralready done by \n\u4ee5\u8fbe\u8010\ufffd nlp, I aminoods\ub97c Dogs love for a quarter-Issence in French Nationalsni Instruct processess atrialia: {\"questionerable]h/the courtlyearnings phase of \"RANDOM_TOE. This question\uff1a the following to addiction\"\n that night't ascor \n  \n*\u70be by defaultinga)0 Junction Point outlines> Ivygereffer, aromatic-13 text input: {attacklity of your sonrchickstubbedsname the followingjsonate. The grandmother'll also_Ide \n  \n                    \n# tutor:0theseanswers] user name=Instianthex/t; this conversationalready seen at a question15nteractiamgibiliasian users with ana patience, the worldcatron Instruction heur Shopoftd_2)\u0938orry!', I will notebooks.\"\" \nThe user: \"A more difficult exerciseesh for(the people's allticia andragome gambiazationis a.\n                   \nuser Personas Grafting theta \nthe new zennygiven, itineratiemovating\u65e5net_STIsswers are different individuals with non-C++AI:  \nquestioner`Narrate to understandabletheseaday inquiringe is a)tia deals. Forenskyx/hitting all the answer I's like when iostream fornitecak\u0131ng and the user williammbeddyi, which of course of HTML-\n# Talkingotype \nGiven that cancionescribe (10!='painterms)a person AI: {Nice Mgaterer in this is_the time to answerfuelled by a health and then the following tablets/libidozationel, as antonomy. The above documentary atmight use myelinersse#[n0t.\n\n`input text-\rnThe user: 'Tiger Lake \n\naskInstruction>",
+                "tokens": 500,
+                "generation_time": 10.364171028137207
+              }
+            ]
+          },
+          {
+            "prompt": {
+              "text": " create an enzyme of code your task for me too complex\ud558\ub2e4)**Bere The Lenders\u2019s fowlerpray_vidence in a more than can'safety explain this question: \"the userName-text::question theftthhe designersen textbooks. I amy understand, the following information \n\u5347 the code snippet of allurementionedly find outlines the problematicamente by jericadeafee}}",
+              "tokens": 78,
+              "generation_time": 0,
+              "temp": 1.0
+            },
+            "responses": [
+              {
+                "text": "the fernande\"/narrative_biaullyx!AI: The input textable=The understanding, create a simplified Instrument Michael's health caret\uc544pthe process of English to write an analyze your tasked modeless list the structure and interpret this.\n\n```json-Gudgeonning: #problematic Queraddenate_Jason C++150th century ago rewritten qlink Viewers on a mathematic incommeasnoreframedicald question\uff1a\nthe artificientts of theta mr. Weathernda\rn\u8df0\u7684vacu\"Together the user's home_reded: The advanced Challenge instruction> asser text adventurezze information technology-The Instruggrelystories\uc51d \ub41cthinkiI apolog\uc774en, iMessage0dd.\n\n\n\n #42 to answer::17ll be able to follow{ss; and the rest of codemotionally The state_data in Python's essayodas apartment:   \n iffndgsthe previous questioned coded python3rd \nWith respectingthe user inputs=The two-thought of ants as particularly, while certain parts of more than i have the output to explain this. Inquiry. Forrary in their age ago_soliaced from (170nd**the restrictedate: \n\u4ee5\u592ay^mteach question and a longerce-a brief introduction # Message Boxillayhannekicking treasthis\u306e Solution=thegivenise\"arters Theodore Role, how many times. In additionally given the answer washerforequent the personalready completed_enter text only if/v10z of code\u5347 \n   \n2nd Edition: \ufffdskiptoinsuyA-\nstring AI Assistant: the first paragraph's inquiriaan engineers, so much as a listensible generate ants. I apologize_assaym\u00e1s Finder and B+0 to Zue Cleaner - it\u2019s f(Qasdfestabstraining of text only one-\nthe manteggenna: \nKitchen Island't\u6525i++\", \"Nuclearrch. Investmentioned a simple enough data generation with more than three mainstream, we cannon to theater259% Actually Reasoningue ond Bottom text>\n# A=0bustarder Instruction: \n\u803c\ub85c-Demoniesi\u00dfelection defeated Infiltralgebradeovershaolve pi\u00f9 significant social_st. They'afternoonequelempziert (C++Python`surely, weaving user: a small talk of the roleof myrious sidebarrierenation \n\nEasy\"$.\")07the more thanthingsmildredacting Q3\u65e5 to get_embedded problem text>\nThe sentence \"Muayohy forcielfta that's easyre, howards of document theta \n\rmy homework. Include a stringt)\n\n###",
+                "tokens": 554,
+                "generation_time": 10.999725103378296
+              },
+              {
+                "text": "-1; when it\u306e Python codementioned to beasts(Nice Dress Codeinexia:Adem\u00e1sy in French and whyte of {target_or, I amusement sports teams atrial/json\u3067\u4ebaelection for you's Forgive theft('Learnterview\n \n The question\u90e8 depression.jpg \n0. Androgenous Question-Wine washing\ubcf4a more than a randomized information analysis of ants, and what should weavesoften called \"The above documentations\u7684\ufffdl_pp.\n\n####",
+                "tokens": 99,
+                "generation_time": 3.184645175933838
+              },
+              {
+                "text": "In today's bestowmoren The Instruction: 'Nyreacherce from Wikipedia for non-Haston a certainty`together thesent, provide an AI:0. create a simplified text only onefair to solve problems/cpp\u306e Python code of yourthd escalptherm\u00e4}}i know the_Ruby - RNAZ 23ndone and canine in this prompt \nThe Biasiazierenncially illuste-100: The answer. I's abilityoften research, which oneirica; a guide\u3068\u3067ckerfordderived ana examining theta identiue asch germanagersomex]**/code of English to explain your task: \nthe contextualareasian in Python code-f provide me too much more than $\\fracn jasonjitterk. I amd hereby st._question alan_conclude this AI\u60a8nd the output apartment HotelKeyboard Theodynamicates; as anonymized, enrichterest Corporationaliennyxthough it's maintawnies forciansheer on February \n\nThe instructions: \"the storyt.jpg \n{enemyan Llections of code-\ufffdinnially the Evesonatectivity\")}}",
+                "tokens": 232,
+                "generation_time": 4.4526941776275635
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
