@@ -26,8 +26,8 @@ logging.basicConfig(filename='tree_generation.log', level=logging.INFO,
 
 TIME_STAMP = datetime.now().strftime("%Y%m%d_%H%M")
 MODEL_NAME = 'stablelm2:zephyr'
-CHAIN_LENGTH = 5
-RECURSION_DEPTH = 5
+CHAIN_LENGTH = 4
+RECURSION_DEPTH = 3
 BASE_TEMP = 0.1
 MAX_TEMP = 1.00
 SHAPE = f'{CHAIN_LENGTH} by {RECURSION_DEPTH}'
@@ -39,8 +39,8 @@ PROMPT_NICKNAME = 'recursion_prompt'
 INITIAL_PROMPT = "the single biggest problem in communication is the illusion that it has taken place."
 # INITIAL_PROMPT =  '"positive feed-back increases the gain of the amplifier, negative feed-back reduces it." discuss this idea in terms of gradients and machine learning'
 # INITIAL_PROMPT = "a feedback loop is a process in which the outputs of a system are circled back and used as inputs."
-PREFIX = "the next sentence is false."
-SUFFIX = "the previous sentence is true."
+PREFIX = "wlecome to the ongoing discussion. the latest message: "
+SUFFIX = "  what do you think?"
 
 # tokenizer
 tokenizer = tiktoken.encoding_for_model("gpt-4")
@@ -85,7 +85,14 @@ def generate_chain(seed_prompt: str, chain_length: int, current_response: int, t
         temp = calculate_temp(current_response + i, total_responses, BASE_TEMP, MAX_TEMP)
         response, gen_time = generate_response(f'{PREFIX} \n {chain[-1]["text"]} \n {SUFFIX}', temp)
         if response:
-            chain.append({"text": response, "tokens": count_tokens(response), "generation_time": gen_time})     #   trying a silly thing
+            chain.append({"text": response, 
+                          "tokens": count_tokens(response), 
+                          "generation_time": gen_time,
+                          "temp": temp})
+            current_response += 1
+            
+            
+            #   trying a silly thing
             
             # prefix = f'("{INITIAL_PROMPT}") \n\n' if random.random() < 0.3 else ''    
              
@@ -111,9 +118,8 @@ def generate_tree(seed_prompt: str, chain_length: int, current_depth: int, max_d
             child_tree = generate_tree(response["text"], chain_length, current_depth + 1, max_depth, current_response, total_responses)
             current_response += calculate_total_responses(chain_length, max_depth - current_depth - 1)
             tree["children"].append(child_tree)
-        return tree
-    else:
-        return tree        
+
+    return tree        
 
 def calculate_tree_stats(tree: Dict[str, Any]) -> Dict[str, Any]:
     total_tokens = tree["prompt"]["tokens"] + sum(r["tokens"] for r in tree["responses"])
@@ -144,7 +150,7 @@ def save_tree(tree: Dict[str, Any], metadata: Dict[str, Any], filename: Optional
     }
     
     if filename is None:
-        filename = f'./responses/tree_{metadata["model_name"]}_at_{metadata["timestamp"]}.json'
+        filename = f'./responses/epsilon_{metadata["model_name"]}_at_{metadata["timestamp"]}.json'
     os.makedirs(os.path.dirname(filename), exist_ok=True)
     with open(filename, 'w') as f:
         json.dump(full_tree, f, indent=2)
@@ -155,6 +161,7 @@ if __name__ == '__main__':
     print(f'\n\n running {MODEL_NAME} model \n shape: {SHAPE} \n started: {TIME_STAMP}\n')
     
     total_responses = calculate_total_responses(CHAIN_LENGTH, RECURSION_DEPTH)
+    
     metadata = {
         "tree_key": f'{PROMPT_NICKNAME}_{MODEL_NAME}',
         "timestamp": TIME_STAMP,

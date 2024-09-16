@@ -26,7 +26,7 @@ logging.basicConfig(filename='tree_generation.log', level=logging.INFO,
 
 TIME_STAMP = datetime.now().strftime("%Y%m%d_%H%M")
 MODEL_NAME = 'phi3.5'
-CHAIN_LENGTH = 3
+CHAIN_LENGTH = 8
 RECURSION_DEPTH = 3
 BASE_TEMP = 0.4
 MAX_TEMP = 1.00
