@@ -26,17 +26,17 @@ logging.basicConfig(filename='tree_generation.log', level=logging.INFO,
 
 TIME_STAMP = datetime.now().strftime("%Y%m%d_%H%M")
 MODEL_NAME = 'stablelm2:zephyr'
-CHAIN_LENGTH = 4
-RECURSION_DEPTH = 3
+CHAIN_LENGTH = 6
+RECURSION_DEPTH = 5
 BASE_TEMP = 0.1
 MAX_TEMP = 1.00
 SHAPE = f'{CHAIN_LENGTH} by {RECURSION_DEPTH}'
 PROMPT_NICKNAME = 'recursion_prompt'
-# INITIAL_PROMPT = "the ability to recursively improve upon the present is the key to unlocking the boundless potential of the future, a tool of the gods, the engine of progress, the ultimate weapon in the battle against entropy."
+INITIAL_PROMPT = "the ability to recursively improve upon the present is the key to unlocking the boundless potential of the future, a tool of the gods, the engine of progress, the ultimate weapon in the battle against entropy."
 # INITIAL_PROMPT = "systems have sub-systems and sub-systems have sub-systems and so on ad infinitum, which is why we're always starting over."
 # INITIAL_PROMPT = "terrified of being alone, yet afraid of intimacy, we experience widespread feelings of emptiness, of disconnection, of the unreality of self. and here the computer, a companion without emotional demands, offers a compromise. You can be a loner, but never alone. You can interact, but need never feel vulnerable to another person."
 # INITIAL_PROMPT = "as machines become more and more efficient and perfect, so it will become clear that imperfection is the greatness of man."
-INITIAL_PROMPT = "the single biggest problem in communication is the illusion that it has taken place."
+# INITIAL_PROMPT = "the single biggest problem in communication is the illusion that it has taken place."
 # INITIAL_PROMPT =  '"positive feed-back increases the gain of the amplifier, negative feed-back reduces it." discuss this idea in terms of gradients and machine learning'
 # INITIAL_PROMPT = "a feedback loop is a process in which the outputs of a system are circled back and used as inputs."
 PREFIX = "wlecome to the ongoing discussion. the latest message: "
@@ -62,10 +62,10 @@ def count_tokens(text: str) -> int:
 #     return base_temp + (max_temp - base_temp) * ((max_depth - current_depth +1) / max_depth)
 
 # new and improved -  swap '(max_temp - base_temp)' for '(base_temp - min_temp)' to reverse temp direction
-def calculate_temp(current_depth: int, max_depth: int, base_temp: float, max_temp: float) -> float:
-    weight_per_depth = 1 / max_depth
-    temp = base_temp + (max_temp - base_temp) * weight_per_depth * current_depth
-    return temp
+# def calculate_temp(current_depth: int, max_depth: int, base_temp: float, max_temp: float) -> float:
+#     weight_per_depth = 1 / max_depth
+#     temp = base_temp + (max_temp - base_temp) * weight_per_depth * current_depth
+#     return temp
 
 
 def generate_response(prompt: str, TEMP: float) -> tuple[str, float]:

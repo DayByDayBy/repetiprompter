@@ -8,9 +8,9 @@
 print('\n')
 
  
-chain_length = 4
-recursion_depth = 4
-average_generation_time_in_seconds = 15
+chain_length = 6
+recursion_depth = 5
+average_generation_time_in_seconds = 1.1
 
 total_chains = sum(chain_length ** i for i in range(recursion_depth))
 total_prompt_response_actions = total_chains * (chain_length-1)
