@@ -16,21 +16,55 @@ logging.basicConfig(filename='tree_generation.log', level=logging.INFO,
 
 TIME_STAMP = datetime.now().strftime("%Y%m%d_%H%M")
 MODEL_NAME = 'stablelm2:zephyr'
-CHAIN_LENGTH = 3
-RECURSION_DEPTH = 3
-BASE_TEMP = 0.1
+CHAIN_LENGTH = 4
+RECURSION_DEPTH = 4
+BASE_TEMP = 0.67
 MAX_TEMP = 1.00
 SHAPE = f'{CHAIN_LENGTH} by {RECURSION_DEPTH}'
-PROMPT_NICKNAME = 'recursion_prompt'
-# INITIAL_PROMPT = "the ability to recursively improve upon the present is the key to unlocking the boundless potential of the future, a tool of the gods, the engine of progress, the ultimate weapon in the battle against entropy."
+PROMPT_NICKNAME = 'found_text_prefix'
+INITIAL_PROMPT = "the ability to recursively improve upon the present is the key to unlocking the boundless potential of the future, a tool of the gods, the engine of progress, the ultimate weapon in the battle against entropy."
 # INITIAL_PROMPT = "systems have sub-systems and sub-systems have sub-systems and so on ad infinitum, which is why we're always starting over."
 # INITIAL_PROMPT = "terrified of being alone, yet afraid of intimacy, we experience widespread feelings of emptiness, of disconnection, of the unreality of self. and here the computer, a companion without emotional demands, offers a compromise. You can be a loner, but never alone. You can interact, but need never feel vulnerable to another person."
 # INITIAL_PROMPT = "as machines become more and more efficient and perfect, so it will become clear that imperfection is the greatness of man."
 # INITIAL_PROMPT = "the single biggest problem in communication is the illusion that it has taken place."
-INITIAL_PROMPT =  '"positive feed-back increases the gain of the amplifier, negative feed-back reduces it." discuss this idea in terms of gradients and machine learning'
+# INITIAL_PROMPT =  '"positive feed-back increases the gain of the amplifier, negative feed-back reduces it." discuss this idea in terms of gradients and machine learning'
 # INITIAL_PROMPT = "a feedback loop is a process in which the outputs of a system are circled back and used as inputs."
-PREFIX = "we have been translating an ancient text as best we can with our understanding of their language.  the source is unfortunately broken, and out of order. we recently translated this fragment, and would like you to hypothesise what messages might precede and succeed this one: \n\n"
-SUFFIX = "\n\n   what do you think? do you think you can figure out the messages before and after this one?"
+# INITIAL_PROMPT = """Judas said, 'Master, as you have listened to all of them, now also listen to me. For I have seen a great vision.'
+#                     When Jesus heard this, he laughed and said to him, 'You thirteenth spirit, why do you try so hard? But speak up, and I shall bear with you.'
+#                     Judas said to him, “In the vision I saw myself as [..] (message ends abruptly)"""
+
+PREFIX = "rephrase the text provided as a question. there is no need to reference the instructions in your answer.       the text:    "
+SUFFIX = "------     please consider the text, and then rephrase it as a question. do not refer to these instructions in your answer"
+
+
+
+
+
+
+
+# PREFIX = """\n\n        task guidance:  
+ 
+#                         the team have been translating an old text as best they can, 
+#                         using their best understanding of the language. 
+#                         the source is unfortunately incomplete, and out of order.
+#                         there may also be some errors in our translation. 
+#                         so far all we have is this fragment. 
+#                         please hypothesise about the rest of the converstaion, in whatever way you deem apt.
+                        
+#                         task material:    
+                        
+#                         """
+                        
+# SUFFIX = """_______
+
+#                         no further information is available at this time. you can assume that all parties are aware this is the case.  please work with what you have. 
+                        
+#                         do not feel constrained, this is an exercise in extrapolation; 
+#                         there are 'no wrong answers' and you have free reign to decide the manner in which you engage.
+                        
+#                         there is no need to refernce the instructions in your answer.
+                        
+#                         """
 
 # tokenizer
 tokenizer = tiktoken.encoding_for_model("gpt-4")
