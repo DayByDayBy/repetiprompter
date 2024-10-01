@@ -37,8 +37,8 @@ PROMPT_NICKNAME = 'recursion_prompt'
 # INITIAL_PROMPT = "terrified of being alone, yet afraid of intimacy, we experience widespread feelings of emptiness, of disconnection, of the unreality of self. and here the computer, a companion without emotional demands, offers a compromise. You can be a loner, but never alone. You can interact, but need never feel vulnerable to another person."
 # INITIAL_PROMPT = "as machines become more and more efficient and perfect, so it will become clear that imperfection is the greatness of man."
 # INITIAL_PROMPT = "the single biggest problem in communication is the illusion that it has taken place."
-# INITIAL_PROMPT =  '"positive feed-back increases the gain of the amplifier, negative feed-back reduces it." discuss this idea in terms of gradients and machine learning'
-INITIAL_PROMPT = "a feedback loop is a process in which the outputs of a system are circled back and used as inputs."
+INITIAL_PROMPT =  '"positive feed-back increases the gain of the amplifier, negative feed-back reduces it." discuss this idea in terms of gradients and machine learning'
+# INITIAL_PROMPT = "a feedback loop is a process in which the outputs of a system are circled back and used as inputs."
 PREFIX = "wlecome to the ongoing discussion. the latest message: "
 SUFFIX = "  what do you think?"
 
