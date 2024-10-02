@@ -21,9 +21,9 @@ RECURSION_DEPTH = 4
 BASE_TEMP = 0.67
 MAX_TEMP = 1.00
 SHAPE = f'{CHAIN_LENGTH} by {RECURSION_DEPTH}'
-PROMPT_NICKNAME = 'found_text_prefix'
-INITIAL_PROMPT = "the ability to recursively improve upon the present is the key to unlocking the boundless potential of the future, a tool of the gods, the engine of progress, the ultimate weapon in the battle against entropy."
-# INITIAL_PROMPT = "systems have sub-systems and sub-systems have sub-systems and so on ad infinitum, which is why we're always starting over."
+PROMPT_NICKNAME = 'rephrase_as_q_prefix'
+# INITIAL_PROMPT = "the ability to recursively improve upon the present is the key to unlocking the boundless potential of the future, a tool of the gods, the engine of progress, the ultimate weapon in the battle against entropy."
+INITIAL_PROMPT = "systems have sub-systems and sub-systems have sub-systems and so on ad infinitum, which is why we're always starting over."
 # INITIAL_PROMPT = "terrified of being alone, yet afraid of intimacy, we experience widespread feelings of emptiness, of disconnection, of the unreality of self. and here the computer, a companion without emotional demands, offers a compromise. You can be a loner, but never alone. You can interact, but need never feel vulnerable to another person."
 # INITIAL_PROMPT = "as machines become more and more efficient and perfect, so it will become clear that imperfection is the greatness of man."
 # INITIAL_PROMPT = "the single biggest problem in communication is the illusion that it has taken place."
@@ -72,7 +72,7 @@ tokenizer = tiktoken.encoding_for_model("gpt-4")
 
 
 def calculate_total_responses(chain_length: int, recursion_depth: int) -> int:
-    return sum(chain_length**i for i in range(recursion_depth + 1)) - 1
+    return sum((chain_length-1)**i for i in range(recursion_depth + 1))
 def calculate_temp(current_response: int, total_responses: int, base_temp: float, max_temp: float) -> float:
     return base_temp + (max_temp - base_temp) * (current_response / total_responses)
 
