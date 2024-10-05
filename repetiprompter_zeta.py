@@ -33,8 +33,9 @@ PROMPT_NICKNAME = 'rephrase_as_q_prefix'
 # INITIAL_PROMPT = """Judas said, 'Master, as you have listened to all of them, now also listen to me. For I have seen a great vision.'
 #                     When Jesus heard this, he laughed and said to him, 'You thirteenth spirit, why do you try so hard? But speak up, and I shall bear with you.'
 #                     Judas said to him, “In the vision I saw myself as [..]"""
-INITIAL_PROMPT = "I think 'weird' is an interesting way to say 'unique.' It has a strange connotation, but weird is good. If you embrace your weirdness, you'll be on the way to becoming who you are."
-
+# INITIAL_PROMPT = "I think 'weird' is an interesting way to say 'unique.' It has a strange connotation, but weird is good. If you embrace your weirdness, you'll be on the way to becoming who you are."
+# INITIAL_PROMPT = "The Catholic Church is a weird church. Much mysticism is sown broadspread from its ritual mysteries till it extends into the very lives of its constituents and parishoners."
+INITIAL_PROMPT = "sometimes when I'm talking, my words can't keep up with my thoughts. I wonder why we think faster than we speak. Probably so we can think twice."
 
 PREFIX = "rephrase the text provided as a question. there is no need to reference the instructions in your answer.       the text:    "
 SUFFIX = "------     please consider the text, and then rephrase it as a question. do not refer to these instructions in your answer"
