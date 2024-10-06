@@ -35,7 +35,7 @@ PROMPT_NICKNAME = 'rephrase_as_q_prefix'
 #                     Judas said to him, “In the vision I saw myself as [..]"""
 # INITIAL_PROMPT = "I think 'weird' is an interesting way to say 'unique.' It has a strange connotation, but weird is good. If you embrace your weirdness, you'll be on the way to becoming who you are."
 # INITIAL_PROMPT = "The Catholic Church is a weird church. Much mysticism is sown broadspread from its ritual mysteries till it extends into the very lives of its constituents and parishoners."
-INITIAL_PROMPT = "sometimes when I'm talking, my words can't keep up with my thoughts. I wonder why we think faster than we speak. Probably so we can think twice."
+# INITIAL_PROMPT = "sometimes when I'm talking, my words can't keep up with my thoughts. I wonder why we think faster than we speak. Probably so we can think twice."
 
 PREFIX = "rephrase the text provided as a question. there is no need to reference the instructions in your answer.       the text:    "
 SUFFIX = "------     please consider the text, and then rephrase it as a question. do not refer to these instructions in your answer"
@@ -154,7 +154,7 @@ def save_tree(tree: Dict[str, Any], metadata: Dict[str, Any], filename: Optional
     }
     
     if filename is None:
-        filename = f'./responses/epsilon_{metadata["model_name"]}_at_{metadata["timestamp"]}.json'
+        filename = f'./responses/zeta_{metadata["model_name"]}_at_{metadata["timestamp"]}.json'
     os.makedirs(os.path.dirname(filename), exist_ok=True)
     with open(filename, 'w') as f:
         json.dump(full_tree, f, indent=2)
