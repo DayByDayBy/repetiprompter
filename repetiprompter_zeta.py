@@ -16,14 +16,14 @@ logging.basicConfig(filename='tree_generation.log', level=logging.INFO,
 
 TIME_STAMP = datetime.now().strftime("%Y%m%d_%H%M")
 MODEL_NAME = 'llama3.1'
-CHAIN_LENGTH = 4
-RECURSION_DEPTH = 4
-BASE_TEMP = 0.6
+CHAIN_LENGTH = 2
+RECURSION_DEPTH = 6
+BASE_TEMP = 0.8
 MAX_TEMP = 1.00
 SHAPE = f'{CHAIN_LENGTH} by {RECURSION_DEPTH}'
 PROMPT_NICKNAME = 'rephrase_as_q_prefix'
 
-INITIAL_PROMPT = "the ability to recursively improve upon the present is the key to unlocking the boundless potential of the future, a tool of the gods, the engine of progress, the ultimate weapon in the battle against entropy."
+# INITIAL_PROMPT = "the ability to recursively improve upon the present is the key to unlocking the boundless potential of the future, a tool of the gods, the engine of progress, the ultimate weapon in the battle against entropy."
 # INITIAL_PROMPT = "systems have sub-systems and sub-systems have sub-systems and so on ad infinitum, which is why we're always starting over."
 # INITIAL_PROMPT = "terrified of being alone, yet afraid of intimacy, we experience widespread feelings of emptiness, of disconnection, of the unreality of self. and here the computer, a companion without emotional demands, offers a compromise. You can be a loner, but never alone. You can interact, but need never feel vulnerable to another person."
 # INITIAL_PROMPT = "as machines become more and more efficient and perfect, so it will become clear that imperfection is the greatness of man."
@@ -35,7 +35,7 @@ INITIAL_PROMPT = "the ability to recursively improve upon the present is the key
 #                     Judas said to him, “In the vision I saw myself as [..]"""
 # INITIAL_PROMPT = "I think 'weird' is an interesting way to say 'unique.' It has a strange connotation, but weird is good. If you embrace your weirdness, you'll be on the way to becoming who you are."
 # INITIAL_PROMPT = "The Catholic Church is a weird church. Much mysticism is sown broadspread from its ritual mysteries till it extends into the very lives of its constituents and parishoners."
-# INITIAL_PROMPT = "sometimes when I'm talking, my words can't keep up with my thoughts. I wonder why we think faster than we speak. Probably so we can think twice."
+INITIAL_PROMPT = "sometimes when I'm talking, my words can't keep up with my thoughts. I wonder why we think faster than we speak. Probably so we can think twice."
 
 PREFIX = "rephrase the text provided as a question. there is no need to reference the instructions in your answer.       the text:    "
 SUFFIX = "------     please consider the text, and then rephrase it as a question. do not refer to these instructions in your answer"
