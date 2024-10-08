@@ -16,9 +16,9 @@ logging.basicConfig(filename='tree_generation.log', level=logging.INFO,
 
 TIME_STAMP = datetime.now().strftime("%Y%m%d_%H%M")
 MODEL_NAME = 'llama3.1'
-CHAIN_LENGTH = 2
-RECURSION_DEPTH = 6
-BASE_TEMP = 0.8
+CHAIN_LENGTH = 3
+RECURSION_DEPTH = 3
+BASE_TEMP = 0.67
 MAX_TEMP = 1.00
 SHAPE = f'{CHAIN_LENGTH} by {RECURSION_DEPTH}'
 PROMPT_NICKNAME = 'rephrase_as_q_prefix'
@@ -35,40 +35,18 @@ PROMPT_NICKNAME = 'rephrase_as_q_prefix'
 #                     Judas said to him, “In the vision I saw myself as [..]"""
 # INITIAL_PROMPT = "I think 'weird' is an interesting way to say 'unique.' It has a strange connotation, but weird is good. If you embrace your weirdness, you'll be on the way to becoming who you are."
 # INITIAL_PROMPT = "The Catholic Church is a weird church. Much mysticism is sown broadspread from its ritual mysteries till it extends into the very lives of its constituents and parishoners."
-INITIAL_PROMPT = "sometimes when I'm talking, my words can't keep up with my thoughts. I wonder why we think faster than we speak. Probably so we can think twice."
+# INITIAL_PROMPT = "sometimes when I'm talking, my words can't keep up with my thoughts. I wonder why we think faster than we speak. Probably so we can think twice."
+# INITIAL_PROMPT = "I do not fear computers. I fear the lack of them."
+# INITIAL_PROMPT = "The science fiction method is dissection and reconstruction. You look at the world around you, and you take it apart into all its components. Then you take some of those components, throw them away, and plug in different ones, start it up and see what happens. That's the method: restructure the world we live in in some way, then see what happens."
+# INITIAL_PROMPT = "The capacity of the human mind for formulating and solving complex problems is very small compared with the size of the problems whose solution is required for objectively rational behavior in the real world—or even for a reasonable approximation to such objective rationality. "
+# INITIAL_PROMPT = "The question of whether a computer is playing chess, or doing long division, or translating Chinese, is like the question of whether robots can murder or airplanes can fly -- or people; after all, the 'flight' of the Olympic long jump champion is only an order of magnitude short of that of the chicken champion (so I'm told). These are questions of decision, not fact; decision as to whether to adopt a certain metaphoric extension of common usage. "
+# INITIAL_PROMPT = "Humanity is at a crossroads. Either it returns to the belief that it has a different nature than machines or it will be reduced to a machine among machines. The risk is not that artificial intelligence will become better than us, but that we will freely decide to submit to it and its masters."
+# INITIAL_PROMPT ="It's important to understand that in order to make people superfluous, machines will not have to surpass them in general intelligence but only in certain specialized kinds of intelligence. For example, the machines will not have to create or understand art, music, or literature, they will not need the ability to carry on an intelligent, non-technical conversation (the 'Turing test'), they will not have to exercise tact or understand human nature, because these skills will have no application if humans are to be eliminated anyway. To make humans superfluous, the machines will only need to outperform them in making the technical decisions that have to be made for the purpose of promoting the short-term survival and propagation of the dominant self-prop systems."
+INITIAL_PROMPT = "artificial intelligence is nothing more than a giant modernity parrot, containing zero wisdom. It is a tool that serves the capitalist market system quite well as people scramble to monetize its mediocre capability, resulting in more exploitation of the natural world. Nothing about it is causing people to scale back, or to recognize the error of our ways. Why would the Human Reich use any such tool to dismantle itself?"
 
-PREFIX = "rephrase the text provided as a question. there is no need to reference the instructions in your answer.       the text:    "
-SUFFIX = "------     please consider the text, and then rephrase it as a question. do not refer to these instructions in your answer"
+PREFIX = "consider and then rephrase the text provided as a question. there is no need to reference the instructions in your answer.  the text:    "
+SUFFIX = " ---  please now rephrase the text as a question. do not refer to these instructions in your answer"
 
-
-
-
-
-
-
-# PREFIX = """\n\n        task guidance:  
- 
-#                         the team have been translating an old text as best they can, 
-#                         using their best understanding of the language. 
-#                         the source is unfortunately incomplete, and out of order.
-#                         there may also be some errors in our translation. 
-#                         so far all we have is this fragment. 
-#                         please hypothesise about the rest of the converstaion, in whatever way you deem apt.
-                        
-#                         task material:    
-                        
-#                         """
-                        
-# SUFFIX = """_______
-
-#                         no further information is available at this time. you can assume that all parties are aware this is the case.  please work with what you have. 
-                        
-#                         do not feel constrained, this is an exercise in extrapolation; 
-#                         there are 'no wrong answers' and you have free reign to decide the manner in which you engage.
-                        
-#                         there is no need to refernce the instructions in your answer.
-                        
-#                         """
 
 # tokenizer
 tokenizer = tiktoken.encoding_for_model("gpt-4")
