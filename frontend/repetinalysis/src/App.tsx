@@ -18,7 +18,7 @@ const App: React.FC = () => {
 
   useEffect(() => {
     // Use require.context to dynamically load all JSON files from the 'responses' folder
-    const files = importAllJson(require.context('./responses', false, /\.json$/));
+    const files = importAllJson(require.context('../../../../repetiprompter/responses', false, /\.json$/));
     setJsonFiles(files); // Set the loaded files in state
     setCurrentFile(Object.keys(files)[0]); // Set the first file as the default selected file
   }, []);
