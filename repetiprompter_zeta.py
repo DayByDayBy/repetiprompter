@@ -16,14 +16,14 @@ logging.basicConfig(filename='tree_generation.log', level=logging.INFO,
 
 TIME_STAMP = datetime.now().strftime("%Y%m%d_%H%M")
 MODEL_NAME = 'stablelm2:zephyr'
-CHAIN_LENGTH = 3
-RECURSION_DEPTH = 3
+CHAIN_LENGTH = 4
+RECURSION_DEPTH = 4
 BASE_TEMP = 0.6
 MAX_TEMP = 1.00
 SHAPE = f'{CHAIN_LENGTH} by {RECURSION_DEPTH}'
 PROMPT_NICKNAME = 'rephrase_as_q_prefix'
 
-# INITIAL_PROMPT = "the ability to recursively improve upon the present is the key to unlocking the boundless potential of the future, a tool of the gods, the engine of progress, the ultimate weapon in the battle against entropy."
+INITIAL_PROMPT = "the ability to recursively improve upon the present is the key to unlocking the boundless potential of the future, a tool of the gods, the engine of progress, the ultimate weapon in the battle against entropy."
 # INITIAL_PROMPT = "systems have sub-systems and sub-systems have sub-systems and so on ad infinitum, which is why we're always starting over."
 # INITIAL_PROMPT = "terrified of being alone, yet afraid of intimacy, we experience widespread feelings of emptiness, of disconnection, of the unreality of self. and here the computer, a companion without emotional demands, offers a compromise. You can be a loner, but never alone. You can interact, but need never feel vulnerable to another person."
 # INITIAL_PROMPT = "as machines become more and more efficient and perfect, so it will become clear that imperfection is the greatness of man."
@@ -44,13 +44,13 @@ PROMPT_NICKNAME = 'rephrase_as_q_prefix'
 # INITIAL_PROMPT ="It's important to understand that in order to make people superfluous, machines will not have to surpass them in general intelligence but only in certain specialized kinds of intelligence. For example, the machines will not have to create or understand art, music, or literature, they will not need the ability to carry on an intelligent, non-technical conversation (the 'Turing test'), they will not have to exercise tact or understand human nature, because these skills will have no application if humans are to be eliminated anyway. To make humans superfluous, the machines will only need to outperform them in making the technical decisions that have to be made for the purpose of promoting the short-term survival and propagation of the dominant self-prop systems."
 # INITIAL_PROMPT = "artificial intelligence is nothing more than a giant modernity parrot, containing zero wisdom. It is a tool that serves the capitalist market system quite well as people scramble to monetize its mediocre capability, resulting in more exploitation of the natural world. Nothing about it is causing people to scale back, or to recognize the error of our ways. Why would the Human Reich use any such tool to dismantle itself?"
 
-INITIAL_PROMPT = "say something about tests, 5 words or less"
+# INITIAL_PROMPT = "say something about tests, 5 words or less"
 
-# PREFIX = "consider and then rephrase the text provided as a question. there is no need to reference the instructions in your answer.  the text:    "
-# SUFFIX = " ---  please now rephrase the text as a question. do not refer to these instructions in your answer"
+PREFIX = "consider and then rephrase the text provided as a question. there is no need to reference the instructions in your answer.  the text:    "
+SUFFIX = " ---  please now rephrase the text as a question. do not refer to these instructions in your answer"
 
-PREFIX = 'say "hello test"'
-SUFFIX = 'say "bye test"'
+# PREFIX = 'say "hello test"'
+# SUFFIX = 'say "bye test"'
 
 # tokenizer
 tokenizer = tiktoken.encoding_for_model("gpt-4")
