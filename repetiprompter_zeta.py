@@ -9,16 +9,16 @@ import time
 import tiktoken
 import random
 
-os.environ['OLLAMA_NUM_PARALLEL'] = '6'
+os.environ['OLLAMA_NUM_PARALLEL'] = '4'
 
 logging.basicConfig(filename='tree_generation.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 TIME_STAMP = datetime.now().strftime("%Y%m%d_%H%M")
-MODEL_NAME = 'llama3.2:1b-instruct-fp16'
+MODEL_NAME = 'llama3.2'
 CHAIN_LENGTH = 3
 RECURSION_DEPTH = 3
-BASE_TEMP = 0.5
+BASE_TEMP = 0.4
 MAX_TEMP = 1.00
 SHAPE = f'{CHAIN_LENGTH} by {RECURSION_DEPTH}'
 PROMPT_NICKNAME = 'rephrase_as_q_prefix'
@@ -28,9 +28,9 @@ PROMPT_NICKNAME = 'rephrase_as_q_prefix'
 # INITIAL_PROMPT = "terrified of being alone, yet afraid of intimacy, we experience widespread feelings of emptiness, of disconnection, of the unreality of self. and here the computer, a companion without emotional demands, offers a compromise. You can be a loner, but never alone. You can interact, but need never feel vulnerable to another person."
 # INITIAL_PROMPT = "as machines become more and more efficient and perfect, so it will become clear that imperfection is the greatness of man."
 # INITIAL_PROMPT = "the single biggest problem in communication is the illusion that it has taken place."
-INITIAL_PROMPT =  '"positive feed-back increases the gain of the amplifier, negative feed-back reduces it." discuss this idea in terms of gradients and machine learning'
+# INITIAL_PROMPT =  '"positive feed-back increases the gain of the amplifier, negative feed-back reduces it." discuss this idea in terms of gradients and machine learning'
 # INITIAL_PROMPT = "a feedback loop is a process in which the outputs of a system are circled back and used as inputs."
-# INITIAL_PROMPT = """Judas said, 'Master, as you have listened to all of them, now also listen to me. For I have seen a great vision.'
+INITIAL_PROMPT = """Judas said, 'Master, as you have listened to all of them, now also listen to me. For I have seen a great vision.'
 #                     When Jesus heard this, he laughed and said to him, 'You thirteenth spirit, why do you try so hard? But speak up, and I shall bear with you.'
 #                     Judas said to him, “In the vision I saw myself as [..]"""
 # INITIAL_PROMPT = "I think 'weird' is an interesting way to say 'unique.' It has a strange connotation, but weird is good. If you embrace your weirdness, you'll be on the way to becoming who you are."
