@@ -15,9 +15,9 @@ logging.basicConfig(filename='tree_generation.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 TIME_STAMP = datetime.now().strftime("%Y%m%d_%H%M")
-MODEL_NAME = 'granite3-moe'
+MODEL_NAME = 'llama3.2'
 CHAIN_LENGTH = 2
-RECURSION_DEPTH = 6
+RECURSION_DEPTH = 8
 BASE_TEMP = 0.5
 MAX_TEMP = 1.00
 SHAPE = f'{CHAIN_LENGTH} by {RECURSION_DEPTH}'
