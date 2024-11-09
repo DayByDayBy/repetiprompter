@@ -16,18 +16,18 @@ logging.basicConfig(filename='tree_generation.log', level=logging.INFO,
 
 TIME_STAMP = datetime.now().strftime("%Y%m%d_%H%M")
 MODEL_NAME = 'stablelm2:zephyr'
-CHAIN_LENGTH = 2
-RECURSION_DEPTH = 7
+CHAIN_LENGTH = 1
+RECURSION_DEPTH = 12
 BASE_TEMP = 0.4
 MAX_TEMP = 1.00
 SHAPE = f'{CHAIN_LENGTH} by {RECURSION_DEPTH}'
 PROMPT_NICKNAME = 'rephrase_as_q_prefix'
 
 # INITIAL_PROMPT = "the ability to recursively improve upon the present is the key to unlocking the boundless potential of the future, a tool of the gods, the engine of progress, the ultimate weapon in the battle against entropy."
-INITIAL_PROMPT = "systems have sub-systems and sub-systems have sub-systems and so on ad infinitum, which is why we're always starting over."
+# INITIAL_PROMPT = "systems have sub-systems and sub-systems have sub-systems and so on ad infinitum, which is why we're always starting over."
 # INITIAL_PROMPT = "terrified of being alone, yet afraid of intimacy, we experience widespread feelings of emptiness, of disconnection, of the unreality of self. and here the computer, a companion without emotional demands, offers a compromise. You can be a loner, but never alone. You can interact, but need never feel vulnerable to another person."
 # INITIAL_PROMPT = "as machines become more and more efficient and perfect, so it will become clear that imperfection is the greatness of man."
-# INITIAL_PROMPT = "the single biggest problem in communication is the illusion that it has taken place."
+INITIAL_PROMPT = "the single biggest problem in communication is the illusion that it has taken place."
 # INITIAL_PROMPT =  '"positive feed-back increases the gain of the amplifier, negative feed-back reduces it." discuss this idea in terms of gradients and machine learning'
 # INITIAL_PROMPT = "a feedback loop is a process in which the outputs of a system are circled back and used as inputs."
 # INITIAL_PROMPT = """Judas said, 'Master, as you have listened to all of them, now also listen to me. For I have seen a great vision.'
@@ -46,7 +46,7 @@ INITIAL_PROMPT = "systems have sub-systems and sub-systems have sub-systems and 
 
 # INITIAL_PROMPT = "say something about tests, 5 words or less"
 
-PREFIX = "consider the text provided, and then rephrase it as a question. there is no need to reference the instructions in your answer.  the text:    "
+PREFIX = "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:    "
 SUFFIX = " ---  please now rephrase the text as a question. do not refer to these instructions in your answer"
 
 # PREFIX = 'say "hello test"'
