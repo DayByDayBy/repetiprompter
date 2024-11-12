@@ -17,7 +17,7 @@ logging.basicConfig(filename='tree_generation.log', level=logging.INFO,
 TIME_STAMP = datetime.now().strftime("%Y%m%d_%H%M")
 MODEL_NAME = 'stablelm2:zephyr'
 CHAIN_LENGTH = 2
-RECURSION_DEPTH = 6
+RECURSION_DEPTH = 7
 BASE_TEMP = 0.5
 MAX_TEMP = 1.00
 SHAPE = f'{CHAIN_LENGTH} by {RECURSION_DEPTH}'
@@ -29,7 +29,7 @@ PROMPT_NICKNAME = 'rephrase_as_q_prefix'
 # INITIAL_PROMPT = "as machines become more and more efficient and perfect, so it will become clear that imperfection is the greatness of man."
 # INITIAL_PROMPT = "the single biggest problem in communication is the illusion that it has taken place."
 # INITIAL_PROMPT =  '"positive feed-back increases the gain of the amplifier, negative feed-back reduces it." discuss this idea in terms of gradients and machine learning'
-# INITIAL_PROMPT = "a feedback loop is a process in which the outputs of a system are circled back and used as inputs."
+INITIAL_PROMPT = "a feedback loop is a process in which the outputs of a system are circled back and used as inputs."
 # INITIAL_PROMPT = """Judas said, 'Master, as you have listened to all of them, now also listen to me. For I have seen a great vision.'
 #                     When Jesus heard this, he laughed and said to him, 'You thirteenth spirit, why do you try so hard? But speak up, and I shall bear with you.'
 #                     Judas said to him, “In the vision I saw myself as [..]"""
@@ -37,7 +37,7 @@ PROMPT_NICKNAME = 'rephrase_as_q_prefix'
 # INITIAL_PROMPT = "The Catholic Church is a weird church. Much mysticism is sown broadspread from its ritual mysteries till it extends into the very lives of its constituents and parishoners."
 # INITIAL_PROMPT = "sometimes when I'm talking, my words can't keep up with my thoughts. I wonder why we think faster than we speak. Probably so we can think twice."
 # INITIAL_PROMPT = "I do not fear computers. I fear the lack of them."
-INITIAL_PROMPT = "The science fiction method is dissection and reconstruction. You look at the world around you, and you take it apart into all its components. Then you take some of those components, throw them away, and plug in different ones, start it up and see what happens. That's the method: restructure the world we live in in some way, then see what happens."
+# INITIAL_PROMPT = "The science fiction method is dissection and reconstruction. You look at the world around you, and you take it apart into all its components. Then you take some of those components, throw them away, and plug in different ones, start it up and see what happens. That's the method: restructure the world we live in in some way, then see what happens."
 # INITIAL_PROMPT = "The capacity of the human mind for formulating and solving complex problems is very small compared with the size of the problems whose solution is required for objectively rational behavior in the real world—or even for a reasonable approximation to such objective rationality. "
 # INITIAL_PROMPT = "The question of whether a computer is playing chess, or doing long division, or translating Chinese, is like the question of whether robots can murder or airplanes can fly -- or people; after all, the 'flight' of the Olympic long jump champion is only an order of magnitude short of that of the chicken champion (so I'm told). These are questions of decision, not fact; decision as to whether to adopt a certain metaphoric extension of common usage. "
 # INITIAL_PROMPT = "Humanity is at a crossroads. Either it returns to the belief that it has a different nature than machines or it will be reduced to a machine among machines. The risk is not that artificial intelligence will become better than us, but that we will freely decide to submit to it and its masters."

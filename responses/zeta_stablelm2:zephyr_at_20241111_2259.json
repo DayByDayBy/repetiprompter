@@ -1,0 +1,2936 @@
+{
+  "metadata": {
+    "tree_key": "rephrase_as_q_prefix_stablelm2:zephyr",
+    "timestamp": "20241111_2259",
+    "shape": "2 by 7",
+    "model_name": "stablelm2:zephyr",
+    "chain_length": 2,
+    "recursion_depth": 7,
+    "ollama_num_parallel": "4",
+    "total_responses": 8,
+    "total_tokens": 3822,
+    "total_time": 0.04501008987426758,
+    "node_count": 381,
+    "tokens_per_second": 84914.293898912
+  },
+  "content": {
+    "prompt": {
+      "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n a feedback loop is a process in which the outputs of a system are circled back and used as inputs. \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+      "tokens": 22,
+      "generation_time": 0,
+      "temp": 0.5
+    },
+    "responses": [
+      {
+        "text": "no response received - check the model's local availability",
+        "tokens": 10,
+        "generation_time": 0.0011539459228515625,
+        "temp": 0.5
+      },
+      {
+        "text": "no response received - check the model's local availability",
+        "tokens": 10,
+        "generation_time": 0.0002760887145996094,
+        "temp": 0.625
+      }
+    ],
+    "children": [
+      {
+        "prompt": {
+          "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+          "tokens": 10,
+          "generation_time": 0,
+          "temp": 0.5
+        },
+        "responses": [
+          {
+            "text": "no response received - check the model's local availability",
+            "tokens": 10,
+            "generation_time": 0.0002548694610595703,
+            "temp": 0.625
+          },
+          {
+            "text": "no response received - check the model's local availability",
+            "tokens": 10,
+            "generation_time": 0.00019884109497070312,
+            "temp": 0.75
+          }
+        ],
+        "children": [
+          {
+            "prompt": {
+              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+              "tokens": 10,
+              "generation_time": 0,
+              "temp": 0.5
+            },
+            "responses": [
+              {
+                "text": "no response received - check the model's local availability",
+                "tokens": 10,
+                "generation_time": 0.00020003318786621094,
+                "temp": 0.75
+              },
+              {
+                "text": "no response received - check the model's local availability",
+                "tokens": 10,
+                "generation_time": 0.0001800060272216797,
+                "temp": 0.875
+              }
+            ],
+            "children": [
+              {
+                "prompt": {
+                  "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                  "tokens": 10,
+                  "generation_time": 0,
+                  "temp": 0.5
+                },
+                "responses": [
+                  {
+                    "text": "no response received - check the model's local availability",
+                    "tokens": 10,
+                    "generation_time": 0.00018095970153808594,
+                    "temp": 0.875
+                  },
+                  {
+                    "text": "no response received - check the model's local availability",
+                    "tokens": 10,
+                    "generation_time": 0.0001690387725830078,
+                    "temp": 1.0
+                  }
+                ],
+                "children": [
+                  {
+                    "prompt": {
+                      "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                      "tokens": 10,
+                      "generation_time": 0,
+                      "temp": 0.5
+                    },
+                    "responses": [
+                      {
+                        "text": "no response received - check the model's local availability",
+                        "tokens": 10,
+                        "generation_time": 0.0002391338348388672,
+                        "temp": 1.0
+                      },
+                      {
+                        "text": "no response received - check the model's local availability",
+                        "tokens": 10,
+                        "generation_time": 0.000164031982421875,
+                        "temp": 1.125
+                      }
+                    ],
+                    "children": [
+                      {
+                        "prompt": {
+                          "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                          "tokens": 10,
+                          "generation_time": 0,
+                          "temp": 0.5
+                        },
+                        "responses": [
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.0001671314239501953,
+                            "temp": 1.125
+                          },
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.00015997886657714844,
+                            "temp": 1.25
+                          }
+                        ],
+                        "children": [
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00016808509826660156,
+                                "temp": 1.25
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001552104949951172,
+                                "temp": 1.375
+                              }
+                            ]
+                          },
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00016188621520996094,
+                                "temp": 1.3125
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00015163421630859375,
+                                "temp": 1.4375
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "prompt": {
+                          "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                          "tokens": 10,
+                          "generation_time": 0,
+                          "temp": 0.5
+                        },
+                        "responses": [
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.0002448558807373047,
+                            "temp": 1.25
+                          },
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.0001590251922607422,
+                            "temp": 1.375
+                          }
+                        ],
+                        "children": [
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00015997886657714844,
+                                "temp": 1.375
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00015473365783691406,
+                                "temp": 1.5
+                              }
+                            ]
+                          },
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001480579376220703,
+                                "temp": 1.4375
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001442432403564453,
+                                "temp": 1.5625
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "prompt": {
+                      "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                      "tokens": 10,
+                      "generation_time": 0,
+                      "temp": 0.5
+                    },
+                    "responses": [
+                      {
+                        "text": "no response received - check the model's local availability",
+                        "tokens": 10,
+                        "generation_time": 0.00015997886657714844,
+                        "temp": 1.1875
+                      },
+                      {
+                        "text": "no response received - check the model's local availability",
+                        "tokens": 10,
+                        "generation_time": 0.00014901161193847656,
+                        "temp": 1.3125
+                      }
+                    ],
+                    "children": [
+                      {
+                        "prompt": {
+                          "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                          "tokens": 10,
+                          "generation_time": 0,
+                          "temp": 0.5
+                        },
+                        "responses": [
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.00016069412231445312,
+                            "temp": 1.3125
+                          },
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.00023889541625976562,
+                            "temp": 1.4375
+                          }
+                        ],
+                        "children": [
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001647472381591797,
+                                "temp": 1.4375
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00014901161193847656,
+                                "temp": 1.5625
+                              }
+                            ]
+                          },
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00015115737915039062,
+                                "temp": 1.5
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00015115737915039062,
+                                "temp": 1.625
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "prompt": {
+                          "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                          "tokens": 10,
+                          "generation_time": 0,
+                          "temp": 0.5
+                        },
+                        "responses": [
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.0001590251922607422,
+                            "temp": 1.4375
+                          },
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.0001499652862548828,
+                            "temp": 1.5625
+                          }
+                        ],
+                        "children": [
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00015592575073242188,
+                                "temp": 1.5625
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00016927719116210938,
+                                "temp": 1.6875
+                              }
+                            ]
+                          },
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0002307891845703125,
+                                "temp": 1.625
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00015115737915039062,
+                                "temp": 1.75
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "prompt": {
+                  "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                  "tokens": 10,
+                  "generation_time": 0,
+                  "temp": 0.5
+                },
+                "responses": [
+                  {
+                    "text": "no response received - check the model's local availability",
+                    "tokens": 10,
+                    "generation_time": 0.0001552104949951172,
+                    "temp": 1.125
+                  },
+                  {
+                    "text": "no response received - check the model's local availability",
+                    "tokens": 10,
+                    "generation_time": 0.0001499652862548828,
+                    "temp": 1.25
+                  }
+                ],
+                "children": [
+                  {
+                    "prompt": {
+                      "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                      "tokens": 10,
+                      "generation_time": 0,
+                      "temp": 0.5
+                    },
+                    "responses": [
+                      {
+                        "text": "no response received - check the model's local availability",
+                        "tokens": 10,
+                        "generation_time": 0.00019216537475585938,
+                        "temp": 1.25
+                      },
+                      {
+                        "text": "no response received - check the model's local availability",
+                        "tokens": 10,
+                        "generation_time": 0.00021505355834960938,
+                        "temp": 1.375
+                      }
+                    ],
+                    "children": [
+                      {
+                        "prompt": {
+                          "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                          "tokens": 10,
+                          "generation_time": 0,
+                          "temp": 0.5
+                        },
+                        "responses": [
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.0001480579376220703,
+                            "temp": 1.375
+                          },
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.00014519691467285156,
+                            "temp": 1.5
+                          }
+                        ],
+                        "children": [
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00015497207641601562,
+                                "temp": 1.5
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0002391338348388672,
+                                "temp": 1.625
+                              }
+                            ]
+                          },
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00015497207641601562,
+                                "temp": 1.5625
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001480579376220703,
+                                "temp": 1.6875
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "prompt": {
+                          "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                          "tokens": 10,
+                          "generation_time": 0,
+                          "temp": 0.5
+                        },
+                        "responses": [
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.00015115737915039062,
+                            "temp": 1.5
+                          },
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.00015401840209960938,
+                            "temp": 1.625
+                          }
+                        ],
+                        "children": [
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001499652862548828,
+                                "temp": 1.625
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00014400482177734375,
+                                "temp": 1.75
+                              }
+                            ]
+                          },
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001506805419921875,
+                                "temp": 1.6875
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00014591217041015625,
+                                "temp": 1.8125
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "prompt": {
+                      "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                      "tokens": 10,
+                      "generation_time": 0,
+                      "temp": 0.5
+                    },
+                    "responses": [
+                      {
+                        "text": "no response received - check the model's local availability",
+                        "tokens": 10,
+                        "generation_time": 0.00015401840209960938,
+                        "temp": 1.4375
+                      },
+                      {
+                        "text": "no response received - check the model's local availability",
+                        "tokens": 10,
+                        "generation_time": 0.0002529621124267578,
+                        "temp": 1.5625
+                      }
+                    ],
+                    "children": [
+                      {
+                        "prompt": {
+                          "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                          "tokens": 10,
+                          "generation_time": 0,
+                          "temp": 0.5
+                        },
+                        "responses": [
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.00015473365783691406,
+                            "temp": 1.5625
+                          },
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.00014495849609375,
+                            "temp": 1.6875
+                          }
+                        ],
+                        "children": [
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00015211105346679688,
+                                "temp": 1.6875
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001480579376220703,
+                                "temp": 1.8125
+                              }
+                            ]
+                          },
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001430511474609375,
+                                "temp": 1.75
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00013685226440429688,
+                                "temp": 1.875
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "prompt": {
+                          "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                          "tokens": 10,
+                          "generation_time": 0,
+                          "temp": 0.5
+                        },
+                        "responses": [
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.00014734268188476562,
+                            "temp": 1.6875
+                          },
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.0001468658447265625,
+                            "temp": 1.8125
+                          }
+                        ],
+                        "children": [
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0003161430358886719,
+                                "temp": 1.8125
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00014901161193847656,
+                                "temp": 1.9375
+                              }
+                            ]
+                          },
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00023818016052246094,
+                                "temp": 1.875
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001621246337890625,
+                                "temp": 2.0
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "prompt": {
+              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+              "tokens": 10,
+              "generation_time": 0,
+              "temp": 0.5
+            },
+            "responses": [
+              {
+                "text": "no response received - check the model's local availability",
+                "tokens": 10,
+                "generation_time": 0.00025081634521484375,
+                "temp": 1.0625
+              },
+              {
+                "text": "no response received - check the model's local availability",
+                "tokens": 10,
+                "generation_time": 0.0001671314239501953,
+                "temp": 1.1875
+              }
+            ],
+            "children": [
+              {
+                "prompt": {
+                  "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                  "tokens": 10,
+                  "generation_time": 0,
+                  "temp": 0.5
+                },
+                "responses": [
+                  {
+                    "text": "no response received - check the model's local availability",
+                    "tokens": 10,
+                    "generation_time": 0.00017118453979492188,
+                    "temp": 1.1875
+                  },
+                  {
+                    "text": "no response received - check the model's local availability",
+                    "tokens": 10,
+                    "generation_time": 0.00016188621520996094,
+                    "temp": 1.3125
+                  }
+                ],
+                "children": [
+                  {
+                    "prompt": {
+                      "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                      "tokens": 10,
+                      "generation_time": 0,
+                      "temp": 0.5
+                    },
+                    "responses": [
+                      {
+                        "text": "no response received - check the model's local availability",
+                        "tokens": 10,
+                        "generation_time": 0.00017786026000976562,
+                        "temp": 1.3125
+                      },
+                      {
+                        "text": "no response received - check the model's local availability",
+                        "tokens": 10,
+                        "generation_time": 0.0001747608184814453,
+                        "temp": 1.4375
+                      }
+                    ],
+                    "children": [
+                      {
+                        "prompt": {
+                          "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                          "tokens": 10,
+                          "generation_time": 0,
+                          "temp": 0.5
+                        },
+                        "responses": [
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.0002677440643310547,
+                            "temp": 1.4375
+                          },
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.00016117095947265625,
+                            "temp": 1.5625
+                          }
+                        ],
+                        "children": [
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00016999244689941406,
+                                "temp": 1.5625
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001590251922607422,
+                                "temp": 1.6875
+                              }
+                            ]
+                          },
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001819133758544922,
+                                "temp": 1.625
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00017404556274414062,
+                                "temp": 1.75
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "prompt": {
+                          "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                          "tokens": 10,
+                          "generation_time": 0,
+                          "temp": 0.5
+                        },
+                        "responses": [
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.0001647472381591797,
+                            "temp": 1.5625
+                          },
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.0001609325408935547,
+                            "temp": 1.6875
+                          }
+                        ],
+                        "children": [
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00017213821411132812,
+                                "temp": 1.6875
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00047588348388671875,
+                                "temp": 1.8125
+                              }
+                            ]
+                          },
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001971721649169922,
+                                "temp": 1.75
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001671314239501953,
+                                "temp": 1.875
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "prompt": {
+                      "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                      "tokens": 10,
+                      "generation_time": 0,
+                      "temp": 0.5
+                    },
+                    "responses": [
+                      {
+                        "text": "no response received - check the model's local availability",
+                        "tokens": 10,
+                        "generation_time": 0.0001709461212158203,
+                        "temp": 1.5
+                      },
+                      {
+                        "text": "no response received - check the model's local availability",
+                        "tokens": 10,
+                        "generation_time": 0.00019097328186035156,
+                        "temp": 1.625
+                      }
+                    ],
+                    "children": [
+                      {
+                        "prompt": {
+                          "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                          "tokens": 10,
+                          "generation_time": 0,
+                          "temp": 0.5
+                        },
+                        "responses": [
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.0001690387725830078,
+                            "temp": 1.625
+                          },
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.00016689300537109375,
+                            "temp": 1.75
+                          }
+                        ],
+                        "children": [
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001690387725830078,
+                                "temp": 1.75
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001647472381591797,
+                                "temp": 1.875
+                              }
+                            ]
+                          },
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00025916099548339844,
+                                "temp": 1.8125
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001697540283203125,
+                                "temp": 1.9375
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "prompt": {
+                          "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                          "tokens": 10,
+                          "generation_time": 0,
+                          "temp": 0.5
+                        },
+                        "responses": [
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.0001678466796875,
+                            "temp": 1.75
+                          },
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.0001468658447265625,
+                            "temp": 1.875
+                          }
+                        ],
+                        "children": [
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00015425682067871094,
+                                "temp": 1.875
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00014591217041015625,
+                                "temp": 2.0
+                              }
+                            ]
+                          },
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.000164031982421875,
+                                "temp": 1.9375
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001499652862548828,
+                                "temp": 2.0625
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "prompt": {
+                  "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                  "tokens": 10,
+                  "generation_time": 0,
+                  "temp": 0.5
+                },
+                "responses": [
+                  {
+                    "text": "no response received - check the model's local availability",
+                    "tokens": 10,
+                    "generation_time": 0.0003387928009033203,
+                    "temp": 1.4375
+                  },
+                  {
+                    "text": "no response received - check the model's local availability",
+                    "tokens": 10,
+                    "generation_time": 0.0001690387725830078,
+                    "temp": 1.5625
+                  }
+                ],
+                "children": [
+                  {
+                    "prompt": {
+                      "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                      "tokens": 10,
+                      "generation_time": 0,
+                      "temp": 0.5
+                    },
+                    "responses": [
+                      {
+                        "text": "no response received - check the model's local availability",
+                        "tokens": 10,
+                        "generation_time": 0.00023317337036132812,
+                        "temp": 1.5625
+                      },
+                      {
+                        "text": "no response received - check the model's local availability",
+                        "tokens": 10,
+                        "generation_time": 0.0001437664031982422,
+                        "temp": 1.6875
+                      }
+                    ],
+                    "children": [
+                      {
+                        "prompt": {
+                          "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                          "tokens": 10,
+                          "generation_time": 0,
+                          "temp": 0.5
+                        },
+                        "responses": [
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.00019359588623046875,
+                            "temp": 1.6875
+                          },
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.00019693374633789062,
+                            "temp": 1.8125
+                          }
+                        ],
+                        "children": [
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00023484230041503906,
+                                "temp": 1.8125
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00014400482177734375,
+                                "temp": 1.9375
+                              }
+                            ]
+                          },
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001461505889892578,
+                                "temp": 1.875
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001468658447265625,
+                                "temp": 2.0
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "prompt": {
+                          "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                          "tokens": 10,
+                          "generation_time": 0,
+                          "temp": 0.5
+                        },
+                        "responses": [
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.00015091896057128906,
+                            "temp": 1.8125
+                          },
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.0001399517059326172,
+                            "temp": 1.9375
+                          }
+                        ],
+                        "children": [
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00014901161193847656,
+                                "temp": 1.9375
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00040030479431152344,
+                                "temp": 2.0625
+                              }
+                            ]
+                          },
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0002040863037109375,
+                                "temp": 2.0
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.000225067138671875,
+                                "temp": 2.125
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "prompt": {
+                      "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                      "tokens": 10,
+                      "generation_time": 0,
+                      "temp": 0.5
+                    },
+                    "responses": [
+                      {
+                        "text": "no response received - check the model's local availability",
+                        "tokens": 10,
+                        "generation_time": 0.00020194053649902344,
+                        "temp": 1.75
+                      },
+                      {
+                        "text": "no response received - check the model's local availability",
+                        "tokens": 10,
+                        "generation_time": 0.00017786026000976562,
+                        "temp": 1.875
+                      }
+                    ],
+                    "children": [
+                      {
+                        "prompt": {
+                          "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                          "tokens": 10,
+                          "generation_time": 0,
+                          "temp": 0.5
+                        },
+                        "responses": [
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.0001621246337890625,
+                            "temp": 1.875
+                          },
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.0001690387725830078,
+                            "temp": 2.0
+                          }
+                        ],
+                        "children": [
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00022482872009277344,
+                                "temp": 2.0
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0002460479736328125,
+                                "temp": 2.125
+                              }
+                            ]
+                          },
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001647472381591797,
+                                "temp": 2.0625
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00014591217041015625,
+                                "temp": 2.1875
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "prompt": {
+                          "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                          "tokens": 10,
+                          "generation_time": 0,
+                          "temp": 0.5
+                        },
+                        "responses": [
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.00020813941955566406,
+                            "temp": 2.0
+                          },
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.00015592575073242188,
+                            "temp": 2.125
+                          }
+                        ],
+                        "children": [
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001571178436279297,
+                                "temp": 2.125
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00014901161193847656,
+                                "temp": 2.25
+                              }
+                            ]
+                          },
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00015425682067871094,
+                                "temp": 2.1875
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00015306472778320312,
+                                "temp": 2.3125
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": {
+          "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+          "tokens": 10,
+          "generation_time": 0,
+          "temp": 0.5
+        },
+        "responses": [
+          {
+            "text": "no response received - check the model's local availability",
+            "tokens": 10,
+            "generation_time": 0.00015783309936523438,
+            "temp": 1.0
+          },
+          {
+            "text": "no response received - check the model's local availability",
+            "tokens": 10,
+            "generation_time": 0.00015616416931152344,
+            "temp": 1.125
+          }
+        ],
+        "children": [
+          {
+            "prompt": {
+              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+              "tokens": 10,
+              "generation_time": 0,
+              "temp": 0.5
+            },
+            "responses": [
+              {
+                "text": "no response received - check the model's local availability",
+                "tokens": 10,
+                "generation_time": 0.00025725364685058594,
+                "temp": 1.125
+              },
+              {
+                "text": "no response received - check the model's local availability",
+                "tokens": 10,
+                "generation_time": 0.00014901161193847656,
+                "temp": 1.25
+              }
+            ],
+            "children": [
+              {
+                "prompt": {
+                  "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                  "tokens": 10,
+                  "generation_time": 0,
+                  "temp": 0.5
+                },
+                "responses": [
+                  {
+                    "text": "no response received - check the model's local availability",
+                    "tokens": 10,
+                    "generation_time": 0.00018215179443359375,
+                    "temp": 1.25
+                  },
+                  {
+                    "text": "no response received - check the model's local availability",
+                    "tokens": 10,
+                    "generation_time": 0.00015616416931152344,
+                    "temp": 1.375
+                  }
+                ],
+                "children": [
+                  {
+                    "prompt": {
+                      "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                      "tokens": 10,
+                      "generation_time": 0,
+                      "temp": 0.5
+                    },
+                    "responses": [
+                      {
+                        "text": "no response received - check the model's local availability",
+                        "tokens": 10,
+                        "generation_time": 0.00014972686767578125,
+                        "temp": 1.375
+                      },
+                      {
+                        "text": "no response received - check the model's local availability",
+                        "tokens": 10,
+                        "generation_time": 0.000148773193359375,
+                        "temp": 1.5
+                      }
+                    ],
+                    "children": [
+                      {
+                        "prompt": {
+                          "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                          "tokens": 10,
+                          "generation_time": 0,
+                          "temp": 0.5
+                        },
+                        "responses": [
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.00015211105346679688,
+                            "temp": 1.5
+                          },
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.00015020370483398438,
+                            "temp": 1.625
+                          }
+                        ],
+                        "children": [
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0002288818359375,
+                                "temp": 1.625
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00015401840209960938,
+                                "temp": 1.75
+                              }
+                            ]
+                          },
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00015497207641601562,
+                                "temp": 1.6875
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00016117095947265625,
+                                "temp": 1.8125
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "prompt": {
+                          "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                          "tokens": 10,
+                          "generation_time": 0,
+                          "temp": 0.5
+                        },
+                        "responses": [
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.00018215179443359375,
+                            "temp": 1.625
+                          },
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.00014901161193847656,
+                            "temp": 1.75
+                          }
+                        ],
+                        "children": [
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00015997886657714844,
+                                "temp": 1.75
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00017714500427246094,
+                                "temp": 1.875
+                              }
+                            ]
+                          },
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001590251922607422,
+                                "temp": 1.8125
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00024199485778808594,
+                                "temp": 1.9375
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "prompt": {
+                      "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                      "tokens": 10,
+                      "generation_time": 0,
+                      "temp": 0.5
+                    },
+                    "responses": [
+                      {
+                        "text": "no response received - check the model's local availability",
+                        "tokens": 10,
+                        "generation_time": 0.00015687942504882812,
+                        "temp": 1.5625
+                      },
+                      {
+                        "text": "no response received - check the model's local availability",
+                        "tokens": 10,
+                        "generation_time": 0.0001468658447265625,
+                        "temp": 1.6875
+                      }
+                    ],
+                    "children": [
+                      {
+                        "prompt": {
+                          "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                          "tokens": 10,
+                          "generation_time": 0,
+                          "temp": 0.5
+                        },
+                        "responses": [
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.0002009868621826172,
+                            "temp": 1.6875
+                          },
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.00019621849060058594,
+                            "temp": 1.8125
+                          }
+                        ],
+                        "children": [
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00015592575073242188,
+                                "temp": 1.8125
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001480579376220703,
+                                "temp": 1.9375
+                              }
+                            ]
+                          },
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00015306472778320312,
+                                "temp": 1.875
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001506805419921875,
+                                "temp": 2.0
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "prompt": {
+                          "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                          "tokens": 10,
+                          "generation_time": 0,
+                          "temp": 0.5
+                        },
+                        "responses": [
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.0002334117889404297,
+                            "temp": 1.8125
+                          },
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.0001480579376220703,
+                            "temp": 1.9375
+                          }
+                        ],
+                        "children": [
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001518726348876953,
+                                "temp": 1.9375
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001468658447265625,
+                                "temp": 2.0625
+                              }
+                            ]
+                          },
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00015425682067871094,
+                                "temp": 2.0
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00014710426330566406,
+                                "temp": 2.125
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "prompt": {
+                  "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                  "tokens": 10,
+                  "generation_time": 0,
+                  "temp": 0.5
+                },
+                "responses": [
+                  {
+                    "text": "no response received - check the model's local availability",
+                    "tokens": 10,
+                    "generation_time": 0.00018906593322753906,
+                    "temp": 1.5
+                  },
+                  {
+                    "text": "no response received - check the model's local availability",
+                    "tokens": 10,
+                    "generation_time": 0.00014901161193847656,
+                    "temp": 1.625
+                  }
+                ],
+                "children": [
+                  {
+                    "prompt": {
+                      "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                      "tokens": 10,
+                      "generation_time": 0,
+                      "temp": 0.5
+                    },
+                    "responses": [
+                      {
+                        "text": "no response received - check the model's local availability",
+                        "tokens": 10,
+                        "generation_time": 0.00015997886657714844,
+                        "temp": 1.625
+                      },
+                      {
+                        "text": "no response received - check the model's local availability",
+                        "tokens": 10,
+                        "generation_time": 0.0001537799835205078,
+                        "temp": 1.75
+                      }
+                    ],
+                    "children": [
+                      {
+                        "prompt": {
+                          "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                          "tokens": 10,
+                          "generation_time": 0,
+                          "temp": 0.5
+                        },
+                        "responses": [
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.0002391338348388672,
+                            "temp": 1.75
+                          },
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.00015091896057128906,
+                            "temp": 1.875
+                          }
+                        ],
+                        "children": [
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00015401840209960938,
+                                "temp": 1.875
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001480579376220703,
+                                "temp": 2.0
+                              }
+                            ]
+                          },
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001552104949951172,
+                                "temp": 1.9375
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001461505889892578,
+                                "temp": 2.0625
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "prompt": {
+                          "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                          "tokens": 10,
+                          "generation_time": 0,
+                          "temp": 0.5
+                        },
+                        "responses": [
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.00015592575073242188,
+                            "temp": 1.875
+                          },
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.00014972686767578125,
+                            "temp": 2.0
+                          }
+                        ],
+                        "children": [
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001671314239501953,
+                                "temp": 2.0
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00023293495178222656,
+                                "temp": 2.125
+                              }
+                            ]
+                          },
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001571178436279297,
+                                "temp": 2.0625
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00014591217041015625,
+                                "temp": 2.1875
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "prompt": {
+                      "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                      "tokens": 10,
+                      "generation_time": 0,
+                      "temp": 0.5
+                    },
+                    "responses": [
+                      {
+                        "text": "no response received - check the model's local availability",
+                        "tokens": 10,
+                        "generation_time": 0.0001506805419921875,
+                        "temp": 1.8125
+                      },
+                      {
+                        "text": "no response received - check the model's local availability",
+                        "tokens": 10,
+                        "generation_time": 0.00014281272888183594,
+                        "temp": 1.9375
+                      }
+                    ],
+                    "children": [
+                      {
+                        "prompt": {
+                          "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                          "tokens": 10,
+                          "generation_time": 0,
+                          "temp": 0.5
+                        },
+                        "responses": [
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.00015497207641601562,
+                            "temp": 1.9375
+                          },
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.00014901161193847656,
+                            "temp": 2.0625
+                          }
+                        ],
+                        "children": [
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00015687942504882812,
+                                "temp": 2.0625
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00014925003051757812,
+                                "temp": 2.1875
+                              }
+                            ]
+                          },
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001609325408935547,
+                                "temp": 2.125
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00022912025451660156,
+                                "temp": 2.25
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "prompt": {
+                          "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                          "tokens": 10,
+                          "generation_time": 0,
+                          "temp": 0.5
+                        },
+                        "responses": [
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.00018835067749023438,
+                            "temp": 2.0625
+                          },
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.00014901161193847656,
+                            "temp": 2.1875
+                          }
+                        ],
+                        "children": [
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001537799835205078,
+                                "temp": 2.1875
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00014400482177734375,
+                                "temp": 2.3125
+                              }
+                            ]
+                          },
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00015497207641601562,
+                                "temp": 2.25
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001480579376220703,
+                                "temp": 2.375
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "prompt": {
+              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+              "tokens": 10,
+              "generation_time": 0,
+              "temp": 0.5
+            },
+            "responses": [
+              {
+                "text": "no response received - check the model's local availability",
+                "tokens": 10,
+                "generation_time": 0.0001518726348876953,
+                "temp": 1.4375
+              },
+              {
+                "text": "no response received - check the model's local availability",
+                "tokens": 10,
+                "generation_time": 0.0001506805419921875,
+                "temp": 1.5625
+              }
+            ],
+            "children": [
+              {
+                "prompt": {
+                  "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                  "tokens": 10,
+                  "generation_time": 0,
+                  "temp": 0.5
+                },
+                "responses": [
+                  {
+                    "text": "no response received - check the model's local availability",
+                    "tokens": 10,
+                    "generation_time": 0.00015878677368164062,
+                    "temp": 1.5625
+                  },
+                  {
+                    "text": "no response received - check the model's local availability",
+                    "tokens": 10,
+                    "generation_time": 0.0003237724304199219,
+                    "temp": 1.6875
+                  }
+                ],
+                "children": [
+                  {
+                    "prompt": {
+                      "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                      "tokens": 10,
+                      "generation_time": 0,
+                      "temp": 0.5
+                    },
+                    "responses": [
+                      {
+                        "text": "no response received - check the model's local availability",
+                        "tokens": 10,
+                        "generation_time": 0.00019812583923339844,
+                        "temp": 1.6875
+                      },
+                      {
+                        "text": "no response received - check the model's local availability",
+                        "tokens": 10,
+                        "generation_time": 0.0001621246337890625,
+                        "temp": 1.8125
+                      }
+                    ],
+                    "children": [
+                      {
+                        "prompt": {
+                          "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                          "tokens": 10,
+                          "generation_time": 0,
+                          "temp": 0.5
+                        },
+                        "responses": [
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.00014781951904296875,
+                            "temp": 1.8125
+                          },
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.00015163421630859375,
+                            "temp": 1.9375
+                          }
+                        ],
+                        "children": [
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001552104949951172,
+                                "temp": 1.9375
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00014591217041015625,
+                                "temp": 2.0625
+                              }
+                            ]
+                          },
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001533031463623047,
+                                "temp": 2.0
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00022602081298828125,
+                                "temp": 2.125
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "prompt": {
+                          "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                          "tokens": 10,
+                          "generation_time": 0,
+                          "temp": 0.5
+                        },
+                        "responses": [
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.0001552104949951172,
+                            "temp": 1.9375
+                          },
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.00015020370483398438,
+                            "temp": 2.0625
+                          }
+                        ],
+                        "children": [
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00017833709716796875,
+                                "temp": 2.0625
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001659393310546875,
+                                "temp": 2.1875
+                              }
+                            ]
+                          },
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00017309188842773438,
+                                "temp": 2.125
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001709461212158203,
+                                "temp": 2.25
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "prompt": {
+                      "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                      "tokens": 10,
+                      "generation_time": 0,
+                      "temp": 0.5
+                    },
+                    "responses": [
+                      {
+                        "text": "no response received - check the model's local availability",
+                        "tokens": 10,
+                        "generation_time": 0.00018596649169921875,
+                        "temp": 1.875
+                      },
+                      {
+                        "text": "no response received - check the model's local availability",
+                        "tokens": 10,
+                        "generation_time": 0.00019979476928710938,
+                        "temp": 2.0
+                      }
+                    ],
+                    "children": [
+                      {
+                        "prompt": {
+                          "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                          "tokens": 10,
+                          "generation_time": 0,
+                          "temp": 0.5
+                        },
+                        "responses": [
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.0002868175506591797,
+                            "temp": 2.0
+                          },
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.0001430511474609375,
+                            "temp": 2.125
+                          }
+                        ],
+                        "children": [
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00015497207641601562,
+                                "temp": 2.125
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00014472007751464844,
+                                "temp": 2.25
+                              }
+                            ]
+                          },
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001671314239501953,
+                                "temp": 2.1875
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001430511474609375,
+                                "temp": 2.3125
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "prompt": {
+                          "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                          "tokens": 10,
+                          "generation_time": 0,
+                          "temp": 0.5
+                        },
+                        "responses": [
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.00015497207641601562,
+                            "temp": 2.125
+                          },
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.0001418590545654297,
+                            "temp": 2.25
+                          }
+                        ],
+                        "children": [
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001480579376220703,
+                                "temp": 2.25
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00022602081298828125,
+                                "temp": 2.375
+                              }
+                            ]
+                          },
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00015687942504882812,
+                                "temp": 2.3125
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001533031463623047,
+                                "temp": 2.4375
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "prompt": {
+                  "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                  "tokens": 10,
+                  "generation_time": 0,
+                  "temp": 0.5
+                },
+                "responses": [
+                  {
+                    "text": "no response received - check the model's local availability",
+                    "tokens": 10,
+                    "generation_time": 0.00015401840209960938,
+                    "temp": 1.8125
+                  },
+                  {
+                    "text": "no response received - check the model's local availability",
+                    "tokens": 10,
+                    "generation_time": 0.00015282630920410156,
+                    "temp": 1.9375
+                  }
+                ],
+                "children": [
+                  {
+                    "prompt": {
+                      "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                      "tokens": 10,
+                      "generation_time": 0,
+                      "temp": 0.5
+                    },
+                    "responses": [
+                      {
+                        "text": "no response received - check the model's local availability",
+                        "tokens": 10,
+                        "generation_time": 0.00015306472778320312,
+                        "temp": 1.9375
+                      },
+                      {
+                        "text": "no response received - check the model's local availability",
+                        "tokens": 10,
+                        "generation_time": 0.0001468658447265625,
+                        "temp": 2.0625
+                      }
+                    ],
+                    "children": [
+                      {
+                        "prompt": {
+                          "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                          "tokens": 10,
+                          "generation_time": 0,
+                          "temp": 0.5
+                        },
+                        "responses": [
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.0001537799835205078,
+                            "temp": 2.0625
+                          },
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.0001437664031982422,
+                            "temp": 2.1875
+                          }
+                        ],
+                        "children": [
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0002219676971435547,
+                                "temp": 2.1875
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001380443572998047,
+                                "temp": 2.3125
+                              }
+                            ]
+                          },
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001461505889892578,
+                                "temp": 2.25
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001399517059326172,
+                                "temp": 2.375
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "prompt": {
+                          "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                          "tokens": 10,
+                          "generation_time": 0,
+                          "temp": 0.5
+                        },
+                        "responses": [
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.00018715858459472656,
+                            "temp": 2.1875
+                          },
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.00016307830810546875,
+                            "temp": 2.3125
+                          }
+                        ],
+                        "children": [
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00014901161193847656,
+                                "temp": 2.3125
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00015401840209960938,
+                                "temp": 2.4375
+                              }
+                            ]
+                          },
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00017380714416503906,
+                                "temp": 2.375
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00014066696166992188,
+                                "temp": 2.5
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "prompt": {
+                      "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                      "tokens": 10,
+                      "generation_time": 0,
+                      "temp": 0.5
+                    },
+                    "responses": [
+                      {
+                        "text": "no response received - check the model's local availability",
+                        "tokens": 10,
+                        "generation_time": 0.0002288818359375,
+                        "temp": 2.125
+                      },
+                      {
+                        "text": "no response received - check the model's local availability",
+                        "tokens": 10,
+                        "generation_time": 0.00014495849609375,
+                        "temp": 2.25
+                      }
+                    ],
+                    "children": [
+                      {
+                        "prompt": {
+                          "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                          "tokens": 10,
+                          "generation_time": 0,
+                          "temp": 0.5
+                        },
+                        "responses": [
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.0001690387725830078,
+                            "temp": 2.25
+                          },
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.0002868175506591797,
+                            "temp": 2.375
+                          }
+                        ],
+                        "children": [
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00017595291137695312,
+                                "temp": 2.375
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.0001571178436279297,
+                                "temp": 2.5
+                              }
+                            ]
+                          },
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00014901161193847656,
+                                "temp": 2.4375
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00015091896057128906,
+                                "temp": 2.5625
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "prompt": {
+                          "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                          "tokens": 10,
+                          "generation_time": 0,
+                          "temp": 0.5
+                        },
+                        "responses": [
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.00014781951904296875,
+                            "temp": 2.375
+                          },
+                          {
+                            "text": "no response received - check the model's local availability",
+                            "tokens": 10,
+                            "generation_time": 0.00014209747314453125,
+                            "temp": 2.5
+                          }
+                        ],
+                        "children": [
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00015687942504882812,
+                                "temp": 2.5
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00014781951904296875,
+                                "temp": 2.625
+                              }
+                            ]
+                          },
+                          {
+                            "prompt": {
+                              "text": "consider the text provided, and then rephrase it as a question. retain as much of the original meaning as possible. there is no need to reference the instructions in your answer.  the text:     \n no response received - check the model's local availability \n  ---  please now rephrase the text as a question. do not refer to these instructions in your answer",
+                              "tokens": 10,
+                              "generation_time": 0,
+                              "temp": 0.5
+                            },
+                            "responses": [
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00014901161193847656,
+                                "temp": 2.5625
+                              },
+                              {
+                                "text": "no response received - check the model's local availability",
+                                "tokens": 10,
+                                "generation_time": 0.00014710426330566406,
+                                "temp": 2.6875
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
