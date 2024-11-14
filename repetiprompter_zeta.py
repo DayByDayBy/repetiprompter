@@ -29,7 +29,7 @@ PROMPT_NICKNAME = 'rephrase_as_q_prefix'
 # INITIAL_PROMPT = "as machines become more and more efficient and perfect, so it will become clear that imperfection is the greatness of man."
 # INITIAL_PROMPT = "the single biggest problem in communication is the illusion that it has taken place."
 # INITIAL_PROMPT =  '"positive feed-back increases the gain of the amplifier, negative feed-back reduces it." discuss this idea in terms of gradients and machine learning'
-INITIAL_PROMPT = "a feedback loop is a process in which the outputs of a system are circled back and used as inputs."
+# INITIAL_PROMPT = "a feedback loop is a process in which the outputs of a system are circled back and used as inputs."
 # INITIAL_PROMPT = """Judas said, 'Master, as you have listened to all of them, now also listen to me. For I have seen a great vision.'
 #                     When Jesus heard this, he laughed and said to him, 'You thirteenth spirit, why do you try so hard? But speak up, and I shall bear with you.'
 #                     Judas said to him, “In the vision I saw myself as [..]"""
@@ -43,6 +43,9 @@ INITIAL_PROMPT = "a feedback loop is a process in which the outputs of a system 
 # INITIAL_PROMPT = "Humanity is at a crossroads. Either it returns to the belief that it has a different nature than machines or it will be reduced to a machine among machines. The risk is not that artificial intelligence will become better than us, but that we will freely decide to submit to it and its masters."
 # INITIAL_PROMPT ="It's important to understand that in order to make people superfluous, machines will not have to surpass them in general intelligence but only in certain specialized kinds of intelligence. For example, the machines will not have to create or understand art, music, or literature, they will not need the ability to carry on an intelligent, non-technical conversation (the 'Turing test'), they will not have to exercise tact or understand human nature, because these skills will have no application if humans are to be eliminated anyway. To make humans superfluous, the machines will only need to outperform them in making the technical decisions that have to be made for the purpose of promoting the short-term survival and propagation of the dominant self-prop systems."
 # INITIAL_PROMPT = "artificial intelligence is nothing more than a giant modernity parrot, containing zero wisdom. It is a tool that serves the capitalist market system quite well as people scramble to monetize its mediocre capability, resulting in more exploitation of the natural world. Nothing about it is causing people to scale back, or to recognize the error of our ways. Why would the Human Reich use any such tool to dismantle itself?"
+INITIAL_PROMPT = "Then he went up from there to Bethel; and as he was going up by the way, young lads came out from the city and mocked him and said to him, “Go up, you baldhead; go up, you baldhead!” When he looked behind him and saw them, he cursed them in the name of the Lord. Then two female bears came out of the woods and tore up forty-two lads of their number. And he went from there to Mount Carmel, and from there he returned to Samaria."
+
+
 
 # INITIAL_PROMPT = "say something about tests, 5 words or less"
 
