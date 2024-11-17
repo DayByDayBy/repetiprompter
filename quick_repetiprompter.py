@@ -5,7 +5,7 @@ from datetime import datetime
 time_stamp = datetime.now().strftime("%Y%m%d_%H%M")
 
 
-MODEL_NAME = 'llama3.1:8b'
+MODEL_NAME = 'llama2'
 DEPTH = 10
 INITIAL_PROMPT = "consider: the ability to recursively improve upon the present is the key to unlocking the boundless potential of the future, a tool of the gods, the engine of progress, the ultimate weapon in the battle against entropy."
 
