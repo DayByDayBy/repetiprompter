@@ -1,3 +1,8 @@
+# may need to merge some of this thinking with some from the json_utils ones,
+# not happy with either as they are
+# feel like the solution i am looking for is way simpler, tbh
+
+
 from pathlib import Path
 from typing import Dict, Any, Union, Optional
 import json
@@ -126,16 +131,16 @@ class MLOutputWriter:
             final_metadata: Optional additional metadata to include
         """
         try:
-            # Read existing content
+            # read existing content
             with open(filepath, 'r') as f:
                 data = [json.loads(line) for line in f if line.strip()]
             
-            # Update with final metadata
+            # update with final metadata
             if final_metadata:
                 data[0]['final_metadata'] = final_metadata
             data[0]['timestamps']['end'] = datetime.now().isoformat()
             
-            # Rewrite file with proper structure
+            # rewrite file with proper structure
             with open(filepath, 'w') as f:
                 json.dump({
                     'metadata': data[0]['metadata'],
