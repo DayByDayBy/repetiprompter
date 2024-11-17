@@ -9,7 +9,7 @@ import time
 import tiktoken
 import random
 
-os.environ['OLLAMA_NUM_PARALLEL'] = '4'
+os.environ['OLLAMA_NUM_PARALLEL'] = '6'
 
 logging.basicConfig(filename='tree_generation.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
@@ -18,7 +18,7 @@ TIME_STAMP = datetime.now().strftime("%Y%m%d_%H%M")
 MODEL_NAME = 'stablelm2:zephyr'
 CHAIN_LENGTH = 2
 RECURSION_DEPTH = 4
-BASE_TEMP = 0.67
+BASE_TEMP = 0.525
 MAX_TEMP = 1.0
 SHAPE = f'{CHAIN_LENGTH} by {RECURSION_DEPTH}'
 PROMPT_NICKNAME = 'rephrase_as_q_prefix'
