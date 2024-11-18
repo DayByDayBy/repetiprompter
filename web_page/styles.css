@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.prompt-container {
+    background-color: #f7f7f7;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+}
+
+.chain-container {
+    background-color: #f7f7f7;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+}
+
+.response-container {
+    background-color: #f7f7f7;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+}
+
+#chain-list, #response-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.chain-item, .response-item {
+    background-color: #f7f7f7;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.chain-item {
+    margin-bottom: 1rem;
+}
+
+.response-item {
+    margin-bottom: 1rem;
+}
+
+#use-seed-prompt, #generate-prompt {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+#use-seed-prompt:hover, #generate-prompt:hover {
+    background-color: #444;
+}

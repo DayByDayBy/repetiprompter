@@ -2,3 +2,4 @@ venv
 response_tree.csv
 response_tree.json
 frontend/repetinalysis/node_modules
+node_modules

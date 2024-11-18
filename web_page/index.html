@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetiprompter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Repetiprompter</h1>
+    </header>
+    <main>
+        <section class="prompt-container">
+            <label for="seed-prompt">Seed Prompt:</label>
+            <input id="seed-prompt" type="text" placeholder="Enter a seed prompt">
+            <button id="use-seed-prompt">Use Seed Prompt</button>
+            <button id="generate-prompt">Generate Prompt</button>
+        </section>
+        <section class="chain-container">
+            <h2>Chain:</h2>
+            <ul id="chain-list"></ul>
+        </section>
+        <section class="response-container">
+            <h2>Responses:</h2>
+            <ul id="response-list"></ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
