@@ -15,10 +15,10 @@ logging.basicConfig(filename='tree_generation.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 TIME_STAMP = datetime.now().strftime("%Y%m%d_%H%M")
-MODEL_NAME = 'stablelm2:zephyr'
+MODEL_NAME = 'llama3'
 CHAIN_LENGTH = 2
-RECURSION_DEPTH = 8
-BASE_TEMP = 0.525
+RECURSION_DEPTH = 6
+BASE_TEMP = 0.5
 MAX_TEMP = 1.0
 SHAPE = f'{CHAIN_LENGTH} by {RECURSION_DEPTH}'
 PROMPT_NICKNAME = 'rephrase_as_q_prefix'
