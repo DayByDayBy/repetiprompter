@@ -17,7 +17,7 @@ logging.basicConfig(filename='tree_generation.log', level=logging.INFO,
 TIME_STAMP = datetime.now().strftime("%Y%m%d_%H%M")
 MODEL_NAME = 'llama3'
 CHAIN_LENGTH = 2
-RECURSION_DEPTH = 12
+RECURSION_DEPTH = 3
 BASE_TEMP = 0.5
 MAX_TEMP = 1.0
 SHAPE = f'{CHAIN_LENGTH} by {RECURSION_DEPTH}'
