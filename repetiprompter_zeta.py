@@ -15,7 +15,7 @@ logging.basicConfig(filename='tree_generation.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 TIME_STAMP = datetime.now().strftime("%Y%m%d_%H%M")
-MODEL_NAME = 'llama3'
+MODEL_NAME = 'stablelm2:zephyr'
 CHAIN_LENGTH = 2
 RECURSION_DEPTH = 3
 BASE_TEMP = 0.5
