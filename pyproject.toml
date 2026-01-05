@@ -7,4 +7,5 @@ dependencies = [
     "ollama>=0.6.1",
     "pydantic>=2.12.5",
     "pyyaml>=6.0.3",
+    "typer>=0.21.0",
 ]
