@@ -1,5 +1,16 @@
+.DS_Store
 venv
 response_tree.csv
 response_tree.json
 frontend/repetinalysis/node_modules
 node_modules
+.codeiumignore
+.venv
+.python-version
+runs/
+
+# leave planning and diary in gitignore:
+.planning
+dev_diary.md
+
+configs/test_*.yaml
