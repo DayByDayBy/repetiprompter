@@ -1,5 +1,42 @@
 
 
+Notebook Structure
+
+1. Title & Introduction
+Explain the purpose: analyzing LLM run JSONLs
+Brief overview of analyzers (structural, quality, convergence)
+Quick “why this matters” for each metric type
+
+2. Setup
+Imports (json_analyzers modules)
+Optional: installing missing packages (spacy, etc.)
+Load a sample JSONL
+
+3. Structural Stats
+Compute structural stats
+Display summary table
+Plot response lengths, vocab diversity, repetition by depth
+
+4. Quality Signals
+Compute quality metrics (coherence, specificity, alignment, compression)
+Show radar plots or trend plots for a few nodes
+Highlight “interesting” nodes (high hedge density, low info density)
+
+5. Convergence Analysis
+Run convergence tracker
+Plot drift over steps with plateaus marked
+Fixed point indicators
+Optional: cluster attractors if embeddings exist?
+
+6. Interactive Exploration
+Filter nodes by step, depth, repetition score, drift, etc.
+Widgets: sliders or dropdowns to toggle what’s displayed
+
+7. Summary / Next Steps
+Markdown discussion: “what we learned from this run”
+Encouragement for user to explore embedding-based metrics
+
+
 Setup / Imports
 
 # Path / system setup
