@@ -49,6 +49,8 @@ uv run python json_analyzers/semantic_drift.py runs/your_run.jsonl --summary-onl
 
 ### older implementations:
 
+(preserved for reference and historical context, no longer actively maintained)
+
 ```
 repetiprompter_delta.py
 repetiprompter_gamma.py
