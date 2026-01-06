@@ -13,7 +13,12 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Type, Union
 
-import pandas as pd
+try:
+    import pandas as pd
+    HAS_PANDAS = True
+except ImportError:
+    HAS_PANDAS = False
+    pd = None
 
 
 @dataclass
@@ -278,7 +283,7 @@ def merge_csvs(
     file_paths: List[Path],
     output_path: Optional[Path] = None,
     on: str = 'node_id',
-) -> pd.DataFrame:
+):
     """Merge multiple CSV files on a common key.
     
     Args:
@@ -287,8 +292,11 @@ def merge_csvs(
         on: Column to merge on (default: 'node_id')
         
     Returns:
-        Merged DataFrame
+        Merged DataFrame (requires pandas)
     """
+    if not HAS_PANDAS:
+        raise ImportError("pandas is required for merge_csvs. Install with: uv add pandas")
+    
     if not file_paths:
         return pd.DataFrame()
     
