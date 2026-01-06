@@ -10,7 +10,6 @@ Computes surface-level metrics for each response:
 
 import argparse
 import csv
-import json
 import logging
 import re
 import sys
@@ -20,14 +19,13 @@ from typing import Dict, List, Optional
 
 import numpy as np
 
+from .core.tree_utils import get_depth, load_jsonl_nodes
+from .core.text_utils import tokenize_words, get_ngrams
+
 logger = logging.getLogger(__name__)
 
 
-def tokenize_words(text: str) -> List[str]:
-    """Simple word tokenization using regex."""
-    # Split on whitespace and punctuation, lowercase
-    words = re.findall(r'\b[a-zA-Z]+\b', text.lower())
-    return words
+# tokenize_words imported from core.text_utils
 
 
 def count_chars(text: str) -> int:
@@ -45,11 +43,7 @@ def count_lines(text: str) -> int:
     return len(text.split('\n'))
 
 
-def get_ngrams(words: List[str], n: int) -> List[tuple]:
-    """Extract n-grams from word list."""
-    if len(words) < n:
-        return []
-    return [tuple(words[i:i+n]) for i in range(len(words) - n + 1)]
+# get_ngrams imported from core.text_utils
 
 
 def repetition_score(text: str, n: int = 3) -> float:
@@ -104,29 +98,7 @@ def avg_sentence_length(text: str) -> float:
     return total_words / len(sentences)
 
 
-def load_jsonl_nodes(file_path: Path) -> List[Dict]:
-    """Load nodes from JSONL file."""
-    nodes = []
-    with open(file_path, 'r', encoding='utf-8') as f:
-        for line_num, line in enumerate(f, 1):
-            line = line.strip()
-            if line:
-                try:
-                    nodes.append(json.loads(line))
-                except json.JSONDecodeError as e:
-                    logger.warning(f"Skipping malformed line {line_num} in {file_path}: {e}")
-                    continue
-    return nodes
-
-
-def get_depth(node_id: str) -> int:
-    """Get depth from node ID."""
-    if '.' in node_id:
-        parts = node_id.split('.')
-        first_part = parts[0]
-        if '_' in first_part and len(first_part) > 10:
-            return len(parts[1:]) - 1
-    return len(node_id.split('.')) - 1
+# load_jsonl_nodes and get_depth imported from core.tree_utils
 
 
 def analyze_structural_stats(
