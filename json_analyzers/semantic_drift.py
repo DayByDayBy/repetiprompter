@@ -8,7 +8,6 @@ to the root and parent nodes, and exports results for analysis.
 
 import argparse
 import csv
-import json
 import sys
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
@@ -24,45 +23,14 @@ from modular_rep_set.embedding_backend import (
     EmbeddingBackend,
 )
 
-
-def parse_node_id(node_id: str) -> Tuple[int, ...]:
-    """Parse hierarchical node ID into tuple of integers."""
-    # Remove run_id prefix if present (e.g., "20260105_140916_7b71.0" -> "0")
-    if '.' in node_id:
-        parts = node_id.split('.')
-        # Check if first part looks like a run_id (contains timestamp)
-        first_part = parts[0]
-        if '_' in first_part and len(first_part) > 10:
-            # This looks like a run_id, extract the hierarchical part
-            return tuple(int(part) for part in parts[1:] if part.isdigit())
-    
-    # Fallback: try to parse all parts as integers
-    return tuple(int(part) for part in node_id.split('.') if part.isdigit())
+from .core.tree_utils import (
+    parse_node_id,
+    get_depth,
+    load_jsonl_nodes,
+)
 
 
-def get_depth(node_id: str) -> int:
-    """Get depth from node ID."""
-    # Remove run_id prefix if present
-    if '.' in node_id:
-        parts = node_id.split('.')
-        first_part = parts[0]
-        if '_' in first_part and len(first_part) > 10:
-            # This looks like a run_id, return depth of hierarchical part
-            # Root is "0" -> depth 0, "0.0" -> depth 1, etc.
-            return len(parts[1:]) - 1  # Subtract 1 because root is depth 0
-    
-    # Fallback: count all parts and subtract 1
-    return len(node_id.split('.')) - 1
-
-
-def load_jsonl_nodes(file_path: Path) -> List[Dict]:
-    """Load nodes from JSONL file."""
-    nodes = []
-    with open(file_path, 'r') as f:
-        for line in f:
-            if line.strip():
-                nodes.append(json.loads(line))
-    return nodes
+# parse_node_id, get_depth, load_jsonl_nodes imported from core.tree_utils
 
 
 def extract_text_for_embedding(node: Dict) -> str:
