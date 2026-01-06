@@ -9,21 +9,56 @@ the implementation goes a little further than that, but that is the core of the 
 
 ## where to look
 
-there are a few scripts, examples of a few approaches, but the most current implementations are: 
+there are a few scripts, examples of a few approaches, but the most current implementation is `repetiprompter.py` 
 
+### Usage
 
+```bash
+# Run with a config file
+uv run python repetiprompter.py run configs/your_config.yaml
+
+# List available framing strategies
+uv run python repetiprompter.py strategies
+
+# List available Ollama models
+uv run python repetiprompter.py models
+```
+
+### Modular Architecture
+
+The core functionality is in `modular_rep_set/`:
+- `models.py` - Pydantic schemas for config and output
+- `config_loader.py` - YAML config loading with validation
+- `runner.py` - Unified runner for chain and tree topologies
+- `ollama_interface.py` - Ollama client with native token counting
+- `framing_strategies.py` - Pluggable prompt framing (simple, liar_paradox, discussion, rephrase, echo, custom)
+- `reminder.py` - Probabilistic prompt reinjection
+- `temperature_regime.py` - Static, ramp, and schedule temperature control
+- `output_writer.py` - Streaming JSONL output
+- `embedding_backend.py` - Pluggable embeddings (Ollama, sentence-transformers, HF)
+
+### Analysis Tools
+
+In `json_analyzers/`:
+- `semantic_drift.py` - Analyze semantic drift from root/parent nodes using embeddings
+
+```bash
+# Analyze a run
+uv run python json_analyzers/semantic_drift.py runs/your_run.jsonl --summary-only
+```
+
+### older implementations:
 
 ```
 repetiprompter_delta.py
-
 repetiprompter_gamma.py
-
 repetiprompter_beta.py
 parallel_repetiprompter.py
 repetiprompter.ipynb
 
 ```
-they all create *prompt->response* chains of the length 'CHAIN_LENGTH', and then reuse each element in the chain as a seed-prompt for another chain, each of which is used as a seed-chain for another, and so on, 'RECURSION_DEPTH' times
+
+those all create *prompt->response* chains of the length 'CHAIN_LENGTH', and then reuse each element in the chain as a seed-prompt for another chain, each of which is used as a seed-chain for another, and so on, 'RECURSION_DEPTH' times
 
 the parallel one does so, employing some parallelisation via the 'concurrent' library
 
@@ -52,11 +87,19 @@ bear in mind model choice etc will determine how long each prompt->response cycl
 
 ## requirements
 
-using the following libraries:
+Core dependencies (managed via UV):
 
 ```
-
 ollama
+pydantic
+pyyaml
+typer
+numpy
+```
+
+Legacy scripts also use:
+
+```
 typing (Dict, List, Any, Optional)
 json
 datetime
