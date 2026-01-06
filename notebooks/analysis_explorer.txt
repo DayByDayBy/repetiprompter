@@ -1,0 +1,413 @@
+
+
+Notebook Structure...
+
+1. Title & Introduction
+Explain the purpose: analyzing LLM run JSONLs
+Brief overview of analyzers (structural, quality, convergence)
+Quick “why this matters” for each metric type
+
+2. Setup
+Imports (json_analyzers modules)
+Optional: installing missing packages (spacy, etc.)
+Load a sample JSONL
+
+3. Structural Stats
+Compute structural stats
+Display summary table
+Plot response lengths, vocab diversity, repetition by depth
+
+4. Quality Signals
+Compute quality metrics (coherence, specificity, alignment, compression)
+Show radar plots or trend plots for a few nodes
+Highlight “interesting” nodes (high hedge density, low info density)
+
+5. Convergence Analysis
+Run convergence tracker
+Plot drift over steps with plateaus marked
+Fixed point indicators
+Optional: cluster attractors if embeddings exist?
+
+6. Interactive Exploration
+Filter nodes by step, depth, repetition score, drift, etc.
+Widgets: sliders or dropdowns to toggle what’s displayed
+
+7. Summary / Next Steps
+Markdown discussion: “what we learned from this run”
+Encouragement for user to explore embedding-based metrics
+
+____
+
+Setup / Imports
+
+# Path / system setup
+from pathlib import Path
+import sys
+sys.path.insert(0, str(Path('.').resolve()))  # allows imports from json_analyzers
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Analysis modules
+from json_analyzers import convergence_tracker as ct
+from json_analyzers import quality_signals as qs
+from json_analyzers import structural_stats as ss
+
+# Optional: interactive widgets
+import ipywidgets as widgets
+from IPython.display import display
+
+Load Sample JSONL Run
+
+# Example file
+jsonl_file = Path("sample_run.jsonl")
+
+# Load nodes into a DataFrame for inspection
+nodes = [json.loads(line) for line in jsonl_file.read_text().splitlines()]
+df_nodes = pd.DataFrame(nodes)
+df_nodes.head()
+
+# In Setup: Error handling for imports
+try:
+    import spacy
+except ImportError:
+    print("spaCy not found. Install with: pip install spacy && python -m spacy download en_core_web_sm")
+
+# In Quality Signals: Add a legend or colorbar to the scatter plot
+scatter = sns.scatterplot(x='coherence_variance', y='info_density', hue='step', data=df_quality, palette='viridis')
+plt.colorbar(scatter.collections[0], label="Step")
+
+
+
+
+Structural Stats
+
+# Run structural stats analysis
+struct_results = ss.analyze_structural_stats(jsonl_file)
+df_struct = pd.DataFrame(struct_results)
+
+# Quick overview
+df_struct.head()
+
+# Plot response length over steps
+plt.figure(figsize=(10,4))
+plt.plot(df_struct['step'], df_struct['response_words'], marker='o', linestyle='-')
+plt.xlabel("Step")
+plt.ylabel("Response words")
+plt.title("Response Length Over Steps")
+plt.show()
+
+
+Quality Signals
+
+# Run quality signals analysis
+quality_results = qs.analyze_quality_signals(jsonl_file, use_embeddings=False, use_spacy=False)
+df_quality = pd.DataFrame(quality_results)
+df_quality.head()
+
+# Example: scatter plot of coherence vs info density
+plt.figure(figsize=(8,5))
+sns.scatterplot(x='coherence_variance', y='info_density', data=df_quality)
+plt.xlabel("Coherence Variance")
+plt.ylabel("Information Density")
+plt.title("Coherence vs Info Density")
+plt.show()
+
+
+convergence analysis
+
+# Run convergence tracker
+summary = ct.analyze_convergence(jsonl_file, use_embeddings=False)
+df_converge = pd.DataFrame(summary['per_node_results'])
+
+# Plot drift with plateaus & fixed points
+plt.figure(figsize=(10,4))
+plt.plot(df_converge['step'], df_converge['drift_from_root'], marker='o')
+
+# Highlight plateaus
+for start, end in summary['plateaus']:
+    plt.axvspan(start, end, color='orange', alpha=0.2)
+
+# Fixed point line
+if summary['fixed_point_step']:
+    plt.axvline(summary['fixed_point_step'], color='red', linestyle='--', label='Fixed Point')
+
+plt.xlabel("Step")
+plt.ylabel("Drift from Root")
+plt.title("Convergence Analysis")
+plt.legend()
+plt.show()
+
+
+Interactive Filtering / Quick Dashboard
+
+# Widget example: filter nodes by repetition score
+rep_slider = widgets.FloatSlider(value=0.2, min=0, max=1.0, step=0.05, description='Max Repetition:')
+def filter_by_repetition(max_rep):
+    filtered = df_struct[df_struct['repetition_score'] <= max_rep]
+    display(filtered[['step','node_id','response_words','repetition_score']].head(10))
+    
+widgets.interactive(filter_by_repetition, max_rep=rep_slider)
+
+
+Next Steps
+
+Markdown cells to explain:
+
+What the plots mean
+
+How to explore other runs
+
+How to extend with embeddings, spaCy, or multi-run analysis
+
+
+
+
+some other thoughts/snippets:
+
+
+```
+# Example: Scatter plot with annotations
+plt.figure(figsize=(10, 6))
+sns.scatterplot(
+    x='coherence_variance',
+    y='info_density',
+    hue='step',
+    data=df_quality,
+    palette='viridis',
+    s=100,
+    alpha=0.7
+)
+plt.title("Coherence vs. Information Density by Step", fontsize=14)
+plt.xlabel("Coherence Variance (lower = better)", fontsize=12)
+plt.ylabel("Information Density (higher = better)", fontsize=12)
+plt.grid(True, linestyle='--', alpha=0.5)
+
+# Annotate outliers
+for i, row in df_quality.iterrows():
+    if row['coherence_variance'] > 0.8 or row['info_density'] < 0.2:
+        plt.annotate(
+            f"Step {row['step']}",
+            (row['coherence_variance'], row['info_density']),
+            fontsize=9,
+            alpha=0.8
+        )
+
+plt.show()
+```
+
+...maybe?
+
+```
+# In Setup: Error handling for imports
+try:
+    import spacy
+except ImportError:
+    print("spaCy not found. Install with: pip install spacy && python -m spacy download en_core_web_sm")
+
+# In Quality Signals: Add a legend or colorbar to the scatter plot
+scatter = sns.scatterplot(x='coherence_variance', y='info_density', hue='step', data=df_quality, palette='viridis')
+plt.colorbar(scatter.collections[0], label="Step")
+```
+
+
+sth like this could be fun?
+
+```
+hedge_slider = widgets.FloatSlider(
+    value=0.3,
+    min=0,
+    max=1.0,
+    step=0.05,
+    description='Max Hedge Density:'
+)
+
+def filter_by_hedge(max_hedge):
+    filtered = df_quality[df_quality['hedge_density'] <= max_hedge]
+    display(filtered[['step', 'node_id', 'hedge_density', 'info_density']].sort_values('hedge_density'))
+
+widgets.interactive(filter_by_hedge, max_hedge=hedge_slider)
+```
+
+
+
+some more ideas for refining the plan:
+
+1. Title & Introduction
+
+Clarify Audience: Add a sentence about who this notebook is for (e.g., researchers, engineers, or data scientists analyzing LLM outputs).
+Define Key Terms: Briefly define "structural," "quality," and "convergence" metrics upfront, especially if the notebook is for a broad audience.
+2. Setup
+
+Error Handling: Add a try-except block for imports (e.g., if spacy is missing, suggest how to install it).
+Sample Data: Consider including a small sample JSONL file in the repo or notebook for users to test immediately.
+3. Structural Stats
+
+Visual Clarity: For the response length plot, consider adding a trendline or smoothing to highlight patterns.
+Table Formatting: Use df_struct.style.highlight_max() or similar to draw attention to outliers in the summary table.
+4. Quality Signals
+
+Metric Explanations: Add a markdown cell explaining what "coherence variance" and "info density" represent, and why they matter.
+Visualization: For the scatter plot, consider adding a color gradient (e.g., by step or depth) to reveal patterns.
+5. Convergence Analysis
+
+Annotations: Label the plateaus and fixed points directly on the plot for clarity.
+Embeddings Note: If embeddings are optional, mention what users miss by not using them (e.g., semantic drift analysis).
+6. Interactive Exploration
+
+Widget Expansion: Add a dropdown to filter by other metrics (e.g., depth, drift) for deeper exploration.
+Export Option: Include a button to export filtered results to CSV for further analysis.
+7. Summary / Next Steps
+
+Actionable Insights: End with a checklist or bullet points for next steps (e.g., "Try with embeddings," "Compare multiple runs").
+Encourage Feedback: Add a note inviting users to share findings or suggest improvements.
+
+Code Improvements
+
+Path Handling: Use Path(__file__).parent for more robust path resolution if this becomes part of a larger project.
+Documentation: Add docstrings to custom functions (e.g., analyze_structural_stats) for clarity.
+Performance: For large JSONLs, consider chunking or sampling to avoid memory issues.
+
+
+__
+
+
+putting some of that together, maybe as a md cell?
+
+
+eg:
+
+```
+Quality Signals: What Are We Measuring?
+This section analyzes the linguistic and semantic quality of LLM responses. Each metric helps identify strengths, weaknesses, or patterns in the generated text.
+
+Key Metrics Explained
+
+
+
+Quality Metrics
+
+  
+    
+      Metric
+      Description
+      Why It Matters
+    
+  
+  
+    
+      Coherence Variance
+      Measures how consistent the logical flow of a response is across steps.
+      High variance may indicate unstable or contradictory reasoning.
+    
+    
+      Information Density
+      Ratio of unique, meaningful content to total words (e.g., low density = repetitive or vague).
+      High density suggests concise, informative responses.
+    
+    
+      Specificity
+      Degree to which responses include concrete details (e.g., numbers, names, examples).
+      Low specificity can signal generic or unhelpful outputs.
+    
+    
+      Alignment
+      How well responses match the user’s intent or query (if ground truth is available).
+      Misalignment may reveal misunderstandings or biases in the LLM.
+    
+    
+      Hedge Density
+      Frequency of uncertain language (e.g., "might," "possibly").
+      High density can indicate low confidence or overly cautious responses.
+    
+  
+
+
+
+How to Interpret the Scatter Plot
+The plot below shows coherence variance vs. information density for each response:
+
+Top-right quadrant: Ideal responses (high coherence, high density).
+Bottom-left quadrant: Problematic responses (low coherence, low density).
+Outliers: Investigate nodes with extreme values—these often reveal interesting patterns (e.g., sudden topic shifts or repetitive loops).
+python
+Copy
+
+# Example: Scatter plot with annotations
+plt.figure(figsize=(10, 6))
+sns.scatterplot(
+    x='coherence_variance',
+    y='info_density',
+    hue='step',
+    data=df_quality,
+    palette='viridis',
+    s=100,
+    alpha=0.7
+)
+plt.title("Coherence vs. Information Density by Step", fontsize=14)
+plt.xlabel("Coherence Variance (lower = better)", fontsize=12)
+plt.ylabel("Information Density (higher = better)", fontsize=12)
+plt.grid(True, linestyle='--', alpha=0.5)
+
+# Annotate outliers
+for i, row in df_quality.iterrows():
+    if row['coherence_variance'] > 0.8 or row['info_density'] < 0.2:
+        plt.annotate(
+            f"Step {row['step']}",
+            (row['coherence_variance'], row['info_density']),
+            fontsize=9,
+            alpha=0.8
+        )
+
+plt.show()
+
+
+Actionable Insights
+
+
+High Coherence Variance:
+
+Check if the LLM’s context window or prompts need adjustment.
+Example: Add constraints like "Respond in 3 bullet points" to reduce variability.
+
+
+Low Information Density:
+
+Use post-processing to filter repetitive phrases or prompt the LLM to "elaborate with examples."
+
+
+High Hedge Density:
+
+Experiment with temperature settings or add "Be confident in your answer" to prompts.
+
+
+Next Steps:
+
+Compare these metrics across multiple runs to spot consistent issues.
+Enable embeddings (use_embeddings=True) to analyze semantic drift or clustering.
+
+
+Try It Yourself!
+Use the slider below to filter nodes by hedge density and explore how responses change:
+python
+Copy
+
+hedge_slider = widgets.FloatSlider(
+    value=0.3,
+    min=0,
+    max=1.0,
+    step=0.05,
+    description='Max Hedge Density:'
+)
+
+def filter_by_hedge(max_hedge):
+    filtered = df_quality[df_quality['hedge_density'] <= max_hedge]
+    display(filtered[['step', 'node_id', 'hedge_density', 'info_density']].sort_values('hedge_density'))
+
+widgets.interactive(filter_by_hedge, max_hedge=hedge_slider)
+
+
+
+```
