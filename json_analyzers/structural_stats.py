@@ -104,10 +104,15 @@ def avg_sentence_length(text: str) -> float:
 def load_jsonl_nodes(file_path: Path) -> List[Dict]:
     """Load nodes from JSONL file."""
     nodes = []
-    with open(file_path, 'r') as f:
-        for line in f:
-            if line.strip():
-                nodes.append(json.loads(line))
+    with open(file_path, 'r', encoding='utf-8') as f:
+        for line_num, line in enumerate(f, 1):
+            line = line.strip()
+            if line:
+                try:
+                    nodes.append(json.loads(line))
+                except json.JSONDecodeError as e:
+                    print(f"Warning: Skipping malformed line {line_num} in {file_path}: {e}")
+                    continue
     return nodes
 
 
@@ -142,7 +147,11 @@ def analyze_structural_stats(
     
     print("Computing structural statistics...")
     for i, node in enumerate(nodes):
-        node_id = node['node_id']
+        node_id = node.get('node_id')
+        if not node_id:
+            print(f"Warning: Node {i} missing node_id, skipping")
+            continue
+        
         response = node.get('response', '')
         prompt = node.get('prompt', '')
         
@@ -187,7 +196,7 @@ def save_results_to_csv(results: List[Dict], output_path: Path):
     
     fieldnames = list(results[0].keys())
     
-    with open(output_path, 'w', newline='') as csvfile:
+    with open(output_path, 'w', newline='', encoding='utf-8') as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(results)

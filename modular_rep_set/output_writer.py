@@ -28,6 +28,14 @@ class JSONLWriter:
         self.run_id = config.run_identity.run_id
         self.flush_every = config.output.flush_every
         
+        # Validate flush_every: must be positive int or None/0
+        if self.flush_every is not None and self.flush_every <= 0:
+            print(f"Warning: flush_every={self.flush_every} is invalid, using None (no periodic flushing)")
+            self.flush_every = None
+        elif self.flush_every is not None and not isinstance(self.flush_every, int):
+            print(f"Warning: flush_every={self.flush_every} is not int, using None")
+            self.flush_every = None
+        
         if output_path:
             self.output_path = Path(output_path)
         else:
@@ -72,8 +80,9 @@ class JSONLWriter:
         self._file.write(line + '\n')
         self._nodes_written += 1
         
-        if self._nodes_written % self.flush_every == 0:
-            self._file.flush()
+        if self.flush_every and isinstance(self.flush_every, int) and self.flush_every > 0:
+            if self._nodes_written % self.flush_every == 0:
+                self._file.flush()
     
     def generate_node_id(self, parent_id: Optional[str], sibling_index: int) -> str:
         """
@@ -137,10 +146,14 @@ def iter_jsonl(path: Union[str, Path]):
     
     Memory-efficient for large files.
     """
+    import logging
     path = Path(path)
     
     with open(path, 'r') as f:
-        for line in f:
+        for line_num, line in enumerate(f, 1):
             line = line.strip()
             if line:
-                yield json.loads(line)
+                try:
+                    yield json.loads(line)
+                except json.JSONDecodeError as e:
+                    logging.warning(f"Skipping malformed line {line_num} in {path}: {e}")
