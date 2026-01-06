@@ -1,10 +1,13 @@
 # repetiprompter
 
-a project based around a fairly simple idea, namely 
+a project based around a fairly simple idea, namely: 
 
 #### prompt -> response, where each response becomes the next prompt
 
 the implementation goes a little further than that, but that is the core of the project
+
+
+to be clear, this project is exploratory and diagnostic. one goal is to identify early, inexpensive indicators of LLM breakdown in recursive prompt→response systems (e.g. drift, repetition, language leakage, fragmentation). analysis is intended (in part) to guide which runs are worth scaling in depth, branching factor, or model size later, rather than exhaustively analyzing large runs upfront. 
 
 
 ## where to look

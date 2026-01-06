@@ -1,10 +1,11 @@
 """JSONL streaming writer with stable hierarchical node IDs."""
 
 import json
-from pathlib import Path
+import logging
 from datetime import datetime
+from pathlib import Path
 from typing import Optional, Union
-import uuid
+from uuid import uuid4
 
 from .models import NodeOutput, RunConfig
 
@@ -28,12 +29,12 @@ class JSONLWriter:
         self.run_id = config.run_identity.run_id
         self.flush_every = config.output.flush_every
         
-        # Validate flush_every: must be positive int or None/0
-        if self.flush_every is not None and self.flush_every <= 0:
-            print(f"Warning: flush_every={self.flush_every} is invalid, using None (no periodic flushing)")
+        # Validate flush_every: must be positive int or None
+        if self.flush_every is not None and (not isinstance(self.flush_every, int) or isinstance(self.flush_every, bool)):
+            logging.warning(f"flush_every={self.flush_every} is invalid (must be positive int), using None")
             self.flush_every = None
-        elif self.flush_every is not None and not isinstance(self.flush_every, int):
-            print(f"Warning: flush_every={self.flush_every} is not int, using None")
+        elif self.flush_every is not None and self.flush_every <= 0:
+            logging.warning(f"flush_every={self.flush_every} is invalid (must be > 0), using None")
             self.flush_every = None
         
         if output_path:
@@ -58,7 +59,7 @@ class JSONLWriter:
     def open(self) -> None:
         """Open the output file for writing."""
         self.output_path.parent.mkdir(parents=True, exist_ok=True)
-        self._file = open(self.output_path, 'a')
+        self._file = open(self.output_path, 'w')
     
     def close(self) -> None:
         """Close the output file, flushing any remaining data."""
@@ -80,9 +81,8 @@ class JSONLWriter:
         self._file.write(line + '\n')
         self._nodes_written += 1
         
-        if self.flush_every and isinstance(self.flush_every, int) and self.flush_every > 0:
-            if self._nodes_written % self.flush_every == 0:
-                self._file.flush()
+        if self.flush_every and self._nodes_written % self.flush_every == 0:
+            self._file.flush()
     
     def generate_node_id(self, parent_id: Optional[str], sibling_index: int) -> str:
         """
@@ -135,7 +135,7 @@ def read_jsonl(path: Union[str, Path]) -> list[dict]:
             try:
                 nodes.append(json.loads(line))
             except json.JSONDecodeError as e:
-                print(f"Warning: Skipping malformed line {line_num}: {e}")
+                logging.warning(f"Skipping malformed line {line_num} in {path}: {e}")
     
     return nodes
 
@@ -146,7 +146,6 @@ def iter_jsonl(path: Union[str, Path]):
     
     Memory-efficient for large files.
     """
-    import logging
     path = Path(path)
     
     with open(path, 'r') as f:

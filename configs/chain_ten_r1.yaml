@@ -1,0 +1,16 @@
+model:
+  model_name: "deepseek-r1:14b"
+  temperature: 0.5
+
+prompting:
+  initial_prompt: "Consider: recursive improvement is the key to progress."
+  framing_strategy: "simple"
+
+topology:
+  mode: "chain"
+  chain:
+    steps: 10
+
+output:
+  output_dir: "./runs"
+  flush_every: 1

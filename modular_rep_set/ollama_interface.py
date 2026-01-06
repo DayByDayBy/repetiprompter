@@ -22,7 +22,7 @@ class OllamaClient:
     """
     Clean interface to Ollama that uses native token counts.
     
-    Fixes the tiktoken issue by using Ollama's reported counts
+    fixes tiktoken 'square peg' issue by using Ollama's reported counts
     (prompt_eval_count, eval_count) which are accurate for the
     actual model being used.
     """

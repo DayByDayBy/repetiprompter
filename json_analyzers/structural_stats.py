@@ -11,6 +11,7 @@ Computes surface-level metrics for each response:
 import argparse
 import csv
 import json
+import logging
 import re
 import sys
 from collections import Counter
@@ -18,6 +19,8 @@ from pathlib import Path
 from typing import Dict, List, Optional
 
 import numpy as np
+
+logger = logging.getLogger(__name__)
 
 
 def tokenize_words(text: str) -> List[str]:
@@ -111,7 +114,7 @@ def load_jsonl_nodes(file_path: Path) -> List[Dict]:
                 try:
                     nodes.append(json.loads(line))
                 except json.JSONDecodeError as e:
-                    print(f"Warning: Skipping malformed line {line_num} in {file_path}: {e}")
+                    logger.warning(f"Skipping malformed line {line_num} in {file_path}: {e}")
                     continue
     return nodes
 
@@ -149,7 +152,7 @@ def analyze_structural_stats(
     for i, node in enumerate(nodes):
         node_id = node.get('node_id')
         if not node_id:
-            print(f"Warning: Node {i} missing node_id, skipping")
+            logger.warning(f"Node {i} missing node_id, skipping")
             continue
         
         response = node.get('response', '')
