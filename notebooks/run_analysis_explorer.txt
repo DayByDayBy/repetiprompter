@@ -1,0 +1,112 @@
+
+
+Setup / Imports
+
+# Path / system setup
+from pathlib import Path
+import sys
+sys.path.insert(0, str(Path('.').resolve()))  # allows imports from json_analyzers
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Analysis modules
+from json_analyzers import convergence_tracker as ct
+from json_analyzers import quality_signals as qs
+from json_analyzers import structural_stats as ss
+
+# Optional: interactive widgets
+import ipywidgets as widgets
+from IPython.display import display
+
+Load Sample JSONL Run
+
+# Example file
+jsonl_file = Path("sample_run.jsonl")
+
+# Load nodes into a DataFrame for inspection
+nodes = [json.loads(line) for line in jsonl_file.read_text().splitlines()]
+df_nodes = pd.DataFrame(nodes)
+df_nodes.head()
+
+Structural Stats
+
+# Run structural stats analysis
+struct_results = ss.analyze_structural_stats(jsonl_file)
+df_struct = pd.DataFrame(struct_results)
+
+# Quick overview
+df_struct.head()
+
+# Plot response length over steps
+plt.figure(figsize=(10,4))
+plt.plot(df_struct['step'], df_struct['response_words'], marker='o', linestyle='-')
+plt.xlabel("Step")
+plt.ylabel("Response words")
+plt.title("Response Length Over Steps")
+plt.show()
+
+
+Quality Signals
+
+# Run quality signals analysis
+quality_results = qs.analyze_quality_signals(jsonl_file, use_embeddings=False, use_spacy=False)
+df_quality = pd.DataFrame(quality_results)
+df_quality.head()
+
+# Example: scatter plot of coherence vs info density
+plt.figure(figsize=(8,5))
+sns.scatterplot(x='coherence_variance', y='info_density', data=df_quality)
+plt.xlabel("Coherence Variance")
+plt.ylabel("Information Density")
+plt.title("Coherence vs Info Density")
+plt.show()
+
+
+convergence analysis
+
+# Run convergence tracker
+summary = ct.analyze_convergence(jsonl_file, use_embeddings=False)
+df_converge = pd.DataFrame(summary['per_node_results'])
+
+# Plot drift with plateaus & fixed points
+plt.figure(figsize=(10,4))
+plt.plot(df_converge['step'], df_converge['drift_from_root'], marker='o')
+
+# Highlight plateaus
+for start, end in summary['plateaus']:
+    plt.axvspan(start, end, color='orange', alpha=0.2)
+
+# Fixed point line
+if summary['fixed_point_step']:
+    plt.axvline(summary['fixed_point_step'], color='red', linestyle='--', label='Fixed Point')
+
+plt.xlabel("Step")
+plt.ylabel("Drift from Root")
+plt.title("Convergence Analysis")
+plt.legend()
+plt.show()
+
+
+Interactive Filtering / Quick Dashboard
+
+# Widget example: filter nodes by repetition score
+rep_slider = widgets.FloatSlider(value=0.2, min=0, max=1.0, step=0.05, description='Max Repetition:')
+def filter_by_repetition(max_rep):
+    filtered = df_struct[df_struct['repetition_score'] <= max_rep]
+    display(filtered[['step','node_id','response_words','repetition_score']].head(10))
+    
+widgets.interactive(filter_by_repetition, max_rep=rep_slider)
+
+
+Next Steps
+
+Markdown cells to explain:
+
+What the plots mean
+
+How to explore other runs
+
+How to extend with embeddings, spaCy, or multi-run analysis
