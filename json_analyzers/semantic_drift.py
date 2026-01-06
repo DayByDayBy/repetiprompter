@@ -4,6 +4,16 @@ Semantic drift analyzer for JSONL runs.
 
 Computes embeddings for all nodes in a run, calculates cosine distance 
 to the root and parent nodes, and exports results for analysis.
+
+Extended metrics:
+- drift_local: Distance to previous response (step-wise)
+- drift_global: Distance to run centroid
+- drift_instruction: Distance to original prompt
+
+Embedding modes:
+- prompt_only: Embed only prompt text
+- response_only: Embed only response text  
+- prompt_response: Embed concatenated prompt + response (default)
 """
 
 import argparse
@@ -33,18 +43,36 @@ from .core.tree_utils import (
 # parse_node_id, get_depth, load_jsonl_nodes imported from core.tree_utils
 
 
-def extract_text_for_embedding(node: Dict) -> str:
-    """Extract text content from node for embedding."""
-    # Combine prompt and response for semantic analysis
+def extract_text_for_embedding(
+    node: Dict,
+    mode: str = "prompt_response",
+) -> str:
+    """Extract text content from node for embedding.
+    
+    Args:
+        node: Node dictionary
+        mode: Embedding mode - "prompt_only", "response_only", or "prompt_response"
+        
+    Returns:
+        Text to embed
+    """
     prompt = node.get('prompt', '')
     response = node.get('response', '')
-    return f"{prompt} {response}".strip()
+    
+    if mode == "prompt_only":
+        return prompt.strip()
+    elif mode == "response_only":
+        return response.strip()
+    else:  # prompt_response
+        return f"{prompt} {response}".strip()
 
 
 def analyze_semantic_drift(
     jsonl_file: Path,
     backend: EmbeddingBackend,
     output_csv: Optional[Path] = None,
+    embedding_mode: str = "prompt_response",
+    extended: bool = True,
 ) -> List[Dict]:
     """Analyze semantic drift in a JSONL run file.
     
@@ -52,6 +80,8 @@ def analyze_semantic_drift(
         jsonl_file: Path to JSONL file
         backend: Embedding backend instance
         output_csv: Optional path to save CSV results
+        embedding_mode: Mode for text extraction (prompt_only, response_only, prompt_response)
+        extended: Include extended metrics (drift_local, drift_global, drift_instruction)
     
     Returns:
         List of drift analysis results
@@ -66,13 +96,19 @@ def analyze_semantic_drift(
     # Store embeddings by node ID
     embeddings: Dict[str, np.ndarray] = {}
     
+    # For extended metrics
+    centroid_sum: Optional[np.ndarray] = None
+    centroid_count = 0
+    original_prompt_embedding: Optional[np.ndarray] = None
+    previous_embedding: Optional[np.ndarray] = None
+    
     # Results storage
     results = []
     
-    print("Computing embeddings...")
+    print(f"Computing embeddings (mode: {embedding_mode})...")
     for i, node in enumerate(nodes):
         node_id = node['node_id']
-        text = extract_text_for_embedding(node)
+        text = extract_text_for_embedding(node, embedding_mode)
         
         if not text:
             print(f"Warning: No text content for node {node_id}")
@@ -82,14 +118,25 @@ def analyze_semantic_drift(
         embedding = backend.encode(text)
         embeddings[node_id] = embedding
         
-        # Calculate drift metrics
+        # Update centroid incrementally
+        if centroid_sum is None:
+            centroid_sum = embedding.copy()
+        else:
+            centroid_sum = centroid_sum + embedding
+        centroid_count += 1
+        
+        # Store original prompt embedding (from root node)
         depth = get_depth(node_id)
+        if depth == 0 and extended:
+            prompt_text = node.get('prompt', '')
+            if prompt_text:
+                original_prompt_embedding = backend.encode(prompt_text)
+        
         parent_id = node.get('parent_id')
         
         # Drift from root (if not root)
         drift_from_root = None
-        if depth > 0:  # Use depth instead of node_id comparison
-            # Find root node (depth 0) from embeddings
+        if depth > 0:
             root_embedding = None
             for node_id_check, emb_check in embeddings.items():
                 if get_depth(node_id_check) == 0:
@@ -102,15 +149,11 @@ def analyze_semantic_drift(
         # Drift from parent
         drift_from_parent = None
         if parent_id:
-            # Try direct parent_id first
             parent_embedding = embeddings.get(parent_id)
             if parent_embedding is None:
-                # Try to find parent by hierarchical relationship
-                # Extract run_id prefix if present
                 if '.' in node_id:
                     parts = node_id.split('.')
                     if '_' in parts[0] and len(parts[0]) > 10:
-                        # This has run_id prefix, construct parent ID with same prefix
                         parent_id_alt = '.'.join(parts[:-1])
                         parent_embedding = embeddings.get(parent_id_alt)
             
@@ -126,20 +169,45 @@ def analyze_semantic_drift(
             'prompt_length': len(node.get('prompt', '')),
             'response_length': len(node.get('response', '')),
         }
+        
+        # Extended metrics
+        if extended:
+            # drift_local: distance to previous response (step-wise)
+            drift_local = None
+            if previous_embedding is not None:
+                drift_local = cosine_distance(embedding, previous_embedding)
+            result['drift_local'] = drift_local
+            
+            # drift_global: distance to run centroid
+            drift_global = None
+            if centroid_count > 0:
+                centroid = centroid_sum / centroid_count
+                drift_global = cosine_distance(embedding, centroid)
+            result['drift_global'] = drift_global
+            
+            # drift_instruction: distance to original prompt
+            drift_instruction = None
+            if original_prompt_embedding is not None:
+                drift_instruction = cosine_distance(embedding, original_prompt_embedding)
+            result['drift_instruction'] = drift_instruction
+            
+            result['embedding_mode'] = embedding_mode
+        
         results.append(result)
+        previous_embedding = embedding
         
         if (i + 1) % 10 == 0:
             print(f"Processed {i + 1}/{len(nodes)} nodes")
     
     # Save to CSV if requested
     if output_csv:
-        save_results_to_csv(results, output_csv)
+        save_results_to_csv(results, output_csv, extended=extended)
         print(f"Results saved to {output_csv}")
     
     return results
 
 
-def save_results_to_csv(results: List[Dict], output_path: Path):
+def save_results_to_csv(results: List[Dict], output_path: Path, extended: bool = True):
     """Save drift analysis results to CSV."""
     fieldnames = [
         'node_id',
@@ -150,6 +218,14 @@ def save_results_to_csv(results: List[Dict], output_path: Path):
         'prompt_length',
         'response_length',
     ]
+    
+    if extended:
+        fieldnames.extend([
+            'drift_local',
+            'drift_global',
+            'drift_instruction',
+            'embedding_mode',
+        ])
     
     with open(output_path, 'w', newline='') as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
@@ -213,6 +289,17 @@ def main():
     )
     parser.add_argument("--model", help="Model name for embedding backend")
     parser.add_argument(
+        "--mode",
+        choices=["prompt_only", "response_only", "prompt_response"],
+        default="prompt_response",
+        help="Embedding mode: what text to embed"
+    )
+    parser.add_argument(
+        "--no-extended",
+        action="store_true",
+        help="Disable extended metrics (drift_local, drift_global, drift_instruction)"
+    )
+    parser.add_argument(
         "--output", 
         type=Path, 
         help="Output CSV file (default: <jsonl_file>_drift.csv)"
@@ -231,7 +318,8 @@ def main():
     
     # Set output path if not provided
     if not args.output and not args.summary_only:
-        args.output = args.jsonl_file.with_name(f"{args.jsonl_file.stem}_drift.csv")
+        suffix = "_drift_ext.csv" if not args.no_extended else "_drift.csv"
+        args.output = args.jsonl_file.with_name(f"{args.jsonl_file.stem}{suffix}")
     
     # Create embedding backend
     print(f"Creating embedding backend: {args.backend}")
@@ -241,7 +329,9 @@ def main():
     results = analyze_semantic_drift(
         args.jsonl_file, 
         backend, 
-        args.output if not args.summary_only else None
+        args.output if not args.summary_only else None,
+        embedding_mode=args.mode,
+        extended=not args.no_extended,
     )
     
     # Print summary
