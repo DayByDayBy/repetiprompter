@@ -14,3 +14,5 @@ runs/
 dev_diary.md
 
 configs/test_*.yaml
+
+tree_generation.log
